@@ -1,13 +1,5 @@
 <!doctype html>
 
-<!--
-  Apply head only for dev environment, this is required for jekyll to
-  insert livereload scripts
--->
-{% if site.dev == true %}
-  <head>
-{% endif %}
-
 {% if site.force_utf_8 %}
   <meta charset="utf-8">
 {% endif %}
@@ -40,11 +32,10 @@
 <!-- DNS prefetching for static files -->
 {% if page.permalink == "/" %}<link rel="dns-prefetch" href="{{ site.file }}">{% endif %}
 
+<!-- browser-sync, don't remove this -->
+<!-- BS_INSERT -->
+
 <!-- Head hooks -->
 {% if page.head %}
   {{ page.head }}
-{% endif %}
-
-{% if site.dev == true %}
-  </head>
 {% endif %}

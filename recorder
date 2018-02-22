@@ -1,0 +1,74 @@
+_amsf.yml           _config.dev.yml   _deploy.yml       LICENSE            recorder
+_app/               _config.init.yml  Gemfile           node_modules/      recorder~
+ATTRIBUTION.md      _config.yml       Gemfile.lock      package.json       s3_website.example.yml
+CHANGELOG.md        CONTRIBUTING.md   Gruntfile.coffee  package-lock.json  _site/
+CODE_OF_CONDUCT.md  CONVENTIONS.md    js/               README.md
+
+
+
+need change:
+_config.yml
+caa
+emacs --eval '(ediff-files "authors.yml" "../../../k/_app/_data/authors.yml")'
+emacs --eval '(ediff-files "authors.yml" "../../../k/_app/_data/authors.yml")'
+cp ../../../k/_app/_data/header.yml .
+
+cas
+cp -r ../../../k/assets/img/ .
+
+casj
+cd ..
+#css/app.css ;; No need change
+#_js/ ;;same up
+#js/ ;;same up
+
+casl
+#emacs --eval '(ediff-files "app.less" "../../../../../../k/_app/assets/themes/curtana/_less/app.less")'
+#emacs --eval '(ediff-files "common.less" "../../../../../../k/_app/assets/themes/curtana/_less/common.less")'
+#emacs --eval '(ediff-files "components/randomized.less" "../../../../../../k/_app/assets/themes/curtana/_less/components/randomized.less")'
+#emacs --eval '(ediff-files "mixins.less" "../../../../../../k/_app/assets/themes/curtana/_less/mixins.less")'
+#emacs --eval '(ediff-files "plugins.less" "../../../../../../k/_app/assets/themes/curtana/_less/plugins.less")'
+#emacs --eval '(ediff-files "print.less" "../../../../../../k/_app/assets/themes/curtana/_less/print.less")'
+;;have diffrent
+#emacs --eval '(ediff-files "reset.less" "../../../../../../k/_app/assets/themes/curtana/_less/reset.less")'
+;;have diff
+#emacs --eval '(ediff-files "variables.less" "../../../../../../k/_app/assets/themes/curtana/_less/variables.less")'
+L38, code-color
+
+cai
+amsf ;;no need
+_amsf.html ;;no need
+
+caii
+#content.html
+css-variables.html ;;change some
+footer.html
+  cp ../../../../../../k/_app/_includes/themes/curtana/includes/footer.html .
+#header.html
+#open-graph.html
+#page-item.html
+#top.html
+  cp ../../../../../../k/_app/_includes/themes/curtana/includes/post-tags.html ../../../../../../k/_app/_includes/themes/curtana/includes/search_lunr .
+
+cail
+#default.html
+page.html
+  cp ../../../../../../k/_app/_includes/themes/curtana/layouts/post.html .
+#post.html
+
+cal
+#default.html
+#page.html
+#post.html
+
+cag
+;;change 
+about.md  error.md  index.html  news.html  themes/
+;;to
+about.md  error.md  index.html  news.html  themes/
+about.md       email-signup-mailchimp.bak  email-verify.md  index.html.bak  search.md
+about.md.bak   email-signup.md             error.md         it.html         tags.html
+archives.html  email-subscribed.md         fu.html          life.html       themes/
+art.html       email-unsubscribed.md       index.html       news.html
+  cp ../../../k/_app/_pages/* .
+

@@ -5,15 +5,18 @@
       <li><a href="{{ '/' | relative_url }}">{{ site.name }}</a></li>
 
       {% if site.credits %}
-        <li><a href="https://sparanoid.com/lab/amsf/" title="Almace Scaffolding">AMSF</a></li>
-        <li><a href="{{ site.data.curtana.meta.url }}" title="{{ site.data.curtana.meta.name }}">{{ site.data.curtana.meta.name }}</a></li>
+      <li><a href="http://yefeiyu.blogspot.com/" title="旧版blogspot博客，需翻墙">Blogger博客</a></li>
+<!--  <li><a href="https://sparanoid.com/lab/amsf/" title="Almace Scaffolding">AMSF</a></li>
+-->
+<!--      <li><a href="{{ site.data.curtana.meta.url }}" title="{{ site.data.curtana.meta.name }}">{{ site.data.curtana.meta.name }}</a></li>
+-->
       {% endif %}
 
       {% if site.data.curtana.subscription %}
-        <li><a href="{{ '/email-signup' | relative_url }}/">Email</a></li>
+        <li><a href="{{ '/email-signup' | relative_url }}/">Email订阅</a></li>
       {% endif %}
 
-      <li><a href="{{ amsf_feed_url | strip }}" title="Feed - Atom (The Atom Syndication Format)">Atom</a></li>
+      <li><a href="{{ amsf_feed_url | strip }}" title="Feed - Atom (The Atom Syndication Format)">Feed/xml阅读/订阅</a></li>
     </ul>
   </footer>
 {% endunless %}
