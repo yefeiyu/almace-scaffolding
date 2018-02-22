@@ -24,7 +24,8 @@ cd ..
 
 casl
 #emacs --eval '(ediff-files "app.less" "../../../../../../k/_app/assets/themes/curtana/_less/app.less")'
-#emacs --eval '(ediff-files "common.less" "../../../../../../k/_app/assets/themes/curtana/_less/common.less")'
+;; change L564-566, the excel wrap.
+emacs --eval '(ediff-files "common.less" "../../../../../../k/_app/assets/themes/curtana/_less/common.less")'
 #emacs --eval '(ediff-files "components/randomized.less" "../../../../../../k/_app/assets/themes/curtana/_less/components/randomized.less")'
 #emacs --eval '(ediff-files "mixins.less" "../../../../../../k/_app/assets/themes/curtana/_less/mixins.less")'
 #emacs --eval '(ediff-files "plugins.less" "../../../../../../k/_app/assets/themes/curtana/_less/plugins.less")'
