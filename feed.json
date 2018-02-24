@@ -139,6 +139,28 @@
   
     
     {
+      "title": "today",
+      "permalink": "http://0.0.0.0:4321/2018/02/23/today.html",
+      "link": "http://0.0.0.0:4321/2018/02/23/today.html",
+      "date": "2018-02-23T00:00:00+08:00",
+      
+      "author": {
+        "name": "yefeiyu",
+        "url": "http://yefeiyu.github.io",
+        "email": "yefeiyu@gmail.com"
+      },
+      "content": "<div id=\"outline-container-sec-1\" class=\"outline-2\">\n<h2 id=\"sec-1\"><span class=\"section-number-2\">1</span> I m fine.</h2>\n</div>",
+      "excerpt": "1 I m fine.",
+      "languages": null,
+      "categories": [null,""],
+      "tags": []
+    }
+    
+  
+
+  
+    ,
+    {
       "title": "理解并编写ackermann函数的scheme公式",
       "permalink": "http://0.0.0.0:4321/soft/2017/05/31/%E7%90%86%E8%A7%A3%E5%B9%B6%E7%BC%96%E5%86%99ackermann%E5%87%BD%E6%95%B0%E7%9A%84scheme%E5%85%AC%E5%BC%8F.html",
       "link": "http://0.0.0.0:4321/soft/2017/05/31/%E7%90%86%E8%A7%A3%E5%B9%B6%E7%BC%96%E5%86%99ackermann%E5%87%BD%E6%95%B0%E7%9A%84scheme%E5%85%AC%E5%BC%8F.html",
