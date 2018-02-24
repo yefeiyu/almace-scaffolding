@@ -6,4 +6,5 @@ group :development do
   gem 'match_regex'
   gem 'stringex'
   gem 'jekyll-lunr-js-search'
+  gem 'bundler'
 end
