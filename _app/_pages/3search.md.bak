@@ -10,6 +10,8 @@ type: page
       <div id="search-searchbar">
       </div>
       <hr>
+
       <div id="search-hits"> </div>
       {% include algolia.html %}
    </div>
+</div>

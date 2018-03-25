@@ -644,14 +644,6 @@
     
   
     
-
-    
-
-    
-
-    
-  
-    
       <link rel="icon" href="/favicon.png" type="image/png">
     
 
@@ -763,7 +755,7 @@
 <meta property="og:title" content="Search">
 <meta property="og:url" content="http://0.0.0.0:4321/search/">
 <meta property="og:description" content="{% include algolia.html %}">
-<meta property="og:image" content="/assets/search-by-algolia.svg">
+<meta property="og:image" content="http://0.0.0.0:4321/logo.png">
 
 <meta name="twitter:card" content="summary_large_image">
 
@@ -4369,6 +4361,25 @@ margin-left: 12px;
         </a>
       </li>
     
+      
+
+
+
+
+
+
+
+
+      
+      
+      <li class=current>
+        <a href="/search/">
+          
+            搜索
+          
+        </a>
+      </li>
+    
   </ul>
 </nav>
 
@@ -4376,22 +4387,26 @@ margin-left: 12px;
 <main class="content " role=main>
   <div class="page clearfix" index="">
    <div class="left">
-      <img src="/assets/search-by-algolia.svg" style="height:2em;" />
       <div id="search-searchbar">
       </div>
       <hr />
-
       <div id="search-hits"> </div>
-      <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css" />
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch-theme-algolia.min.css" />
 
 <script>
 const search = instantsearch({
   appId: 'K8RBXW3ZB3',
   apiKey: '8df621e14c62c84bc6c75ea248a3c757',
-  indexName: 'K8RBXW3ZB3'
+  indexName: 'K8RBXW3ZB3',
+  searchParameters: {
+    restrictSearchableAttributes: [
+      'title',
+      'content'
+    ]
+  }
 });
 
 const hitTemplate = function(hit) {
@@ -4399,25 +4414,13 @@ const hitTemplate = function(hit) {
   if (hit.date) {
     date = moment.unix(hit.date).format('MMM D, YYYY');
   }
-
-  let url = `${hit.url}#${hit.anchor}`;
-
+  const url = hit.url;
   const title = hit._highlightResult.title.value;
-
-  let breadcrumbs = '';
-  if (hit._highlightResult.headings) {
-    breadcrumbs = hit._highlightResult.headings.map(match => {
-      return `<span class="post-breadcrumb">${match.value}</span>`
-    }).join(' > ')
-  }
-
   const content = hit._highlightResult.html.value;
 
   return `
     <div class="post-item">
-      <span class="post-meta">${date}</span>
       <h2><a class="post-link" href="${url}">${title}</a></h2>
-      <a href="${url}" class="post-breadcrumbs">${breadcrumbs}</a>
       <div class="post-snippet">${content}</div>
     </div>
   `;
@@ -4427,8 +4430,7 @@ const hitTemplate = function(hit) {
 search.addWidget(
   instantsearch.widgets.searchBox({
     container: '#search-searchbar',
-    placeholder: 'Search into posts...',
-    poweredBy: true // This is required if you're on the free Community plan
+    placeholder: 'Search into posts...'
   })
 );
 
@@ -4457,27 +4459,13 @@ search.start();
   font-style: normal;
   text-decoration: underline;
 }
-.post-breadcrumbs {
-  color: #424242;
-  display: block;
-}
-.post-breadcrumb {
-  font-size: 18px;
-  color: #424242;
-}
-.post-breadcrumb .ais-Highlight {
-  font-weight: bold;
-  font-style: normal;
-}
 .post-snippet .ais-Highlight {
   color: #2a7ae2;
   font-style: normal;
   font-weight: bold;
 }
-.post-snippet img {
-  display: none;
-}
 </style>
+
 
    </div>
 </div>
