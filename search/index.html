@@ -142,7 +142,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
 <!-- Define a description for better SEO result -->
-<meta name="description" content="Search results {% raw %} {% endraw %}">
+<meta name="description" content="{% include algolia.html %}">
 
 <!-- Cheome Web App theme color -->
 <meta name="theme-color" content="#ff00b4">
@@ -161,6 +161,30 @@
 
     
       <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
     
   
     
@@ -660,31 +684,55 @@
     
 
     
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
       <link rel="mask-icon" href="/mask-icon.svg" color="#ff00b4">
-    
-
-    
-  
-    
-
-    
-
-    
-
-    
-  
-    
-
-    
-
-    
-
-    
-  
-    
-
-    
-
     
 
     
@@ -714,8 +762,8 @@
 <meta property="og:site_name" content="首页">
 <meta property="og:title" content="Search">
 <meta property="og:url" content="http://0.0.0.0:4321/search/">
-<meta property="og:description" content="Search results {% raw %} {% endraw %}">
-<meta property="og:image" content="http://0.0.0.0:4321/logo.png">
+<meta property="og:description" content="{% include algolia.html %}">
+<meta property="og:image" content="/assets/search-by-algolia.svg">
 
 <meta name="twitter:card" content="summary_large_image">
 
@@ -4326,51 +4374,113 @@ margin-left: 12px;
 
 <!-- Main content wrap -->
 <main class="content " role=main>
-  <div id="search">
-  <form action="/search" method="get">
-    <input type="text" id="search-query" name="q" placeholder="Search" autocomplete="off" />
-  </form>
+  <div class="page clearfix" index="">
+   <div class="left">
+      <img src="/assets/search-by-algolia.svg" style="height:2em;" />
+      <div id="search-searchbar">
+      </div>
+      <hr />
+
+      <div id="search-hits"> </div>
+      <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css" />
+
+<script>
+const search = instantsearch({
+  appId: 'K8RBXW3ZB3',
+  apiKey: '8df621e14c62c84bc6c75ea248a3c757',
+  indexName: 'K8RBXW3ZB3'
+});
+
+const hitTemplate = function(hit) {
+  let date = '';
+  if (hit.date) {
+    date = moment.unix(hit.date).format('MMM D, YYYY');
+  }
+
+  let url = `${hit.url}#${hit.anchor}`;
+
+  const title = hit._highlightResult.title.value;
+
+  let breadcrumbs = '';
+  if (hit._highlightResult.headings) {
+    breadcrumbs = hit._highlightResult.headings.map(match => {
+      return `<span class="post-breadcrumb">${match.value}</span>`
+    }).join(' > ')
+  }
+
+  const content = hit._highlightResult.html.value;
+
+  return `
+    <div class="post-item">
+      <span class="post-meta">${date}</span>
+      <h2><a class="post-link" href="${url}">${title}</a></h2>
+      <a href="${url}" class="post-breadcrumbs">${breadcrumbs}</a>
+      <div class="post-snippet">${content}</div>
+    </div>
+  `;
+}
+
+
+search.addWidget(
+  instantsearch.widgets.searchBox({
+    container: '#search-searchbar',
+    placeholder: 'Search into posts...',
+    poweredBy: true // This is required if you're on the free Community plan
+  })
+);
+
+search.addWidget(
+  instantsearch.widgets.hits({
+    container: '#search-hits',
+    templates: {
+      item: hitTemplate
+    }
+  })
+);
+
+search.start();
+</script>
+
+<style>
+.ais-search-box {
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+.post-item {
+  margin-bottom: 30px;
+}
+.post-link .ais-Highlight {
+  color: #111;
+  font-style: normal;
+  text-decoration: underline;
+}
+.post-breadcrumbs {
+  color: #424242;
+  display: block;
+}
+.post-breadcrumb {
+  font-size: 18px;
+  color: #424242;
+}
+.post-breadcrumb .ais-Highlight {
+  font-weight: bold;
+  font-style: normal;
+}
+.post-snippet .ais-Highlight {
+  color: #2a7ae2;
+  font-style: normal;
+  font-weight: bold;
+}
+.post-snippet img {
+  display: none;
+}
+</style>
+
+   </div>
 </div>
-
-<script src="/js/search.min.js" type="text/javascript" charset="utf-8"></script>
-
-<section id="search-results" style="display: none;">
-  <p>Search results</p>
-  <div class="entries">
-  </div>
-</section>
-
-<script type="text/javascript">
-  $(function() {
-    $('#search-query').lunrSearch({
-      indexUrl  : '/js/index.json',           // url for the .json file containing search index data// URL of the `search.json` index data for your site
-      results   : '#search-results',          // selector for containing search results element// jQuery selector for the search results container
-      template  : '#search-results-template', // selector for Mustache.js template// jQuery selector for the Mustache.js template
-      titleMsg  : '<h1>Search results<h1>',   // message attached in front of results (can be empty)
-      emptyMsg  : '<p>Nothing found.</p>'     // shown message if search returns no results
-//      entries:  '.entries',                 // jQuery selector for the element to contain the results list, must be a child of the results element above.	
-    });
-  });
-</script>
-
-<script src="/js/search.min.js" type="text/javascript" charset="utf-8"></script>
-
-<script id="search-results-template" type="text/mustache">
-  {{#entries}}
-    <article>
-      <h2>
-        {{#date}}<small><time datetime="{{pubdate}}" pubdate>{{displaydate}}</time></small>{{/date}}
-        <a href="{{url}}">{{title}}</a>
-      </h2>
-      {{#is_post}}
-      <ul>
-{{#tags}} <small> {{.}} </small>{{/tags}}
-      </ul>
-      {{/is_post}}
-    </article>
-  {{/entries}}
-</script>
-
 
 </main>
 
@@ -4417,6 +4527,5 @@ margin-left: 12px;
 
 
 <!-- Foot hooks -->
-
 
 

@@ -137,12 +137,12 @@
   <meta charset="utf-8">
 
 
-<title>在行-1小时和10小时 - 首页</title>
+<title>Search - 首页</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
 <!-- Define a description for better SEO result -->
-<meta name="description" content="今天在”在行”软件上开通了一个页面,发挥我助人为乐的精神。 关于在行，之前在博文《怎么将1小时用出10小时》中己有介绍。 互联网不乏创新的切入口，只有有好的创意。">
+<meta name="description" content="Search results {% raw %} {% endraw %}">
 
 <!-- Cheome Web App theme color -->
 <meta name="theme-color" content="#ff00b4">
@@ -161,6 +161,30 @@
 
     
       <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
     
   
     
@@ -660,31 +684,55 @@
     
 
     
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
       <link rel="mask-icon" href="/mask-icon.svg" color="#ff00b4">
-    
-
-    
-  
-    
-
-    
-
-    
-
-    
-  
-    
-
-    
-
-    
-
-    
-  
-    
-
-    
-
     
 
     
@@ -698,7 +746,7 @@
 <link rel="stylesheet" href="/assets/themes/curtana/css/app.css?assets-inline">
 
 <!-- Canonical links, avoid duplicate content problems -->
-<link rel="canonical" href="http://0.0.0.0:4321/assets/2016-04-06-%E5%9C%A8%E8%A1%8C-1%E5%B0%8F%E6%97%B6%E5%92%8C10%E5%B0%8F%E6%97%B6.html">
+<link rel="canonical" href="http://0.0.0.0:4321/search/">
 
 <!-- DNS prefetching for static files -->
 
@@ -712,9 +760,9 @@
 <!-- Open Graph and Twitter Cards support, more info: https://dev.twitter.com/docs/cards -->
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="首页">
-<meta property="og:title" content="在行-1小时和10小时">
-<meta property="og:url" content="http://0.0.0.0:4321/assets/2016-04-06-%E5%9C%A8%E8%A1%8C-1%E5%B0%8F%E6%97%B6%E5%92%8C10%E5%B0%8F%E6%97%B6.html">
-<meta property="og:description" content="今天在”在行”软件上开通了一个页面,发挥我助人为乐的精神。 关于在行，之前在博文《怎么将1小时用出10小时》中己有介绍。 互联网不乏创新的切入口，只有有好的创意。">
+<meta property="og:title" content="Search">
+<meta property="og:url" content="http://0.0.0.0:4321/search/">
+<meta property="og:description" content="Search results {% raw %} {% endraw %}">
 <meta property="og:image" content="http://0.0.0.0:4321/logo.png">
 
 <meta name="twitter:card" content="summary_large_image">
@@ -723,6 +771,8 @@
   <meta name="twitter:site" content="@sparanoid">
 
 
+
+  <meta name="twitter:creator" content="@yefeiyu">
 
 
 
@@ -4324,231 +4374,52 @@ margin-left: 12px;
 
 <!-- Main content wrap -->
 <main class="content " role=main>
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Post-wide custom CSS -->
-
-  
-
-
-<!-- Prepare for image headers -->
-
-
-<!-- Prepare for SVG header -->
-
-
-
-
-
-
-
-
-
-
-<!-- Article wrapper, limit width -->
-<article 
-  
->
-
-  <!-- Post title -->
-  <header 
-  style="     "
->
-
-    <h1 class="
-  
-" title="在行-1小时和10小时" data-title="在行-1小时和10小时">
-      
-  
-    
-  
-    在行-1小时和10小时<span class="dot dot--post"> </span>
-  
-
-  
-
-    </h1>
-
-    
-      <small>
-        By <span rel="author"></span>
-        on <time datetime="2016-04-06T00:00:00+08:00">Apr 6, 2016</time>
-      </small>
-    
-      <div class="post-tags">
-  Tags: 
-  
-  
-  <a href="/tags/#在行">在行</a>,
-  
-  <a href="/tags/#p2p">p2p</a>
-  
+  <div id="search">
+  <form action="/search" method="get">
+    <input type="text" id="search-query" name="q" placeholder="Search" autocomplete="off">
+  </form>
 </div>
 
-
-    
-
-  </header>
-
-  <!-- Post content -->
-  <div class="post-content">
-    <p>今天在”在行”软件上开通了一个页面,发挥我助人为乐的精神。<br />
-关于在行，之前在博文《怎么将1小时用出10小时》中己有介绍。<br />
-互联网不乏创新的切入口，只有有好的创意。</p>
+<script src="/js/search.min.js" type="text/javascript" charset="utf-8"></script>
 
 
-    
-    
-
-    
+<section id="search-results" style="display: none;">
+  <p>Search results</p>
+  <div class="entries">
   </div>
-<font size= 1>[可匿名评论，建议注册disqus以保存全网评论历史]</font>
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES * * */
-    var disqus_shortname = 'yefeiyu';
-    
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</section>
 
-</article>
+<script type="text/javascript">
+  $(function() {
+    $('#search-query').lunrSearch({
+      indexUrl  : '/js/index.json',           // url for the .json file containing search index data// URL of the `search.json` index data for your site
+      results   : '#search-results',          // selector for containing search results element// jQuery selector for the search results container
+      template  : '#search-results-template', // selector for Mustache.js template// jQuery selector for the Mustache.js template
+      titleMsg  : '<h1>Search results<h1>',   // message attached in front of results (can be empty)
+      emptyMsg  : '<p>Nothing found.</p>'     // shown message if search returns no results
+//      entries:  '.entries',                 // jQuery selector for the element to contain the results list, must be a child of the results element above.	
+    });
+  });
+</script>
+
+<script src="/js/search.min.js" type="text/javascript" charset="utf-8"></script>
+
+
+<script id="search-results-template" type="text/mustache">
+  {{#entries}}
+    <article>
+      <h2>
+        {{#date}}<small><time datetime="{{pubdate}}" pubdate>{{displaydate}}</time></small>{{/date}}
+        <a href="{{url}}">{{title}}</a>
+      </h2>
+      {{#is_post}}
+      <ul>
+{{#tags}} <small> {{.}} </small>{{/tags}}
+      </ul>
+      {{/is_post}}
+    </article>
+  {{/entries}}
+</script>
 
 
 </main>
@@ -4596,6 +4467,5 @@ margin-left: 12px;
 
 
 <!-- Foot hooks -->
-
 
 

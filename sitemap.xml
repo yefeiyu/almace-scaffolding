@@ -137,34 +137,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://0.0.0.0:4321/</loc>
-    <lastmod>2018-02-24</lastmod>
+    <lastmod>2018-03-25</lastmod>
   </url>
 
   
     
       <url>
-        <loc>http://0.0.0.0:4321/assets/2015-06-28-mylife.html</loc>
-        
-      </url>
-    
-  
-    
-      <url>
-        <loc>http://0.0.0.0:4321/assets/2016-04-01-%E5%A5%BD%E4%B9%85%E6%B2%A1%E6%9C%89%E6%9B%B4%E6%96%B0.html</loc>
-        
-      </url>
-    
-  
-    
-      <url>
-        <loc>http://0.0.0.0:4321/assets/2016-04-03-%E5%9C%A8%E5%AE%B6%E6%82%A0%E9%97%B2%E7%9A%84%E5%BA%A6%E8%BF%87%E7%AC%AC%E4%B8%80%E5%A4%A9%E7%9A%84%E5%81%87%E6%9C%9F.html</loc>
-        
-      </url>
-    
-  
-    
-      <url>
-        <loc>http://0.0.0.0:4321/assets/2016-04-06-%E5%9C%A8%E8%A1%8C-1%E5%B0%8F%E6%97%B6%E5%92%8C10%E5%B0%8F%E6%97%B6.html</loc>
+        <loc>http://0.0.0.0:4321/search/</loc>
         
       </url>
     
@@ -281,6 +260,13 @@
     
       <url>
         <loc>http://0.0.0.0:4321/news/</loc>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/search/</loc>
         
       </url>
     
