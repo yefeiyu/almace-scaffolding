@@ -86,7 +86,7 @@ name:           首页
 # - name_short: Sparanoid
 #
 # Default:      AMSF
-name_short:     AMSF
+name_short:     ygi
 
 # Site description
 #
@@ -222,7 +222,5 @@ robots:         "User-agent: *"
 
 algolia:
    application_id: 'K8RBXW3ZB3'
-   index_name:     'Search'
+   index_name:     'K8RBXW3ZB3'
    search_only_api_key: '8df621e14c62c84bc6c75ea248a3c757'
-   enable: true
-   search: true
