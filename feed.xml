@@ -137,7 +137,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>首页</title>
   <subtitle>y.g.i</subtitle>
-  <updated>2018-03-26T00:52:02+08:00</updated>
+  <updated>2018-03-26T16:30:34+08:00</updated>
   <id>http://0.0.0.0:4321/</id>
   <generator uri="https://sparanoid.com/lab/amsf/" version="1.1.10">Almace Scaffolding</generator>
 
@@ -158,8 +158,8 @@
 
       <entry>
         <title>today</title>
-        <id>http://0.0.0.0:4321/2018/02/23/today.html</id>
-        <link rel="alternate" type="text/html" href="http://0.0.0.0:4321/2018/02/23/today.html" />
+        <id>http://0.0.0.0:4321/life/2018/02/23/today.html</id>
+        <link rel="alternate" type="text/html" href="http://0.0.0.0:4321/life/2018/02/23/today.html" />
         <published>2018-02-23T00:00:00+08:00</published>
 
         
@@ -1946,8 +1946,8 @@ alias gl='git pull'&lt;br /&gt;
 
       <entry>
         <title>急性炎症</title>
-        <id>http://0.0.0.0:4321/2016/08/14/%E6%80%A5%E6%80%A7%E7%82%8E%E7%97%87.html</id>
-        <link rel="alternate" type="text/html" href="http://0.0.0.0:4321/2016/08/14/%E6%80%A5%E6%80%A7%E7%82%8E%E7%97%87.html" />
+        <id>http://0.0.0.0:4321/life/2016/08/14/%E6%80%A5%E6%80%A7%E7%82%8E%E7%97%87.html</id>
+        <link rel="alternate" type="text/html" href="http://0.0.0.0:4321/life/2016/08/14/%E6%80%A5%E6%80%A7%E7%82%8E%E7%97%87.html" />
         <published>2016-08-14T00:00:00+08:00</published>
 
         
@@ -1971,21 +1971,6 @@ alias gl='git pull'&lt;br /&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;hr /&gt;
-&lt;p&gt;layout: post
-title: 急性炎症
-date: 2016-08-14
-categories:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;life
-tags:&lt;/li&gt;
-  &lt;li&gt;life&lt;/li&gt;
-  &lt;li&gt;生活&lt;/li&gt;
-  &lt;li&gt;育儿
-author: yefeiyu
-excerpt: 小感小冒小发小烧的也挺烦人
-—&lt;/li&gt;
-&lt;/ul&gt;
 
 &lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
 &lt;h2 id=&quot;sec-1&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;1&lt;/span&gt; 我&lt;/h2&gt;
@@ -2433,8 +2418,8 @@ k3的分辨率低，但渲染伯克利太好了！以前我有篇帖子说过noo
 
       <entry>
         <title>新版红楼梦</title>
-        <id>http://0.0.0.0:4321/2016/07/17/%E6%96%B0%E7%89%88%E7%BA%A2%E6%A5%BC%E6%A2%A6.html</id>
-        <link rel="alternate" type="text/html" href="http://0.0.0.0:4321/2016/07/17/%E6%96%B0%E7%89%88%E7%BA%A2%E6%A5%BC%E6%A2%A6.html" />
+        <id>http://0.0.0.0:4321/life/2016/07/17/%E6%96%B0%E7%89%88%E7%BA%A2%E6%A5%BC%E6%A2%A6.html</id>
+        <link rel="alternate" type="text/html" href="http://0.0.0.0:4321/life/2016/07/17/%E6%96%B0%E7%89%88%E7%BA%A2%E6%A5%BC%E6%A2%A6.html" />
         <published>2016-07-17T00:00:00+08:00</published>
 
         
@@ -2457,20 +2442,6 @@ k3的分辨率低，但渲染伯克利太好了！以前我有篇帖子说过noo
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;hr /&gt;
-&lt;p&gt;layout: post
-title: 新版红楼梦
-date: 2016-07-17
-categories:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;life
-tags:&lt;/li&gt;
-  &lt;li&gt;生活&lt;/li&gt;
-  &lt;li&gt;家居
-author: yefeiyu
-excerpt: 
-—&lt;/li&gt;
-&lt;/ul&gt;
 
 &lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
 &lt;h2 id=&quot;sec-1&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;1&lt;/span&gt; 对古典这样解释得&lt;/h2&gt;
@@ -3389,7 +3360,7 @@ $ gem sources -l
 &lt;/p&gt;
 &lt;pre class=&quot;example&quot;&gt;
 &amp;lt;a href=&quot;&quot; title=&quot;查看所有标签&quot;&amp;gt;&amp;lt;i class=&quot;icon-fixed-width icon-tags&quot;&amp;gt;&amp;lt;/i&amp;gt; 标签云&amp;lt;/a&amp;gt;
-&amp;lt;span title=&quot;标签总数&quot;&amp;gt;149&amp;lt;/span&amp;gt;
+&amp;lt;span title=&quot;标签总数&quot;&amp;gt;150&amp;lt;/span&amp;gt;
 &amp;lt;div id=&quot;tag-cloud&quot;&amp;gt;
 {\% assign first = site.tags.first \%}
 {\% assign max = first[1].size \%}

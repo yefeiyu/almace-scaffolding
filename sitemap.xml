@@ -150,6 +150,13 @@
   
     
       <url>
+        <loc>http://0.0.0.0:4321/search/</loc>
+        
+      </url>
+    
+  
+    
+      <url>
         <loc>http://0.0.0.0:4321/about/</loc>
         
       </url>
@@ -219,10 +226,6 @@
     
   
     
-  
-    
-  
-    
       <url>
         <loc>http://0.0.0.0:4321/fu/</loc>
         
@@ -289,7 +292,7 @@
   
     
       <url>
-        <loc>http://0.0.0.0:4321/2018/02/23/today.html</loc>
+        <loc>http://0.0.0.0:4321/life/2018/02/23/today.html</loc>
         
           <lastmod>2018-02-23</lastmod>
         
@@ -451,7 +454,7 @@
   
     
       <url>
-        <loc>http://0.0.0.0:4321/2016/08/14/%E6%80%A5%E6%80%A7%E7%82%8E%E7%97%87.html</loc>
+        <loc>http://0.0.0.0:4321/life/2016/08/14/%E6%80%A5%E6%80%A7%E7%82%8E%E7%97%87.html</loc>
         
           <lastmod>2016-08-14</lastmod>
         
@@ -496,7 +499,7 @@
   
     
       <url>
-        <loc>http://0.0.0.0:4321/2016/07/17/%E6%96%B0%E7%89%88%E7%BA%A2%E6%A5%BC%E6%A2%A6.html</loc>
+        <loc>http://0.0.0.0:4321/life/2016/07/17/%E6%96%B0%E7%89%88%E7%BA%A2%E6%A5%BC%E6%A2%A6.html</loc>
         
           <lastmod>2016-07-17</lastmod>
         
