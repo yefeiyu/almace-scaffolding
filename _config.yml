@@ -224,3 +224,5 @@ algolia:
    application_id: 'K8RBXW3ZB3'
    index_name:     'K8RBXW3ZB3'
    search_only_api_key: '8df621e14c62c84bc6c75ea248a3c757'
+   enable: true
+   chunkSize: 5000
