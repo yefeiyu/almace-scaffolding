@@ -222,10 +222,7 @@ robots:         "User-agent: *"
 
 algolia:
    application_id: 'K8RBXW3ZB3'
-   index_name:     'K8RBXW3ZB3'
+   index_name:     'Search'
    search_only_api_key: '8df621e14c62c84bc6c75ea248a3c757'
-   indexing_batch_size: 500
-   extensions_to_index:
-    - html
-    - md
-    - adoc
+   enable: true
+   search: true
