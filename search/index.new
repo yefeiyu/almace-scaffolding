@@ -684,6 +684,22 @@
     
 
     
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
       <link rel="mask-icon" href="/mask-icon.svg" color="#ff00b4">
     
 
@@ -773,6 +789,29 @@
   
 
   
+
+.tag-cloud {
+list-style: none;
+word-break:keep-all;
+padding: 0;
+padding-right: 6%;
+text-align: justify; 
+font-size: 16px;
+a{
+display: inline-block;
+margin: 0 12px 12px 0; 
+}}
+
+.archive-group {
+margin: 15px;
+border-top: 1px solid;
+}
+.archive-item {
+margin-left: 12px;
+}
+.post-tags {
+  text-align: left;
+}
 
 .tag-cloud {
 list-style: none;
@@ -4422,8 +4461,8 @@ const hitTemplate = function(hit) {
 search.addWidget(
   instantsearch.widgets.searchBox({
     container: '#search-searchbar',
-    placeholder: 'Search into posts...',
-    poweredBy: true // This is required if you're on the free Community plan
+    placeholder: 'Search into posts...'
+//    poweredBy: true // This is required if you're on the free Community plan
   })
 );
 
@@ -4486,6 +4525,21 @@ search.start();
     
       <div class="post-item">
         
+        <span class="post-meta">Mar 27, 2018</span>
+
+        <h2>
+          <a class="post-link" href="/attitude/2018/03/27/you-should-think-your-life.html">
+            You should think your life
+          </a>
+        </h2>
+
+        <div class="post-snippet"><div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Why are we here?</h2>
+<div class="outline-t</div>
+      </div>
+    
+      <div class="post-item">
+        
         <span class="post-meta">Feb 23, 2018</span>
 
         <h2>
@@ -4494,7 +4548,10 @@ search.start();
           </a>
         </h2>
 
-        <div class="post-snippet">随手测试</div>
+        <div class="post-snippet"><div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> I m fine.</h2>
+</div>
+</div>
       </div>
     
       <div class="post-item">
@@ -4509,32 +4566,7 @@ search.start();
 
         <div class="post-snippet"><p>
 这两天在学习《Structure and Interpretation of Computer Programs》（本书以简称SICP著名），虽然只看了个开头，但依然感受到了语言和数学的魅力。<br >
-细嚼慢咽的翻着书，力争学透书中列举的例子和练习，对于一些经典的函数表达式，试图去wiki寻找更详细的解释。<br >
-昨天看到练习10，讲了构造Ackermann函数，sicp中直接列出构造的函数：<br >
-</p>
-<pre class="example">
-(define (A x y)
-  (cond ((= y 0) 0)
-        ((= x 0) (* 2 y))
-        ((= y 1) 2)
-        (else (A (- x 1)
-                 (A x (- y 1))))))
-</pre>
-<p>
-查阅wiki时，看到原自然函数公式是<br >
-</p>
-<pre class="example">
-(ignore)
-A(m,n)={\begin{cases}n+1&amp;{\mbox{if }}m=0\\A(m-1,1)&amp;{\mbox{if }}m&gt;0{\mbox{ and }}n=0\\A(m-1,A(m,n-1))&amp;{\mbox{if }}m&gt;0{\mbox{ and }}n&gt;0.\end{cases}}
-</pre>
-<p>
-这部分有乱码，直接搜索后看原文吧。<br >
-<a href="https://en.m.wikipedia.org/wiki/Ackermann_function">wiki ackermann function</a><br >
-在计算时，发现sicp中出现的答案和wiki中下面列表的答案不一致：<br >
- Values of A(m, n)<br >
-</p>
-
-</div>
+细嚼慢咽的翻着书，力争学透书中列举的例子和练习，对于一些经典的函数表达式，试图去wiki寻</div>
       </div>
     
       <div class="post-item">
@@ -4547,7 +4579,12 @@ A(m,n)={\begin{cases}n+1&amp;{\mbox{if }}m=0\\A(m-1,1)&amp;{\mbox{if }}m&gt;0{\m
           </a>
         </h2>
 
-        <div class="post-snippet">转载文章，该作者能站在人生的角度思考</div>
+        <div class="post-snippet"><p>
+author: garfileo<br >
+2015年10月18日发布<br >
+</p>
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1<</div>
       </div>
     
       <div class="post-item">
@@ -4560,7 +4597,9 @@ A(m,n)={\begin{cases}n+1&amp;{\mbox{if }}m=0\\A(m-1,1)&amp;{\mbox{if }}m&gt;0{\m
           </a>
         </h2>
 
-        <div class="post-snippet">这是一篇转载，写得不错。</div>
+        <div class="post-snippet"><p>
+author: qglaci<br >
+其实按照国际惯例我应该在开头写上时光荏苒白驹过隙之类的废话。虽然我很不屑而且不在乎，可是事实上时间确实就像是和我们玩丢手绢的小伙伴，她嬉皮笑脸的用手遮住你的双眼然后转身就跑，当你想起来我该去追她了的时候，睁开双眼，才发现周围早已不同，你想抓住她也早已成为</div>
       </div>
     
       <div class="post-item">
@@ -4576,12 +4615,7 @@ A(m,n)={\begin{cases}n+1&amp;{\mbox{if }}m=0\\A(m-1,1)&amp;{\mbox{if }}m&gt;0{\m
         <div class="post-snippet"><p>
 今天我们来到了长沙，下了车直接就到了火宫殿。<br >
 </p>
-<iframe src="httpsbak://onedrive.live.com/embed?cid=8171FD111C385CD1&resid=8171FD111C385CD1%217677&authkey=AHaKsGczwyNJn38" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
-<embed src="httpsbak://1drv.ms/v/s!AtFcOBwR_XGBu32bYPuHuAJXiFY1" autoplay="true"></embed>
-<embed src="httpsbak://onedrive.live.com/embed?cid=8171FD111C385CD1&resid=8171FD111C385CD1%217677&authkey=AHaKsGczwyNJn38" quality="high" width="1024" height="1024" autoplay="true" autostart="true" ></embed>
-<embed src="httpsbak://onedrive.live.com/embed?cid=8171FD111C385CD1&resid=8171FD111C385CD1%217677&authkey=AHaKsGczwyNJn38" quality="high" width="1024" height="1024" autoplay="1" autostart="1" ></embed>
-
-</div>
+<iframe src="httpsbak://onedrive.live.com/embed?cid=8171FD111C385CD1&resid=8171FD111C385CD1%217677&authkey=AHaKsGc</div>
       </div>
     
       <div class="post-item">
@@ -4599,9 +4633,7 @@ A(m,n)={\begin{cases}n+1&amp;{\mbox{if }}m=0\\A(m-1,1)&amp;{\mbox{if }}m&gt;0{\m
 哈哈，虽然是家庭生日小宴，不过比我前两天和母亲说的吃个面条就行了的要求，规格可高多了。<br >
 接下来我们点上了生日蜡烛，全家共唱生日歌，真是天伦之乐，幸福融融。<br >
 有时候，博客可能就是一个日记。<br >
-虽然很简单，但是记下来生活的点点滴滴，还是很有纪念意义的。<br >
-</p>
-</div>
+虽然</div>
       </div>
     
       <div class="post-item">
@@ -4616,10 +4648,7 @@ A(m,n)={\begin{cases}n+1&amp;{\mbox{if }}m=0\\A(m-1,1)&amp;{\mbox{if }}m&gt;0{\m
 
         <div class="post-snippet"><p>
 原先，世界在人们的心中就像是在眼中和手中一样，实实在在，触手可及。曾经的时代，是要靠着在外面的狩猎或劳动获取所需。<br >
-现在，能思考的头脑已经基本上不怎么劳动了，每天面对着电脑或手机，所有对世界的认知出自数字代码，对过没有实体存在的网络了解这世界上的一切，并认识那些好像很熟，但仅仅是一副图像的人们。<br >
-这似乎是已经到了没有必要再把外在看成实在的年代了。<br >
-</p>
-</div>
+现在，能思考的头脑已经基本上不怎么劳动了，每天面对着电脑或手机，所有对世界的认知出自数字代码，对过没有实体存在的网络了解这世界上的一切，并认识那些好像很熟，但仅仅是一副</div>
       </div>
     
       <div class="post-item">
@@ -4632,7 +4661,12 @@ A(m,n)={\begin{cases}n+1&amp;{\mbox{if }}m=0\\A(m-1,1)&amp;{\mbox{if }}m&gt;0{\m
           </a>
         </h2>
 
-        <div class="post-snippet">生活小点滴</div>
+        <div class="post-snippet"><div class="figure">
+<p><img src="http://yefeiyu.github.io/assets/img/2016-11-28%2021.32.04.jpg" alt="2016-11-28%2021.32.04.jpg"><br >
+</p>
+</div>
+
+<di</div>
       </div>
     
       <div class="post-item">
@@ -4648,12 +4682,7 @@ A(m,n)={\begin{cases}n+1&amp;{\mbox{if }}m=0\\A(m-1,1)&amp;{\mbox{if }}m&gt;0{\m
         <div class="post-snippet"><p>
 kvm虚拟机安装<br >
 最少需要以下几个命令<br >
-s virt-install &#x2013;os-variant win7 &#x2013;name win71 &#x2013;memory 4096 &#x2013;disk path=/mnt/d/images/win71.qcow2,size=9 &#x2013;location /media/xx/smallc/cn_windows_7_ultimate_with_sp1_x64_dvd_u_677408.iso<br >
-安装后，在/etc/libvert/images/qemu文件夹中生成xxx.xml配置文件<br >
-安装成功后可以把iso路径关掉<br >
-</p>
-
-</div>
+s virt-install &#x2013;os-variant win7 &#x2013;name win71 &#x2013;memory 4096 &#x2013;disk path=/mnt/d/images/win71.q</div>
       </div>
     
       <div class="post-item">
@@ -4666,7 +4695,9 @@ s virt-install &#x2013;os-variant win7 &#x2013;name win71 &#x2013;memory 4096 &#
           </a>
         </h2>
 
-        <div class="post-snippet">the economics's define.</div>
+        <div class="post-snippet"><div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Define</h2>
+<div class="outline-text-2" id=</div>
       </div>
     
       <div class="post-item">
@@ -4679,7 +4710,9 @@ s virt-install &#x2013;os-variant win7 &#x2013;name win71 &#x2013;memory 4096 &#
           </a>
         </h2>
 
-        <div class="post-snippet">车相关的惊险</div>
+        <div class="post-snippet"><p>
+<img src="http://yefeiyu.github.io/assets/img/2016-11-16-16.27.53.jpg" alt="2016-11-16-16.27.53.jpg"><br >
+昨天下午去车里听了会儿音乐，同事过来又一块沿着车研究了几圈，就把车内供着电这事忘</div>
       </div>
     
       <div class="post-item">
@@ -4692,7 +4725,10 @@ s virt-install &#x2013;os-variant win7 &#x2013;name win71 &#x2013;memory 4096 &#
           </a>
         </h2>
 
-        <div class="post-snippet">生活享受思念</div>
+        <div class="post-snippet"><p>
+<img src="http://yefeiyu.github.io/assets/img/img_2016_11_16__21_22_05.png" alt="img_2016_11_16__21_22_05.png"><br >
+这是在匝道上拍摄的<br >
+<img src="http:</div>
       </div>
     
       <div class="post-item">
@@ -4707,140 +4743,7 @@ s virt-install &#x2013;os-variant win7 &#x2013;name win71 &#x2013;memory 4096 &#
 
         <div class="post-snippet"><p>
 <i>如果有从0110论坛(前身东北网，后方只称0110)来的网友，也许会看过我在零几年刚出iphone且未出google第一代htc那款手机的时候写的帖子，呼吁0110论坛转向。</i><br >
-<i>结局就是0110论坛失去支撑手机及品牌从见颓势到成为『无可奈何的花落』。现在想找那篇帖子都找不到。</i><br >
-<i>今天脑袋中也是突然冒出一个对hipda论坛的担忧。</i><br >
-<i>解决方法我想还是找一个支撑。</i><br >
-</p>
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> 曾经的论坛与百花齐放的时代</h2>
-<div class="outline-text-2" id="text-1">
-<p>
-我来hipda并不早，2010。之前一直在0110。<br >
-那个时代pda如日中天，相关论坛也不少。靠那个特殊的时代，pda也算是世界范围内的"大众"产品。这也是相关论坛的立足之本和发展基础。<br >
-在基础广泛的前提下，咱论坛从pda切入。pda整个发展史我差不多正好错过，但我想和0110没有本质区别。0110也是靠着一款定制性可玩性无以复加的6688手机发展壮大。<br >
-pda和6688如果深入玩进去，需要技术提供。咱这两个论坛就是首先能凝聚起技术大牛，在0110论坛是『cool狼』和一个漂亮美眉『云起·云落』两位，技术登峰造极。<br >
-除了技术大牛，反推就是论坛成员的构成。在普通的手机和电脑中再选择使用pda或6688，本身就是一种过滤，这部分人有些小小的不满足、有些小小的完美要求，还稍微有点动手能力。(可能还有闲得蛋疼的充裕时间)好了，人员构成就是人以群分物以类聚的这些人。<br >
-这是一个兴盛的时代。<br >
-</p>
-</div>
-</div>
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> 从兴盛到衰落</h2>
-<div class="outline-text-2" id="text-2">
-<p>
-衰落来得如此之快。每一个手机，都已经有了pda的全部功能，palm为代表的pda反身努力追赶手机，但是悲凉的失败了。算作pda的另一支，黑莓也残喘到了头。<br >
-pda是这么种东西：一个电子屏幕、一支电子笔，代替纸来办点公。<br >
-黑莓是这么种东西：有一个全面小键盘，安全快捷的处理些电子邮件。<br >
-二者共同的特点，和撮合到一起的这一小堆人完全一致：有点德味的。<br >
-</p>
-</div>
-</div>
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> 淹没到洪流中</h2>
-<div class="outline-text-2" id="text-3">
-<p>
-你发现没有，有一群人，陷入到存在的疑惑之中。<br >
-(前面我有篇帖子略有涉及)画家、书法家、作家、哲学家、音乐家等艺术家。<br >
-昨天嘉德拍卖会9000万成交的张大千《巨然晴峰图》，号称含税1.35亿、6年涨40%。这算法也是了特了，两头税都算到涨幅了。实际涨幅只有7.5%。年均利率都没跑过，更不必说通货膨胀了。<br >
-有画家的时代，没有照相，没有摄像，往前追溯没有文字。有书法家的时代，没有电脑用来打字。《快雪时晴贴》和《鸭头丸贴》本身只是日常书信。最早有作家的时候，人们只能读书。再说《圣经》和《史记》也只是记录历史。哲学起源于对世界形成的认识，赫拉克利特说世界起源于火，从这发荏到现在，世界只存在于科学家的实验中了。<br >
-这一部分人，曾经远远的站在其他所有人类之上，生存于纯精神领域的稀薄空气中，不管他人头攒动思想还是作品，无不闪耀着完美主义的光辉。<br >
-但现在，他们找不到于栖身之处了。看不到尽头的庸俗之众随着时代走到最前面，占据了他们的栖息之地。<br >
-就像咱们的论坛。<br >
-虽然说遗老遗少算不上天才或艺术家，但至少本来有那么点不同于众。<br >
-虽然说没冒出那么多人，最大的板块甚至不对外爬虫，但也有不少人渐渐加入进来。<br >
-</p>
-</div>
-</div>
-<div id="outline-container-sec-4" class="outline-2">
-<h2 id="sec-4"><span class="section-number-2">4</span> 外界有关电子产品的世界</h2>
-<div class="outline-text-2" id="text-4">
-<p>
-只说和咱们关系近一点的。我不太认同apple创造的这个全触摸的、把全键盘斩尽杀绝的世界。<br >
-我现在还用着全键的kindle 3，因为我找不到一个能更方便控制的触摸屏的产品。正如不管你用哪一款iphone or android,你也会在午后追忆起palm的键盘和系统or黑莓的快捷拔号和输入。<br >
-就和艺术家们被淹没了一样，iphone and android淹没了所有可能的产品。外表稍有差别的产品都不太可能，更不用说像siemens一年内推出数款奇形怪状手机的时代了。<br >
-究其原因，我认为是一个产品面对越多受众的时候，它就必须越简单、越傻瓜，就像木桶理论，用最短的那根木头来定水位。(所以锤子怎么可能成功，情怀总被嘲笑。其实只是庸俗者以为和他站在同一水平高度的庸众们的支持就是判断标准而已)<br >
-所以大家会和我一样，在未来也不可能再逆流而上得到一款可以高度定制、超级复杂的通讯产品了。<br >
-</p>
-</div>
-</div>
-<div id="outline-container-sec-5" class="outline-2">
-<h2 id="sec-5"><span class="section-number-2">5</span> 从产品到人</h2>
-<div class="outline-text-2" id="text-5">
-<p>
-电子产品事小，人，事大。没有产品的依附，在这个论坛里，也就不可能再增加同水平同旨趣的同好。<br >
-从pda开始，我们论坛凝聚起这样一群人，是历史的偶然，但这群人有强烈的共同本质，这一点就决定了论坛能维持到现在有它的历史必然。<br >
-静水流深，但也死水易腐。深度够，但是没有新的产品维系，没有新人、新的技术型血液充实，那就只能日渐衰朽，正如同我们这群人的年岁一样。<br >
-论坛从讨论技术，到讨论孩子、到家庭矛盾和离异，完全就是"原始积累"的这群人的生命轨迹。后面，相信就是讨论退休和死亡了。<br >
-新人其实也有。<br >
-除了数量不多之外，重要的是压根就不是一类人。他们不是基于对一类产品带有点拜物、较真及追求极致这样的性格。<br >
-所以在这个论坛里，即使是谈论着日常琐事，但话题、行为、语言、思想和性格，都那么泾渭鲜明。<br >
-衰老、侵蚀、离散，虽然很不显眼，但每天都发生着。<br >
-譬如现在，这个黄金时段上线高峰的时刻却只有3100人在线。美国组织起来真刀实枪打回古巴的流亡者，还能达到1400人呢。不用冒生命危险的键盘党，才3100人，且估计大部分也已经是老、弱、病、残了。<br >
-</p>
-</div>
-</div>
-<div id="outline-container-sec-6" class="outline-2">
-<h2 id="sec-6"><span class="section-number-2">6</span> 看看论坛的版块吧</h2>
-<div class="outline-text-2" id="text-6">
-<p>
-全天能超过10个贴的版块就三个，D版、BS版、EINK版。<br >
-</p>
-</div>
-<div id="outline-container-sec-6-1" class="outline-3">
-<h3 id="sec-6-1"><span class="section-number-3">6.1</span> eink版</h3>
-<div class="outline-text-3" id="text-6-1">
-<p>
-那么说，现在能提供点发展支撑引进新人的版块就只有一个eink版了。<br >
-eink能吸引的是什么人？和以前靠技术吃饭的版块完全不同。吸引的是爱读书的、不爱折腾(也有兼而有之的)、来下载点盗版书籍的人们。靠这个，是发展不起人气的。恰如小米系的多看，从刚成立折腾kindle2时我就接触过，到后来投入小米系，到现在，也没有特别大的发展。讲电子书，比amazon差了光年，讲软件，从附庸kindle起家，没没进过榜单，讲硬件，和汉王的影响力比也是差之光年以计，估计也就是比米聊的处境好点。其实也不是发展的不重视或不努力，而是"阅读"这件事本身，已经就像是前面说的那些艺术门类一样，不再是这个世界里的人类能再投入时间和精力的一种稀缺品了。<br >
-那么靠eink版还能有什么指望。当然，估计本身也没被指望过。<br >
-</p>
-</div>
-</div>
-<div id="outline-container-sec-6-2" class="outline-3">
-<h3 id="sec-6-2"><span class="section-number-3">6.2</span> BS版</h3>
-<div class="outline-text-3" id="text-6-2">
-<p>
-靠着穷屌丝、贪图便宜的人们，续命很难。<br >
-随着社会发展，一些物品的价值更低了。以前为了省钱大多数人选择组装电脑，现在这个行业消失了，人们买整机笔记本。<br >
-如果单纯的说bs版"玩"的意义，那么现在网络电商7天无理由退货本身就给了特殊需求的这类人玩的空间。其他网购也可以随时退。<br >
-从希奇古怪小玩意角度来说，海淘的方便，也冲抵了这一部分。<br >
-再者，旧的物品，可入手价值能有多大呢。今天下午我和同事沿车走了一圈，评论说车灯变黄、缝隙变大、刹车盘变薄、车底油渍多，物品都是有使用折旧的，都是整体性的损耗。<br >
-那bs的意义可能真的只是剩点特殊要求的求购而已了。<br >
-至于商家出了过路费，所得能抵回来吗？再说商家的信誉，和慈善的伤害一样，都有走低的趋势吧。<br >
-不过还是很感谢至少到现在，提出过的要求都很快得到帮助。<br >
-</p>
-</div>
-</div>
-<div id="outline-container-sec-6-3" class="outline-3">
-<h3 id="sec-6-3"><span class="section-number-3">6.3</span> D板</h3>
-<div class="outline-text-3" id="text-6-3">
-<p>
-这是集聚人气最多、有时候使人有些成瘾的版块了。<br >
-但是皮之不存，毛将焉附？D版所有的人，都是来自其他版块。没有技术版的存在，那来的人，不是看热闹的，就是各种无聊人士了。当然还有别有用心者和寻夫团。<br >
-非长期醒在它版后来过来的人，哪怕沉淀于此时间再长，也非我族类。<br >
-D版的封闭性可能是一个独特的乐园，但封闭性单纯从扩大和发展看还是缺点呢。<br >
-这真是个悖论。<br >
-</p>
-</div>
-</div>
-</div>
-<div id="outline-container-sec-7" class="outline-2">
-<h2 id="sec-7"><span class="section-number-2">7</span> 找什么做支撑</h2>
-<div class="outline-text-2" id="text-7">
-<p>
-如果是08年，我可以对着0110建议找iphone，如果是10年，我更是满心焦虑的建议论坛把方向转到将横空出世的gphone(当时以为google推出第一部手机可能叫这名字)。<br >
-但现在手机界大局已定，windows phone都无法翻盘，谁还能更有能力？即使再有全新系统的玩物，也不是现在能看得到的。<br >
-更何况，世界发展到越来越向白痴型、傻瓜型操作的产品一统江湖了，个性、高度定制本身就是除了增加厂商后期维护成本外，无法向普通人推广的东西。<br >
-google glass？早死好多年了吧。<br >
-VR？如火如荼，涉及系统吗？可改制性有多大。也许是个方向？<br >
-当然，世界永远会推陈出新，只要有善于发现的眼睛，有敏感的触觉，也许不难找到切入点。<br >
-哪怕是做一个科技博客站点，也许都能达到-世俗意义的-成功。<br >
-《京华时报》关门大吉了，更早的清朝遗老遗少，也是他们活到百岁前关张了，他们的子孙，分散到各个地方，甚至都不再是满族，改宗改姓了。<br >
-我们和这群人差不多。<br >
-</p>
-</div>
-</div>
-</div>
+<i>结局就是0110论坛失去支撑手机及品牌从见颓势到成为『无可奈何的花落』。现在想找那篇帖子</div>
       </div>
     
       <div class="post-item">
@@ -4855,16 +4758,7 @@ VR？如火如荼，涉及系统吗？可改制性有多大。也许是个方向
 
         <div class="post-snippet"><div id="outline-container-sec-1" class="outline-2">
 <h2 id="sec-1"><span class="section-number-2">1</span> </h2>
-<div class="outline-text-2" id="text-1">
-<p>
-上周考完试，新宝就和小宝与姥姥一起，在爸爸的护送下，去到了姥姥家。<br >
-刚到新地方的时候，估计是路上劳累环境陌生，小宝第一天没有拉粑粑。在经过上次打预防针导致的三天没有拉粑粑的锤炼下，这次倒是没有引起大的恐慌，我们耐心的等到第二天，便便就正常了。<br >
-<img src="http://yefeiyu.github.io/assets/img/img_2016_11_10__21_33_13.png" alt="img_2016_11_10__21_33_13.png"><br >
-</p>
-</div>
-</div>
-
-</div>
+<div class="outline-text-2" id="text-</div>
       </div>
     
       <div class="post-item">
@@ -4877,7 +4771,8 @@ VR？如火如荼，涉及系统吗？可改制性有多大。也许是个方向
           </a>
         </h2>
 
-        <div class="post-snippet">日常修改的记录</div>
+        <div class="post-snippet"><div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> <span class="timestamp-wrapper"><span class</div>
       </div>
     
       <div class="post-item">
@@ -4890,7 +4785,9 @@ VR？如火如荼，涉及系统吗？可改制性有多大。也许是个方向
           </a>
         </h2>
 
-        <div class="post-snippet">追忆下爱情</div>
+        <div class="post-snippet"><div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> 今年</h2>
+<div class="outline-text-2" id="tex</div>
       </div>
     
       <div class="post-item">
@@ -4903,7 +4800,11 @@ VR？如火如荼，涉及系统吗？可改制性有多大。也许是个方向
           </a>
         </h2>
 
-        <div class="post-snippet">干事过程是种享受，有时也是种浪费</div>
+        <div class="post-snippet"><p>
+我说的过程，在这里主要是指凡事追求一种极致，在极致中享受美的快感。<br >
+</p>
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</s</div>
       </div>
     
       <div class="post-item">
@@ -4916,7 +4817,9 @@ VR？如火如荼，涉及系统吗？可改制性有多大。也许是个方向
           </a>
         </h2>
 
-        <div class="post-snippet">对婴儿成长的描述</div>
+        <div class="post-snippet"><p>
+晚上小宝贝和妈妈在屋里玩，姥姥在旁边给他妈揉肩。我进去时站在床尾说了一句话，小宝贝竟然“倏”地扭头看我。他姥姥说，今天开始能看东西了，给记上这是第十七天。我也觉得这变化很大，打开vine就录了一段，小脑袋就会跟着声音追寻着方位了。<br >
+之前看到过简谱，说小孩子的眼睛是很柔弱的，开始的时候</div>
       </div>
     
       <div class="post-item">
@@ -4929,7 +4832,12 @@ VR？如火如荼，涉及系统吗？可改制性有多大。也许是个方向
           </a>
         </h2>
 
-        <div class="post-snippet">小感小冒小发小烧的也挺烦人</div>
+        <div class="post-snippet"><div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. 我</a></li>
+<li><a href="#sec-2"></div>
       </div>
     
       <div class="post-item">
@@ -4942,7 +4850,9 @@ VR？如火如荼，涉及系统吗？可改制性有多大。也许是个方向
           </a>
         </h2>
 
-        <div class="post-snippet">给小孩起名的三两事</div>
+        <div class="post-snippet"><div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> 前传</h2>
+<div class="outline-text-2" id="tex</div>
       </div>
     
       <div class="post-item">
@@ -4957,128 +4867,7 @@ VR？如火如荼，涉及系统吗？可改制性有多大。也许是个方向
 
         <div class="post-snippet"><div id="outline-container-sec-1" class="outline-2">
 <h2 id="sec-1"><span class="section-number-2">1</span> 购买</h2>
-<div class="outline-text-2" id="text-1">
-<p>
-4月份托美国朋友人肉带回，当时价格是799$。购买动力是作显示屏，计划先花700￥由本坛技术大牛root，再花300￥使用本坛另一技术大牛的显示器同步软件。<br >
-到手后，由于看到的放毒贴太多，对重量和大屏并没有什么很大的感觉，对没有前光和分辨率也没有特别的不适，虽然手头有细腻分辨率＋前光的kobo hd。<br >
-到手仔细咨询后，对将其当作显示器的效果基本降到冰点，于是破解和软件购买的费用就不再能承受。<br >
-于是转为专心看书的工具。<br >
-</p>
-</div>
-</div>
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> 看书</h2>
-<div class="outline-text-2" id="text-2">
-<p>
-这些年购买过的电纸书有kindle dxi, kindle 3, nook2&amp;3, kobo hd，无一例外都是用来折腾。现在这本不舍得破解的s1捏在手里，没法折腾了，只好专心看书了。<br >
-此时才发现，这家伙看书真的是太毒了！<br >
-</p>
-</div>
-<div id="outline-container-sec-2-1" class="outline-3">
-<h3 id="sec-2-1"><span class="section-number-3">2.1</span> 轻</h3>
-<div class="outline-text-3" id="text-2-1">
-<p>
-重量，首当其冲最值一提的是重量！<br >
-说捏着一张纸在看书是夸张，说拿一张较厚一点的硬纸板在看书，那就是恰如其分了。举实例来说吧。<br >
-有个周末问媳妇s1、kindle3、iphone 6s plus哪一个重哪一个轻，她掂了后说当然是6s，k3也比s1重。其实我也有这错觉，当然我是查过它们的重量6sp仅200g，k3 200多g，s1460k。但它给人的感觉就是这样轻！这恰恰又是它另一个优点——屏幕就是大——带来的。当时家里的另一位客人也是这样的错觉。<br >
-它轻到用大拇指和食指捏住一个角看书，毫无压力！这种飘飘欲飞的感觉，也是错常见的来源。而6sp（我刚才专门去捏了一下），感觉要重一点。这样比虽然违反常理，但事实和感觉就是这样。当然，最重要的是我自己就常常这样捏着看书，每次都感受和感叹主于这份重量。<br >
-能将这样大的屏幕作成这样轻的感觉，基本上就不必考虑比它小的电纸书了。<br >
-</p>
-</div>
-</div>
-<div id="outline-container-sec-2-2" class="outline-3">
-<h3 id="sec-2-2"><span class="section-number-3">2.2</span> 簿</h3>
-<div class="outline-text-3" id="text-2-2">
-<p>
-如此的轻及轻于其它电子产品的错觉，除了屏幕大的原因之外，就是簿造成的了。<br >
-我一直怀疑它电路板在底端一条、电池簿簿软软的两三层聚合物电池贴于屏幕背后，然后加一个后壳而已。<br >
-真的很簿。相对于大来说。这也是基于柔性屏才能做到的又大又簿的产品。<br >
-</p>
-</div>
-</div>
-</div>
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> 背壳</h2>
-<div class="outline-text-2" id="text-3">
-</div><div id="outline-container-sec-3-1" class="outline-3">
-<h3 id="sec-3-1"><span class="section-number-3">3.1</span> 优点</h3>
-<div class="outline-text-3" id="text-3-1">
-<p>
-开始拿到产品时，看错了背壳的材质。<br >
-整块背壳竟然采用的是拿破仑皇帝时代刚刚提炼出来、昂贵得超过黄金的Al-235材质！<br >
-包括笔夹、micro-USB充电口在内的整个后壳，都是一体铸造成型的。<br >
-流着通红高温的铝汁直接倾倒于带着大法工艺要求的精细模具中，几乎未作打磨就直接进入下一道喷漆工序中了。<br >
-敦实的USB口和笔夹开口，绝非常见的那种在轻簿的或金属或塑料中开口的设计，而是像拿出一段铁轨、用凿子在上面凿出一个厚实的插孔。<br >
-由于材质的原因，硬体的手感上升到另一个层面。<br >
-</p>
-</div>
-</div>
-<div id="outline-container-sec-3-2" class="outline-3">
-<h3 id="sec-3-2"><span class="section-number-3">3.2</span> 缺点</h3>
-<div class="outline-text-3" id="text-3-2">
-<p>
-大法的设计好，出自他考虑全面。e-ink产品的外壳用白色，是我一直不能忍受的，会把屏幕对比的特别灰暗。<br >
-大法于是把壳弄成黑的。<br >
-前壳的四周盖板用的黑色的塑料条，当然，也挺厚实。<br >
-看不过刚才说了材质了，但大法要和前壳统一，也要弄成黑的。其实灾没必要呀，又不拿后壳来对比屏幕。再说，实在要黑色的，可心借鉴灰色版本的ipone壳嘛。<br >
-大法只是拿个油漆给涂两层。上色防锈是簿簿一层、外面再来一层厚厚的、打浆也似的大黑漆。<br >
-结局就是夏天里我每次看书指甲都能扣下一块块的漆皮。<br >
-然后我只好索性把四个边的漆全部刮掉。<br >
-世界清静了。<br >
-所幸完美。铸铝闪着工业精神的光辉。手感也极佳。<br >
-</p>
-</div>
-</div>
-</div>
-<div id="outline-container-sec-4" class="outline-2">
-<h2 id="sec-4"><span class="section-number-2">4</span> 其他</h2>
-<div class="outline-text-2" id="text-4">
-</div><div id="outline-container-sec-4-1" class="outline-3">
-<h3 id="sec-4-1"><span class="section-number-3">4.1</span> 分辨率</h3>
-<div class="outline-text-3" id="text-4-1">
-<p>
-还得专门细说两句。<br >
-我并不觉得分辨率很重要。我平时用k3和kobo，感觉也差不到哪里去（须知我是对细节非常苛求的有些神经的）。<br >
-k3的分辨率低，但渲染伯克利太好了！以前我有篇帖子说过nook2和k3的对比，nook2或3无论经用什么字体，都有些发虚。而k3用华文中宋，简直是细腻清晰得像300ppi屏（主要得益于它对华文中宋的细横无意间「k3本没中文」优化得太精确不发虚）。<br >
-而s1字体优化不太到位，和其他（我只用过nook）android系统的机子一样，有些虚，不太让我接受。<br >
-但它又没有锯齿化选项（很多时候为了绝对清晰我宁愿用锯齿化字体），更为遗憾。<br >
-</p>
-</div>
-</div>
-<div id="outline-container-sec-4-2" class="outline-3">
-<h3 id="sec-4-2"><span class="section-number-3">4.2</span> 前光</h3>
-<div class="outline-text-3" id="text-4-2">
-<p>
-没有。稍有不便。不过也能更好的保护眼睛，光线不好就开灯，不能开灯就不看。<br >
-这两点无可否认是产品时代的体现。<br >
-</p>
-</div>
-</div>
-<div id="outline-container-sec-4-3" class="outline-3">
-<h3 id="sec-4-3"><span class="section-number-3">4.3</span> 手写笔等不说了，其他帖子中说得很好了。很好用。舍不得一直磨笔尖。</h3>
-</div>
-</div>
-<div id="outline-container-sec-5" class="outline-2">
-<h2 id="sec-5"><span class="section-number-2">5</span> 与其他产品的对比</h2>
-<div class="outline-text-2" id="text-5">
-<p>
-如果没用过s1，或像我初衷一样想挪作它用，可以考虑。<br >
-否则，仅仅就是“轻”这一条，我真的太希望你拥有大法sony dpt-s1了。<br >
-</p>
-</div>
-</div>
-<div id="outline-container-sec-6" class="outline-2">
-<h2 id="sec-6"><span class="section-number-2">6</span> 附：书籍和格式</h2>
-<div class="outline-text-2" id="text-6">
-<p>
-首先是阅读一切书籍没有问题。<br >
-这条大优点，使人在下载书籍、收藏书籍时，不必有任何顾虑，只须选择最好、最喜欢的版本。<br >
-（我找了一点坚版pda扫描书籍，还有红旗家庭藏书——这就是矢量字体的出版印刷文档啊！）<br >
-其次换字体和把所有其他格式打印成pdf，也只是举手之劳，教程和小软件多多，不必再说。<br >
-</p>
-</div>
-</div>
-</div>
+<div class="outline-text-2" id="tex</div>
       </div>
     
       <div class="post-item">
@@ -5093,38 +4882,7 @@ k3的分辨率低，但渲染伯克利太好了！以前我有篇帖子说过noo
 
         <div class="post-snippet"><div id="outline-container-sec-1" class="outline-2">
 <h2 id="sec-1"><span class="section-number-2">1</span> 第三天</h2>
-<div class="outline-text-2" id="text-1">
-<p>
-说来太难以置信了，小犬竟然在第三天里自己翻了个身！<br >
-由于天气太热的原因，她姥姥想了一个主意，搁到一个小板上，以免在我们这大床的大厚被子上热出扉子来。<br >
-正好前些年画画的时候，有一块小画板，于是我就翻出来，给他制作一张“小床”。<br >
-这小床可能还是算比较硬的，虽然铺了很多层簿簿的棉垫。其中有两块是他二姑做的，超舒适，又结实。不过毕竟是木板，他可能觉得不甚舒服，手舞足蹈之下，身子扭来扭去，没有一刻老实。<br >
-于是他就掉了下来，脸朝下、屁股朝天，那姿态笑煞观众。<br >
-</p>
-</div>
-</div>
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> 第六天</h2>
-<div class="outline-text-2" id="text-2">
-<p>
-长话短说，这一天又自己翻了下来。他妈妈特地把我们喊了过去，欣赏他的优美姿态。直到他姥姥过来责备我们，不赶快把他翻过来。<br >
-</p>
-</div>
-</div>
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> 第九天</h2>
-<div class="outline-text-2" id="text-3">
-<p>
-这一天翻了360度。<br >
-发现者是他妈妈，自己从小板上一路翻下来，360度之后照旧是仰躺着的姿势。<br >
-从第三天的时候，我们就说，这孩子身体好，长大了可以做个运动员了。<br >
-他姥姥说，没白比别的孩子多长2斤肉。<br >
-他奶奶说，这小脖梗子现在就这么硬了。<br >
-当我在鲨鱼群里炫耀了这事后，这些伪干爹干妈们就在商量长大了打羽毛球还是打网球好了。<br >
-</p>
-</div>
-</div>
-</div>
+<div class="outline-text-2" id="te</div>
       </div>
     
       <div class="post-item">
@@ -5139,51 +4897,7 @@ k3的分辨率低，但渲染伯克利太好了！以前我有篇帖子说过noo
 
         <div class="post-snippet"><div id="outline-container-sec-1" class="outline-2">
 <h2 id="sec-1"><span class="section-number-2">1</span> 前情提要</h2>
-<div class="outline-text-2" id="text-1">
-<p>
-16日凌晨，周六，刚睡没多久就被叫醒。在40周足月又推延几天后，终于小宝宝有了动静。<br >
-打了120没有接通的情况下，没有再拔，新说直接开车去吧，于是就收拾东西出发。<br >
-除了衣服和必备的用品，我又拿了满满一包电脑及其他电子产品。小衣服拿了十几件，简直像要出远门住几十天的样子。最好笑的是娘，只顾照顾我们，自己的鞋子都忘了换，穿着拖鞋就走。<br >
-由于是凌晨路上车少，开得相当快，去到医院是凌晨2点多，例行测胎心等等，折腾了大半夜，最后因产征不明显，又回到家。<br >
-这是待产前激动紧张的一个凌晨。<br >
-</p>
-</div>
-</div>
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> 产前一天</h2>
-<div class="outline-text-2" id="text-2">
-<p>
-周六日在家等了两天，还没有动静，周一按约定去医院办住院手续了。<br >
-去到之后没有独门病房，护士站的回复说你们应该早点到，8点前是有的，或者是预约。这时我才知道可以预约，对准孩妈一直传递的靠关系这一假信号颇为不满。不过也没办法，只好先住一天三人间。当然条件差是不必说的。<br >
-中午测了两次胎心，给医生看说不太好，还是说太平衡，不强烈，建议做顺产测试。<br >
-我详细的问了测试内容，回答说使用一半催产素，如果胎心情况好就顺产，如果差就剖宫。听着颇让人担心。<br >
-在整个孕期，我对新的身体条件和孕宝宝的情况还是了解的。现在的情况，在我心中只是胎宝宝在安静的睡觉而已。因此，征得医生的同意，下午再让我们测一次看看那会儿的情况如何。<br >
-结果当然很好。一是午后有她闺蜜前来倍伴，二来我在旁边大声讲话、念书，刺激胎宝宝的运动。所以这关就安然度过。<br >
-晚饭后，我们又一起去了奥森沿湖边走了一圈。一 边走一边兴高采烈的拍短视频。我说这是产前一天的纪念，新说你怎么知道是产前呢。其实只是说说嘛，也许就是那么快了呢。<br >
-</p>
-</div>
-</div>
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> 生产的日子</h2>
-<div class="outline-text-2" id="text-3">
-<p>
-夜里见红。可见宝宝是多么配合。既免去了一次让人担心的测试，又使人把心放下了。<br >
-但医生建议今天就使用催产素了。我心里老大不情愿。在我意识里，早天晚天，完全不必根据所谓的预产期计算。但在长期的新的焦虑中，尤其是她关于胎便的错误认识，严重影响了我的判断。没有好好学习胎便的知识，导致我同意了医生的建议。<br >
-其实根据后来排胎便的过程来看，很简单的可以知道，不生出来而是在子宫中，是不可能排胎便的。<br >
-租击了昨天的医生建议，今天的还是没有能选择我认为更正确的。过早的挂催产针，结果就是人为制造提前的宫缩，让新受了十四个小时的疼痛。<br >
-后来的生产过程也证明我在整个孕期中的判断。一切情况都超级好，山清水秀。<br >
-</p>
-</div>
-</div>
-<div id="outline-container-sec-4" class="outline-2">
-<h2 id="sec-4"><span class="section-number-2">4</span> 新生命诞生</h2>
-<div class="outline-text-2" id="text-4">
-<p>
-在这个星期二，7月19号，农历六月十六晚10点31分，新顺产生下8斤1两男宝宝一个，新的征程开始了。<br >
-</p>
-</div>
-</div>
-</div>
+<div class="outline-text-2" id="t</div>
       </div>
     
       <div class="post-item">
@@ -5203,9 +4917,7 @@ k3的分辨率低，但渲染伯克利太好了！以前我有篇帖子说过noo
 <li><a href="#sec-1">1. 对古典这样解释得</a></li>
 </ul>
 </div>
-</div>
-
-</div>
+<</div>
       </div>
     
       <div class="post-item">
@@ -5218,7 +4930,9 @@ k3的分辨率低，但渲染伯克利太好了！以前我有篇帖子说过noo
           </a>
         </h2>
 
-        <div class="post-snippet">读书笔记笛卡尔对于认识论贡献</div>
+        <div class="post-snippet"><div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> 书</h2>
+<div class="outline-text-2" id="text</div>
       </div>
     
       <div class="post-item">
@@ -5231,7 +4945,9 @@ k3的分辨率低，但渲染伯克利太好了！以前我有篇帖子说过noo
           </a>
         </h2>
 
-        <div class="post-snippet">对斯宾诺莎的简单描述和他理论中普通人无法理解不愿接受的一点看法</div>
+        <div class="post-snippet"><div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> </h2>
+<div class="outline-text-2" id="text-</div>
       </div>
     
       <div class="post-item">
@@ -5246,33 +4962,7 @@ k3的分辨率低，但渲染伯克利太好了！以前我有篇帖子说过noo
 
         <div class="post-snippet"><img src="/assets/img/img_2016_06_05__23_50_17.png">
 <div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> </h2>
-<div class="outline-text-2" id="text-1">
-<p>
-昨天是六四,终其一天,什么也没做。<br >
-想想去年，至少发了一则朋友圈，配有最有名的那幅图片，西直门立交桥上，是冰冷的坦克车，桥下是一对情侣，女孩坐在自行车后座上，男青年抬头上望，气氛紧张凝固。论坛配文非常好，“所谓爱情，就是她坐在自行车后座上，从背后轻轻搂着他，大气也不敢喘一口”。<br >
-再翻到前年六四，转发了一篇马英九的演说，《民主自由是共同的语言》;发了一幅最著名的图片，“一个瘦削的男人独自挡在一列坦克车前面，试图阻止他们开往天安门去屠杀那些绝食抗议的人们”。<br >
-前年的这一天还有些许的行动，去到天安门广场，行走一圈，虽然然而并没有什么人群在这里，只有府右街上待命的武警车辆和广场上的巡逻队伍。<br >
-再往前到大学的那年，和同学在西祠胡同上开设六四版块，那是一个相对自由的年代。<br >
-更往前的97年，邓小平去逝。作为还是学生且被洗脑的一代，流泪痛哭，为了这样一位改革开放路线的制定者，当然不会联想到他同时也是六四开枪的决策者。<br >
-今年的这天，呆在家里，啥也没干。<br >
-</p>
-</div>
-</div>
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> </h2>
-<div class="outline-text-2" id="text-2">
-<p>
-今年的这天，只是浏览了一些相关内容。<br >
-看到关于爱情和坦克车的图案，只是截取的比较好，今天看到另一张照片，显示着同样西直门桥上的是废弃毁坏的汽车、散乱停放没有炮手的坦克，桥下骑自行车超过的人群。<br >
-读到了一篇小说，《逃兵》，讲述“我”在六四期间恰在美国新闻媒体工作，受托把一盒录相带送到机场匆匆返美的外国人，然后辞职。许久后才知道那盒影带中就有那幅以一己之躯挡坦克车的照片<sup><a id="fnr.1" name="fnr.1" class="footref" href="#fn.1">1</a></sup>。<br >
-</p>
-<img src="/assets/img/img_2016_06_05__23_24_31.png">
-<p>
-(图片说明：六四天安门事件期间，这个被称作「王维林」的年轻人正在用自己的身体阻挡一队在天安门附近长安街上的坦克。这张照片是美联社记者Jeff Widener在1989年6月5日，离事发地半英里外的北京饭店6楼，用一支400mm镜头拍摄的。)<br >
-</p>
-
-</div>
+<h2 id="sec-1"><span class="section-number-2"</div>
       </div>
     
       <div class="post-item">
@@ -5287,6 +4977,8 @@ k3的分辨率低，但渲染伯克利太好了！以前我有篇帖子说过noo
 
         <div class="post-snippet"><img src=/assets/img/img_2016_05_12__23_26_47.png>
 
+<p>
+常常听到一些家长抱怨：“现在的孩子越来越不听话了！”还有些家长经常跟孩子讲：“要听话啊。”回家后询问孩子一天的情况时也会说：“今天有没有听老师（或者是家里人）的话啊，乖不乖啊？”<br >
 </div>
       </div>
     
@@ -5306,101 +4998,7 @@ k3的分辨率低，但渲染伯克利太好了！以前我有篇帖子说过noo
 <ul>
 <li><a href="#sec-1">1. 基础搭建</a>
 <ul>
-<li><a href="#sec-1-1">1.1. 在上注册帐号，建立博客。</a></li>
-<li><a href="#sec-1-2">1.2. 生成ssh密钥，以备上传下载、文章发布。</a></li>
-</ul>
-</li>
-<li><a href="#sec-2">2. 选择主题</a>
-<ul>
-<li><a href="#sec-2-1">2.1. 安装node.js</a></li>
-<li><a href="#sec-2-2">2.2. 安装ruby。不建议使用vpm进行包安装。安装后自带gem</a></li>
-<li><a href="#sec-2-3">2.3. 安装bundler</a></li>
-<li><a href="#sec-2-4">2.4. 安装npm</a></li>
-<li><a href="#sec-2-5">2.5. 安装诸多packages的时候，由于中国政府GFW的封杀，需要翻墙</a></li>
-</ul>
-</li>
-<li><a href="#sec-3">3. 理清博客结构</a>
-<ul>
-<li><a href="#sec-3-1">3.1. 根目录</a></li>
-<li><a href="#sec-3-2">3.2. _app文件夹内容</a></li>
-</ul>
-</li>
-<li><a href="#sec-4">4. 增加邮箱定阅</a></li>
-<li><a href="#sec-5">5. 增加rss定阅</a></li>
-<li><a href="#sec-6">6. 增加评论</a></li>
-<li><a href="#sec-7">7. 增加标签云</a>
-<ul>
-<li><a href="#sec-7-1">7.1. 在includes中建立tags_cloud文件</a></li>
-<li><a href="#sec-7-2">7.2. 在_pages中建立tags.html文件</a></li>
-<li><a href="#sec-7-3">7.3. 在/_includes/themes/curtana/includes中的css-variables.html中添加css的格式设置</a></li>
-<li><a href="#sec-7-4">7.4. 在_includes/themes/curtana/layouts的post.html中为每篇文章添加引用tag的模板</a></li>
-</ul>
-</li>
-<li><a href="#sec-8">8. 添加中文搜索</a>
-<ul>
-<li><a href="#sec-8-1">8.1. 使用jekyll-lunr-js-search</a></li>
-<li><a href="#sec-8-2">8.2. 其他</a></li>
-</ul>
-</li>
-<li><a href="#sec-9">9. 使用org-mode撰写和发布</a>
-<ul>
-<li><a href="#sec-9-1">9.1. 博客直接使用.org文件</a></li>
-<li><a href="#sec-9-2">9.2. 自带.org文件转.html或.md文件</a></li>
-<li><a href="#sec-9-3">9.3. 使用org2jekyll</a></li>
-<li><a href="#sec-9-4">9.4. 使用一键截图</a></li>
-</ul>
-</li>
-<li><a href="#sec-10">10. 简化发布流程</a></li>
-</ul>
-</div>
-</div>
-<p>
-<b>本教程旨在推荐一种可以从零开始，搭建一个简洁、快速，没有广告和令人眼花缭乱的界面，长期稳定、高效和易于访问并完全属于个人的独立博客。</b><br >
-</p>
-<ul class="org-ul">
-<li><span class="underline">使用三大神器，github、emacs、org-mode</span><br >
-</li>
-<li><span class="underline">org格式直接生成html或md格式</span><br >
-</li>
-<li><span class="underline">结合aliases缩写命令行，可以一键发布</span><br >
-</li>
-<li><span class="underline">具备标签云功能</span><br >
-</li>
-<li><span class="underline">自建中文全文搜索</span><br >
-</li>
-</ul>
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> 基础搭建</h2>
-<div class="outline-text-2" id="text-1">
-</div><div id="outline-container-sec-1-1" class="outline-3">
-<h3 id="sec-1-1"><span class="section-number-3">1.1</span> 在<a href="http://www.github.com">http://www.github.com</a> 上注册帐号，建立博客。</h3>
-</div>
-<div id="outline-container-sec-1-2" class="outline-3">
-<h3 id="sec-1-2"><span class="section-number-3">1.2</span> 生成ssh密钥，以备上传下载、文章发布。</h3>
-<div class="outline-text-3" id="text-1-2">
-<p>
-网上相关教程繁多，搜索阅读即可完成此步。<br >
-</p>
-</div>
-</div>
-</div>
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> 选择主题</h2>
-<div class="outline-text-2" id="text-2">
-<p>
-官方主题在<a href="http://jekyllthemes.org/">http://jekyllthemes.org/</a>， 选择你喜欢的一款使用。我选用的是<a href="http://sparanoid.com/lab/amsf/getting-started.html%20">Almace Scaffolding</a>，优点是简洁舒适，极具时尚感，并且特别适合手机浏览。<br >
-</p>
-<img src="/assets/img/img_2016_05_02__13_27_36.png" alt="img_2016_05_02__13_27_36.png"><br >
-<p>
-本主题要求用bundle和npm安装部分gem packages，因此有一点环境搭建的需求。<br >
-</p>
-</div>
-<div id="outline-container-sec-2-1" class="outline-3">
-<h3 id="sec-2-1"><span class="section-number-3">2.1</span> 安装node.js</h3>
-<div class="outline-text-3" id="text-2-1">
-<div class="org-src-container">
-
-</div>
+<li><a href="#sec-</div>
       </div>
     
       <div class="post-item">
@@ -5418,68 +5016,7 @@ k3的分辨率低，但渲染伯克利太好了！以前我有篇帖子说过noo
 <div id="text-table-of-contents">
 <ul>
 <li><a href="#sec-1">1. 简历</a></li>
-<li><a href="#sec-2">2. 作品</a>
-<ul>
-<li><a href="#sec-2-1">2.1. 小说：语言与结构实验编辑</a></li>
-<li><a href="#sec-2-2">2.2. 戏剧：荒诞派的高峰编辑</a></li>
-</ul>
-</li>
-<li><a href="#sec-3">3. 评价</a></li>
-</ul>
-</div>
-</div>
-<img src="/assets/img/beigete.png" alt="beigete.png" >
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> 简历</h2>
-<div class="outline-text-2" id="text-1">
-<p>
-萨缪尔·贝克特（Samuel Beckett，1906年4月13日－1989年11月10日），20世纪爱尔兰、法国作家，创作的领域包括戏剧、小说和诗歌，尤以戏剧成就最高。他是荒诞派戏剧的重要代表人物。1969年，他因“以一种新的小说与戏剧的形式，以崇高的艺术表现人类的苦恼”而获得诺贝尔文学奖。<br >
-</p>
-</div>
-</div>
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> 作品</h2>
-<div class="outline-text-2" id="text-2">
-<p>
-贝克特一生的创作经历，以1952年话剧《等待戈多》的上演为标志而被划分为前后两个时期。前期主要创作小说，而后期则主要写剧本。尽管如此，贝克特的文学风格却始终没有很大变化，而是从一开始就选择了一条远离现实主义传统的道路。<br >
-</p>
-</div>
-<div id="outline-container-sec-2-1" class="outline-3">
-<h3 id="sec-2-1"><span class="section-number-3">2.1</span> 小说：语言与结构实验编辑</h3>
-<div class="outline-text-3" id="text-2-1">
-<p>
-早年的贝克特深受意识流文学的影响。他对传统的现实主义手法深恶痛绝。他曾指责当时的读者只愿意“不费劲地”阅读“形式与内容严格分离”的作品，而不愿意接受像乔伊斯小说那种“直接表述的”作品。1937年，他在给友人的信中写道：“对我来说，用标准的英语写作已经变得很困难，甚至无意义了。语法与形式！它们在我看来像维多利亚时代的浴衣和绅士风度一样落后。”，并声称：“为了美的缘故，向词语发起进攻。”<br >
-因此，在贝克特早期的小说创作中，他绝少涉及真实的社会生活场景和具体的社会问题，而是致力于揭示人类生存的困惑、焦虑、孤独以及现代社会中人们丧失自主意识后的悲哀。他喜欢用一些生活的碎片和幻象来负载哲学思想。他的小说没有连贯的情节和动人的故事，其晦涩程度和当时勃兴的意识流小说并无差别。<br >
-贝克特的小说在结构上独树一帜。他的小说大多采用一种环形封闭的结构，情节不断繁衍而又不断消解。主要情节被不断打结和扯断，直至被叙事彻底解构。<br >
-</p>
-</div>
-</div>
-<div id="outline-container-sec-2-2" class="outline-3">
-<h3 id="sec-2-2"><span class="section-number-3">2.2</span> 戏剧：荒诞派的高峰编辑</h3>
-<div class="outline-text-3" id="text-2-2">
-<p>
-作为荒诞派戏剧的创始人之一和集大成者，贝克特一生共创作了30多个舞台剧本，其中有20多个被拍成电视剧或电影。其中最重要的三部作品是《等待戈多》<sup><a id="fnr.1" name="fnr.1" class="footref" href="#fn.1">1</a></sup>、《剧终》和《啊，美好的日子！》。<br >
-《等待戈多》（1952年）是贝克特的代表作，也是荒诞派戏剧的奠基之作。它于1953年在巴黎巴比伦剧院首演，立刻引发了激烈的争议。在比较不宽容的伦敦上演后，倍受嘲弄，甚至引发评论家群起而攻。1956年在纽约百老汇上演，被美国评论界讥称为“来路不明的戏剧”。直到70年代才开始被评论界接受并赞誉，成为20世纪最重要的剧本之一。<br >
-《等待戈多》是一个两幕剧，出场人物只有5个。全剧的主题就是两个百无聊赖的人在等待“戈多”，而戈多却始终没有出现。剧情上没有任何发展，结尾是开端的重复，没有冲突，只有一些乱无头绪的对话。舞台的背景也显得简陋、压抑，令人窒息。<br >
-西方评论界对《等待戈多》有各种各样的解释，而贝克特始终拒绝对自己的这部作品做出解释。比较通行的看法是：戈多是一种象征，可能是“虚无”、“死亡”也可能是某种被追求的超验。戈多代表了生活在惶恐不安的现代社会的人们对未来若有若无的期盼。英国评论家马丁·艾林斯认为：“这部剧作的主题并非是戈多而是等待，是作为人的存在的一种本质特征的等待。”<br >
-</p>
-</div>
-</div>
-</div>
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> 评价</h2>
-<div class="outline-text-2" id="text-3">
-<p>
-贝克特后半生定居法国，却始终没有取得法国国籍。而由于贝克特使用法语而不是盖尔语进行创作，他的祖国爱尔兰也拒绝承认他的国民身份。贝克特的思维始终是欧洲的、国际的，而不像他的同胞萧伯纳或叶芝一样，始终带有民族主义的狭隘气度。<br >
-</p>
-</div>
-<ol class="org-ol"><li><a id="sec-3-0-0-0-0-1" name="sec-3-0-0-0-0-1"></a><a href="https://zh.m.wikipedia.org/zh-cn/%E8%90%A8%E7%BC%AA%E5%B0%94%C2%B7%E8%B4%9D%E5%85%8B%E7%89%B9#">原文地址：维基百科-萨缪尔·贝克特</a><br ></li></ol>
-</div>
-<div id="footnotes">
-<h2 class="footnotes">Footnotes: </h2>
-<div id="text-footnotes">
-
-</div>
+<li><a href="#sec-2"</div>
       </div>
     
       <div class="post-item">
@@ -5497,7 +5034,8 @@ k3的分辨率低，但渲染伯克利太好了！以前我有篇帖子说过noo
 The ".org" files still disappear extra-headers, `#+EXTRA-YAML-HEADERS: theme: blah\nplugin:<br >
 </p>
 
-</div>
+<p>
+I don't understand this sen</div>
       </div>
     
       <div class="post-item">
@@ -5514,35 +5052,7 @@ The ".org" files still disappear extra-headers, `#+EXTRA-YAML-HEADERS: theme: bl
 <h2 id="sec-1">设定</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-<code>下述内容copy自wenshan</code><br  />
-用 org-mode 记笔记、写博客（比如你现在看到的这篇）、做知识管理的时候，经常需要插入各种类型的源代码，于是我写了个小函数来简化这个过程。<br  />
-</p>
-</div>
-<div id="outline-container-sec-1-1" class="outline-3">
-<h3 id="sec-1-1">1 org-mode 中的源代码块</h3>
-<div class="outline-text-3" id="text-1-1">
-<p>
-这是一个 org-mode 中的 Elisp 代码块（可折叠）：<br  />
-</p>
-<pre class="example">
-#+BEGIN_SRC emacs-lisp
-  (message "天地玄黄，鸟生鱼汤")
-#+END_SRC
-</pre>
-<p>
-you can use <code>&lt;e Tab</code> create this.<br  />
-注 ：在 Emacs 中，把光标置于源代码中间，按 M-x org-edit-src-code （我把它绑定到了 C-c s e ），就可以在相应的模式下编辑这段代码。<br  />
-</p>
-</div>
-</div>
-<div id="outline-container-sec-1-2" class="outline-3">
-<h3 id="sec-1-2">2 org-insert-src-block</h3>
-<div class="outline-text-3" id="text-1-2">
-<p>
-为了不用自己输入 #+BEGIN<sub>SRC…</sub>#+END<sub>SRC</sub> 这一段，我写了下面这个Elisp 函数：<br  />
-</p>
-
-</div>
+<code>下述内容copy自wenshan</code><</div>
       </div>
     
       <div class="post-item">
@@ -5559,15 +5069,7 @@ you can use <code>&lt;e Tab</code> create this.<br  />
 <h2 id="sec-1">install proxychains-ng 4</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-通过git获取源码<br  />
-git clone git@github.com:rofl0r/proxychains-ng.git<br  />
-安装<br  />
-</p>
-</div>
-<ul class="org-ul"><li><a id="sec-1-0-1" name="sec-1-0-1"></a>Installation <b>*</b><br  /><div class="outline-text-4" id="text-1-0-1">
-<div class="org-src-container">
-
-</div>
+通过git获取源</div>
       </div>
     
       <div class="post-item">
@@ -5584,19 +5086,7 @@ git clone git@github.com:rofl0r/proxychains-ng.git<br  />
 <h2 id="sec-1">安装准备</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-因为国内防火墙(GFW)对云盘提供商dropbox进行了屏弊,因为terminal无法直接下载安装,需要使用proxychains走代理。这一部分参见上篇文章《terminal通过proxychains翻墙》。<br  />
-</p>
-</div>
-</div>
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2">安装</h2>
-<div class="outline-text-2" id="text-2">
-</div><div id="outline-container-sec-2-1" class="outline-3">
-<h3 id="sec-2-1">通过deb包</h3>
-<div class="outline-text-3" id="text-2-1">
-<div class="org-src-container">
-
-</div>
+因为国内防火墙(GFW)对云盘提供商dropbox进行了</div>
       </div>
     
       <div class="post-item">
@@ -5609,7 +5099,10 @@ git clone git@github.com:rofl0r/proxychains-ng.git<br  />
           </a>
         </h2>
 
-        <div class="post-snippet">开通新页面</div>
+        <div class="post-snippet">今天在"在行"软件上开通了一个页面,发挥我助人为乐的精神。  
+关于在行，之前在博文《怎么将1小时用出10小时》中己有介绍。  
+互联网不乏创新的切入口，只有有好的创意。
+</div>
       </div>
     
       <div class="post-item">
@@ -5622,7 +5115,9 @@ git clone git@github.com:rofl0r/proxychains-ng.git<br  />
           </a>
         </h2>
 
-        <div class="post-snippet">深表认同</div>
+        <div class="post-snippet">2015-01-29 16:11  
+
+我具有世界上最先进的文明。做我的朋友本来应该是一件容易的事，可我却很不容易找到一个朋友，因为很少有人具有跟我匹配的“个人价值”。我对人的“估价”，不是取决于他拥有多少金钱或者知识，而是取决于他的内心认为自己有多大价值，取决于他有多尊重和爱戴他自己。具有高价值的人</div>
       </div>
     
       <div class="post-item">
@@ -5635,7 +5130,8 @@ git clone git@github.com:rofl0r/proxychains-ng.git<br  />
           </a>
         </h2>
 
-        <div class="post-snippet">放假记录</div>
+        <div class="post-snippet">今天休息，明天打球。
+</div>
       </div>
     
       <div class="post-item">
@@ -5648,7 +5144,14 @@ git clone git@github.com:rofl0r/proxychains-ng.git<br  />
           </a>
         </h2>
 
-        <div class="post-snippet">久违</div>
+        <div class="post-snippet"># 久违
+
+这段较长的时期没有更新，最主要是因为要解决人生大事，婚姻。
+
+# 重逢
+
+以后会及时记录我的生活。
+</div>
       </div>
     
       <div class="post-item">
@@ -5661,10 +5164,12 @@ git clone git@github.com:rofl0r/proxychains-ng.git<br  />
           </a>
         </h2>
 
-        <div class="post-snippet"><p><em>joy</em>
-  　　当我们被问到喜欢或者爱我们现在的伴侣的原因时，很多人都会一脸无辜并且不知所措地说：“我也不知道是什么原因呢。”</p>
+        <div class="post-snippet"><em>joy</em>
+  　　当我们被问到喜欢或者爱我们现在的伴侣的原因时，很多人都会一脸无辜并且不知所措地说：“我也不知道是什么原因呢。”
 
-</div>
+  　　但是请你仔细想想，为什么茫茫人海中，为什么在你认识的那么多人中，你偏偏会选择跟你的伴侣在一起呢？
+
+  　　好莱坞爱情电影告诉我们说：Love i</div>
       </div>
     
       <div class="post-item">
@@ -5677,7 +5182,11 @@ git clone git@github.com:rofl0r/proxychains-ng.git<br  />
           </a>
         </h2>
 
-        <div class="post-snippet">my first blog on this site</div>
+        <div class="post-snippet"><cite>师北宸</cite>
+
+我在之前的《做 Uber 司机太没新意，当行家才是正经事》这篇文章中留了一个小尾巴：
+
+这些愿意为知识和经验买单的人，愿意跑半个城市人以及双方都对交流做了精心准备的时候，对话的质量和效率才有了保证，对话双方的单位时间价值也得到了提升……而当这样的交流规模化以后，显然</div>
       </div>
     
       <div class="post-item">
@@ -5690,9 +5199,10 @@ git clone git@github.com:rofl0r/proxychains-ng.git<br  />
           </a>
         </h2>
 
-        <div class="post-snippet"><h1 id="国家的谎言">国家的谎言</h1>
+        <div class="post-snippet"># 国家的谎言
 
-</div>
+关于国家的观念，是一种误区，是强加于个人主体价值之上的虚幻观念。过于强调的国家观念，是以漠视个体为代价的。<br>
+最原始的时候没有国家，氏族的时候就是同一母系到后来是父系的人们生活在一起。随着财务的分配和掠夺，一个族类侵占另一个族类，把战败者当做奴隶，慢慢扩大活动范围和版图，修筑城</div>
       </div>
     
       <div class="post-item">
@@ -5705,9 +5215,7 @@ git clone git@github.com:rofl0r/proxychains-ng.git<br  />
           </a>
         </h2>
 
-        <div class="post-snippet"><p>华盛顿跟波拿巴不同，不属于那种超过人类高度的种族。他身上没有任何惊人之处;他并未置身于广阔的舞台;他不曾同那个时代最能干的将军和最强大的君主打交道;他没有从孟菲斯转战维也纳，从加的斯转战莫斯科;他在内部狭小的圈子里，在一片无名的土地上，带着一小帮人进行自卫。他并未发动战争，取得可以同阿尔贝尔（公元前四世纪，亚历山大大帝在那里取得对波斯国王大流士三世的决定性胜利）和法尔撒尔（公元前一世纪，恺撒在那里打败庞培）的大捷相媲美的胜利。他没有推翻王位，用王位的残余部分组成新王朝;他不曾让那些国王在他门口说:“他们让人等得太久，阿提拉厌烦了。”</p>
-
-</div>
+        <div class="post-snippet">华盛顿跟波拿巴不同，不属于那种超过人类高度的种族。他身上没有任何惊人之处;他并未置身于广阔的舞台;他不曾同那个时代最能干的将军和最强大的君主打交道;他没有从孟菲斯转战维也纳，从加的斯转战莫斯科;他在内部狭小的圈子里，在一片无名的土地上，带着一小帮人进行自卫。他并未发动战争，取得可以同阿尔贝尔（公元前四</div>
       </div>
     
       <div class="post-item">
@@ -5720,17 +5228,9 @@ git clone git@github.com:rofl0r/proxychains-ng.git<br  />
           </a>
         </h2>
 
-        <div class="post-snippet"><p>柏拉图说，未来是哲学王管理的世界。<br />
-但中国离这个方向越来越远了，对律师都已经婶婶的感到恐惧。7月中，全国各地警方同时出动，逮捕、约谈律师220人，其中数十人属于没有任何手续且后续属“失踪”或“失联”状态。<br />
-律师是维护公平和正义的支撑，在目前中国集权统治以及公权滥用的情况下，律师是保护弱者的一个重要力量。但目前这力量，本来是为弱者特别是上访群众维权而被尊称为”维权律师“的群体，已经被官方按照前《新京报》案模式未审先定论、从宣传机器上介定为煽动闹事甚至是颠覆国家政权的性质。官方主要借助徐纯合案相关的事件及涉事律师进行定性，然后全国范围内同时开展大范围抓捕。<br />
-这次大规模抓捕中，除了官方公布的以北京那律师事务所为主的律师外，其他特别是处于“失踪”状态的，多数是提倡宪政和公民社会的律师。<br />
-徐案只是借用原由，更深层的原因是律师界是但是倡导公民社会的一股重要力量，律师的职业素养、整体素质、思考能力、接触事件程度、调阅案卷权力、法庭豁免权等除了在具体情景中使当事官僚感受不佳外，已经让整个官僚系统产生了危机感。<br />
-从这点上来说，上层对律师力量的认识可能比你我普通公民认识的更深刻，除了众所周知的林肯等多位美国总统出身律师外，我记得曼德拉、昂山素季等都是律师出身。<br />
-那么7月份这个做法，就不难理解了 。<br />
-联系更早的事件，受监控、监视，最后逃往美国大使馆避难的盲人律师陈光诚的身份，同样可以佐证上述。陈光诚以盲人的残疾身体，自学法律，为村民、残疾人士维护权益，被媒体尊称“赤脚”律师，并在2006年入选《Times》时代百大人物。其做维权律师、06－10年入狱、妻女遭软禁、12年4月逃往美使馆并最终逃离中国的整个过程，就已经是目前律师遭遇这一困境的先验缩影了。<br />
-总体来看，以后也许会有更多有良知的律师加入提升人权的行列，在其他行业领域内，公民意识提高，应该也是能慢慢进行的。如果意识没有缓慢发展、就不会有这次大规模的抓捕，站在这个角度看也算是能让人一点欣慰的点滴想法。<br />
-开心一下，建议凤姐在美国考个律师，既然和陈光诚律师一样有能量。<br /></p>
-</div>
+        <div class="post-snippet">柏拉图说，未来是哲学王管理的世界。<br>
+但中国离这个方向越来越远了，对律师都已经婶婶的感到恐惧。7月中，全国各地警方同时出动，逮捕、约谈律师220人，其中数十人属于没有任何手续且后续属“失踪”或“失联”状态。<br>
+律师是维护公平和正义的支撑，在目前中国集权统治以及公权滥用的情况下，律师是保护弱</div>
       </div>
     
       <div class="post-item">
@@ -5743,9 +5243,10 @@ git clone git@github.com:rofl0r/proxychains-ng.git<br  />
           </a>
         </h2>
 
-        <div class="post-snippet"><h1 id="msn-space时期">MSN Space时期</h1>
+        <div class="post-snippet"># MSN Space时期  
 
-</div>
+ ๑۩渤智堂۩๑，是在msn空间建博客时起的名字。当时是和小媛他们打羽毛球时，她兴冲冲的问我，你有空间吗？msn的空间，我们都用。我一听这么高大上，立马建了一个。  
+大多数人建博客基本都会遇到荒鞠灾，小媛的也不例外。其中一则评论印象深刻“你的博客最近怎么像我们科常遇</div>
       </div>
     
       <div class="post-item">
@@ -5758,9 +5259,9 @@ git clone git@github.com:rofl0r/proxychains-ng.git<br  />
           </a>
         </h2>
 
-        <div class="post-snippet"><p>这两天又努力修改了下，增加了邮箱订阅和添加评论的功能，方便了使用和的交流。<br />
-这就是原先的设想，同时也应该是做事的习惯，不必一次性把所有的都弄好，可以一点点修正。<br />
-是为记<br /></p>
+        <div class="post-snippet">这两天又努力修改了下，增加了邮箱订阅和添加评论的功能，方便了使用和的交流。<br>
+这就是原先的设想，同时也应该是做事的习惯，不必一次性把所有的都弄好，可以一点点修正。<br>
+是为记<br>
 </div>
       </div>
     
@@ -5774,19 +5275,9 @@ git clone git@github.com:rofl0r/proxychains-ng.git<br  />
           </a>
         </h2>
 
-        <div class="post-snippet"><p>多年以后，曹拿来一个apple 的笔记本，古老的powerbook pro大飞机A1085对我说，飞哥你要不要，需要手动把后面的排线摩擦打火才能启动开机，张总的机子，买的时候据说两万多，从没用过，二百块钱就处理了。<br />
-我说行，情怀机，地板价，我要了。<br />
-拿回家后，我摸着这温暖的全太空铝金属机身，热泪盈眶。当年就是因为给单位设计公司画册，一度想拥有最顶级的这款机器，怯步于其高昂的价格才一路寻找到darwin、挖掘出freebsd。结局是付出两年时光，不但没用上apple系统的photoshop，把一度痴迷的平面设计也彻底抛弃了。<br />
-当然抛弃平设倒也不全赖freebsd，这恰如其名称的红色小魔鬼，而是在于这阶段爱好也颇为驳杂。<br />
-先是喜欢上原画设计，朋友的朋友赠送了全套的制图工具，并告诉我“其实中国的动画制作水平绝不比世界差，但是没有能力作大成本的投入精细打造，所以出的作品都比较粗糙。现在主要是好莱坞迪斯尼林工厂派单，分包公司切成片断由各公司承接，好点的公司一般能拿到几分钟的制作任务”。现在和朋友聊起这个是当作业内人士来炫耀，虽然不知道说法的正确性如何。在当时，听得是热血沸腾，“原来艺术真是无国界，中国也能在绘画领域做出高水平作品啊，那我先来”。<br />
-然后又是喜欢上木工，要做一名木匠。罗永浩的锤子及工匠情怀，我至少比他早了十年。我不但买了锤子，还买了刨子、锯、凿子、电钻、砂纸、白玉胶、甚至还买了一双厚糙的反皮木工鞋。<br />
-穿上全幅的装备后，雇了一辆大卡车跑到西郊木材厂买了一方原木……<br />
-我坐在医院的急诊室，左小臂的胳膊肚上覆盖厚厚的白纱布，尽量用轻快的语调对初恋女友说，别担心，皮肤小伤算得了什么，看到刚才进门时头顶那行大字了吗，总医院医学整形美容医院，过几天我去把皮一磨，完好如初！再说了，刚才医生也说了，有多少人来的时候被电锯削掉了……<br />
-“嘘～”，她打断了我，“别说这样的话，以后不要再做了”。<br />
-我还真听了。<br />
-感谢有无数的爱好在付出时间和精力后发现存在不可企及的高度时能及时断供。<br />
-也感谢目前都还没有爱好能有所成，让我为自己尚拥有如此巨大的发展空间而高兴。<br /></p>
-</div>
+        <div class="post-snippet">多年以后，曹拿来一个apple 的笔记本，古老的powerbook pro大飞机A1085对我说，飞哥你要不要，需要手动把后面的排线摩擦打火才能启动开机，张总的机子，买的时候据说两万多，从没用过，二百块钱就处理了。<br>
+我说行，情怀机，地板价，我要了。<br>
+拿回家后，我摸着这温暖的全太空铝金属</div>
       </div>
     
       <div class="post-item">
@@ -5799,16 +5290,8 @@ git clone git@github.com:rofl0r/proxychains-ng.git<br  />
           </a>
         </h2>
 
-        <div class="post-snippet"><p>受老爸遗传的影响，我的爱好也广泛至极。他打过枪、做过布商、做过金银首饰，50岁了开始学医卜都能精通，会书法、篆刻、根雕，还懂点绘画，如果不是他娶的媳妇凡事都拦挡着，可能会的更多。<br />
-我自己能承认的也就是绘画方面了，可惜没有最终从事。跟着央美的罗尔纯老师学习了个半调子，罗老师60岁时还能参加89年六四运动并雕刻了自由女神搬到天安门广场，我最多是跑到景德镇烧个泥筒拿到798工厂，放到那些傻粗的雕像身上。罗老师被共产党赶到法国，画作拿卢浮宫按平米卖能比房价贵，我画了幅温莎夫人像，拿同事家挂了半年，搬家时又还给了我，小声告诉我这画影响他的欲望，顺便指着送我的那筐北寨红杏说，也许画这个能凑个成语。“真的真的”，他诚恳的说，“‘望杏止渴’，你照样能画得生动，我们相信你”。<br />
-其他方面，在我身上应该是再无别的天赋了。<br />
-书法跟纵晓林老师学过两年，扔下时间更久，现在已经羡慕日夜苦炼出一手小楷的二姐了。篆刻方面差不多也只做过一件事，给喜欢的女生用羊脂白玉刻印一方。<br />
-这些都是太久以前。再往后兴趣散乱无章。<br />
-先是photoshop，dreamwaver，flash。ps完全可以在失业后做点假证混饭吃，dw做的网站都被关了，flash再倒是说不定能接点迪斯尼的活。但这三者结局都快game over了，ps不如美图秀秀在美眉手中有杀伤力，dw走进历史，flash在apple公司死活不支持的情况下也走向完结。<br />
-photoshop在最好的时代，最能发挥的是在苹果电脑mac上。但那时以为买不起苹果，就找到mac系统的祖宗darwin系统，对，叫达尔文，然后找到darwin的祖上freebsd，一踏入UNIX阵营，就晃晃悠悠的研究了两年。<br />
-电脑系统的阵营可以简单划分为windows，mac，UNIX和Linux，都只是生产力的，对另相当一部分人来说是游戏的，工具。我对着一堆工具，苦心孤诣的干了两年，就是为了让一个只适合做服务器的系统，去做ps。两年后，我已经忘了当年为什么要折腾freebsd了，因为这个系统上根本就安装不了ps，只有一只头像是小狐狸的傻工具叫gimp。<br />
-那天晚上一个广告公司老板找到我，抱着当年我给做的菲佣广告，略带哭腔的说设计员走了，一个大单总完不成，客户点名要找你做。我虎躯一震，突然想起来我的ps呢。<br /></p>
-</div>
+        <div class="post-snippet">受老爸遗传的影响，我的爱好也广泛至极。他打过枪、做过布商、做过金银首饰，50岁了开始学医卜都能精通，会书法、篆刻、根雕，还懂点绘画，如果不是他娶的媳妇凡事都拦挡着，可能会的更多。<br>
+我自己能承认的也就是绘画方面了，可惜没有最终从事。跟着央美的罗尔纯老师学习了个半调子，罗老师60岁时还能参加89年</div>
       </div>
     
       <div class="post-item">
@@ -5821,12 +5304,8 @@ photoshop在最好的时代，最能发挥的是在苹果电脑mac上。但那�
           </a>
         </h2>
 
-        <div class="post-snippet"><p>今天上指创8年最大单日跌幅，报收3725点，跌345点，期指跌停，报3647点，跌405点。<br />
-午前11点、午后2点，期指都有上拉护盘的线型，整体在两点前的走势上，负隅顽抗。但你不可能违抗市场，强大到如政府也不可能。2点之后期指全面跳水，直至跌停，大盘到3点仍然没有任何反抽，收到全天最低点。后市相当严峻。<br />
-周末有朋友问到过后市如何，这是永远无法回答的问题。预测只占投机中的一小部分，最重要的还是遇到各类情形时的应对。再则从整个大的时期来说，多头买多、空头卖空，是最安全的措施。如果市场处于下跌趋势中，卖出是最好的策略，“市场永远在那里，只要想进就进，机会每天都有无数无数次”（《投机基础简明原理》）。但不要找反弹的高点卖出，这是违反前面在“原理”一文中说过的高买低卖的原则的。况且根本不可能在高点卖得出。如大盘这两周以来的走势，六连阳，涨势是任何人都难以抗拒进行卖出的。<br />
-想起上月的体验，在任何惊险游戏中都能平淡如水的我，自信满满的要求自己跳、不用推。站上跳台的那一瞬，脚底如同钉住一般纹丝不动。有些反自然的心理和行为，是内心极难克服的。<br />
-回头看了下前些天写的原理，罗列的观点依然有效。但为了有更多时间寻找个人幸福，脱离市场太久，许多新的形势及策略，已经颇感生疏。市场的强大的吸力依然在召唤，但愿我能继续做到真正稳定之后进来。<br /></p>
-</div>
+        <div class="post-snippet">今天上指创8年最大单日跌幅，报收3725点，跌345点，期指跌停，报3647点，跌405点。<br>
+午前11点、午后2点，期指都有上拉护盘的线型，整体在两点前的走势上，负隅顽抗。但你不可能违抗市场，强大到如政府也不可能。2点之后期指全面跳水，直至跌停，大盘到3点仍然没有任何反抽，收到全天最低点。后市</div>
       </div>
     
       <div class="post-item">
@@ -5839,19 +5318,9 @@ photoshop在最好的时代，最能发挥的是在苹果电脑mac上。但那�
           </a>
         </h2>
 
-        <div class="post-snippet"><p>今天午饭有众多朋友，席间强烈遣责了在坐中对日本持有差异观点的童鞋。<br />
-几次想说说我的看法，但还是忍住了。意识形态的观点比较难以交流，这也是我来越常常感觉到的无奈。再者，本质上来说这并不是反映意识形态的差异，而是一个人的局限性。终究是有许多东西，是一生都永远不可能理解的。<br />
-目前国内的排外情绪，主要是在于历史上是被侵略，作为弱势和受害的一方，因误导教育而积压的负面因素。在整体社会形态和发展阶段未发生根本变化之前，是难以解决相应心理问题的。这也许是自卑，在国内被强权统治无法申张和释怀的自我。<br />
-除了40年代的历史，自1999年5月8日南斯拉夫中国使馆被炸开始，政府重拾利用民族情绪激化矛盾，从而转移国内视线的做法。从前世纪前共产党使用这一做法纾解困境直至夺取政权，是发挥这一做法的巅峰时期。在建国后的几十年中，国内思想被严重禁锢而国际倍受制裁，于是采用了向美示好、提倡中日友谊等等措施。到了89年可以说是跟限了世界自由思潮发展的步伐，自由形成气候，结局就是各国共产党的独裁政府瞬间崩塌。这一年不但是世界同时也是中国自由的巅峰，以之为分水岭，中国内政外交形势互转，于是政府重拾旧策，反复宣传仇外情绪，一旦遇有涉及民族性的事件，鼓励流行示威甚至打砸烧抢，转移国内执政的危机和矛盾焦点。<br />
-相距七八十年，同一手段，相同的效果，他们成功了。<br />
-回想80年代左右提倡的中日友好等观念，是种什么样的感触。新旧对比，历史的倒退让人扼腕。<br />
-刚才对照想了一下，政府引导仇日还隐含新的任务。强调抗日战争的那一段历史，但却把起到决定胜利的关键力量，脸不红心不跳的从国民党身上切换到共产党身上。起关键作用的一方一转换，就可以为后来执政合法性做好铺堑。这在一党专政、非普选而是强制性掌权、直到目前腐败程度完全暴露之后，可以为当下政权提供一个历史注定执政合法的支撑点。<br />
-相关涉及的东西其实很多，东北、南海等方面的领土在建国后变更到苏联及俄国等等，这些事上也有许多遮掩要求。但不管是什么或者有多么多的因素考量，从来没有主见的中国人只能是受害者，且远不止是被砸的车、被烧的店、被伤害的人那么直接和表面，我们失去的，是思考能力的内心的平衡。<br />
-＊＊＊<br />
-在受伤害的事件中，弱者失去的越多，事后越会坚信自己行为的正确。<br />
-他会欺骗自己和亲人子女，直到毁了所有的人生。<br />
-<br /></p>
-</div>
+        <div class="post-snippet">今天午饭有众多朋友，席间强烈遣责了在坐中对日本持有差异观点的童鞋。<br>
+几次想说说我的看法，但还是忍住了。意识形态的观点比较难以交流，这也是我来越常常感觉到的无奈。再者，本质上来说这并不是反映意识形态的差异，而是一个人的局限性。终究是有许多东西，是一生都永远不可能理解的。<br>
+目前国内的排外情</div>
       </div>
     
       <div class="post-item">
@@ -5868,7 +5337,7 @@ photoshop在最好的时代，最能发挥的是在苹果电脑mac上。但那�
 <p><em>我个人将随机读到的不错的文章，不分类别的放在“转载”category中，题目标记zz,转载</em></p>
 </blockquote>
 
-</div>
+第一次我走进日本的星巴克，我以为我准备好了。这相当简单，"Large"被译为某种意大利英语和日语结合的异类词“Grande</div>
       </div>
     
       <div class="post-item">
@@ -5881,9 +5350,9 @@ photoshop在最好的时代，最能发挥的是在苹果电脑mac上。但那�
           </a>
         </h2>
 
-        <div class="post-snippet"><h1 id="千古之謎我是誰">千古之謎－－我是誰？</h1>
+        <div class="post-snippet"># 千古之謎－－我是誰？
 
-</div>
+我們每天講得最多的是甚麼字呢？可能是「我」字。然而這每天掛在嘴邊的「我」究竟是甚麼東西？這看起來很容易的問題卻則難倒了千古的智者。如紀元前四、五世紀時希臘哲學家蘇格拉底就勸導我們去認識自我(to know thyself)。其他動物不會問這問題，只有人類這奇怪的動物，他自己</div>
       </div>
     
       <div class="post-item">
@@ -5896,9 +5365,16 @@ photoshop在最好的时代，最能发挥的是在苹果电脑mac上。但那�
           </a>
         </h2>
 
-        <div class="post-snippet"><p><img src="/assets/img/sisyph.jpg" alt="image" /></p>
+        <div class="post-snippet">![image](/assets/img/sisyph.jpg)
 
-</div>
+油画 [^1]  西西弗斯 [^2]  
+
+<blockquote>
+<p>我发誓在水上书写  <br>
+我发誓为西西弗斯分担  <br>
+那块沉默的岩石  <br>
+我发誓始终和西西弗斯一起  <br>
+经受高热和火花的炙烤  <b</div>
       </div>
     
       <div class="post-item">
@@ -5911,9 +5387,7 @@ photoshop在最好的时代，最能发挥的是在苹果电脑mac上。但那�
           </a>
         </h2>
 
-        <div class="post-snippet"><p>上周政府一系列投机市场政策的失效，表明其对市场控制力的削弱。这一方面是市场中公司增多、市值变大，市场固有规律能起更大作用所造成，另一方面是经济发展已经到了目前这种落后政治体制已经不能再促成更大进步，反而由于维护政体的原因，在高端经济领域甚至文化等其他领域中成为阻滞进步的绊脚石，那么其控制力必然会下降。在切身利益的损失中，市场投资者会逐渐开始对独裁国家乱政、落后及失误逐渐看得更清。投资者群体的素质、进入市场需要的智力，以及在经济起伏中获得的体验和思考，会带动这一群体前瞻性的思考和视野，对经济及其背后的政治看得更透彻。在经济与政策政治角力中，也许能反推体制走向真正的自由和民主。</p>
-
-</div>
+        <div class="post-snippet">上周政府一系列投机市场政策的失效，表明其对市场控制力的削弱。这一方面是市场中公司增多、市值变大，市场固有规律能起更大作用所造成，另一方面是经济发展已经到了目前这种落后政治体制已经不能再促成更大进步，反而由于维护政体的原因，在高端经济领域甚至文化等其他领域中成为阻滞进步的绊脚石，那么其控制力必然会下降。</div>
       </div>
     
       <div class="post-item">
@@ -5926,10 +5400,12 @@ photoshop在最好的时代，最能发挥的是在苹果电脑mac上。但那�
           </a>
         </h2>
 
-        <div class="post-snippet"><p><img src="/assets/img/050706conkerorggl.png" alt="" />
- <b><em> 针对kobo aura hd debian系统，conkeror相关的帖子已经发过多篇，到目前所有梦想的功能都已经实现，所以重新疏理一下。   </em> </b></p>
+        <div class="post-snippet">![](/assets/img/050706conkerorggl.png)
+ <b><em> 针对kobo aura hd debian系统，conkeror相关的帖子已经发过多篇，到目前所有梦想的功能都已经实现，所以重新疏理一下。   </em> </b>
 
-</div>
+# 实现功能
+
+- 全部网站user-</div>
       </div>
     
       <div class="post-item">
@@ -5943,15 +5419,7 @@ photoshop在最好的时代，最能发挥的是在苹果电脑mac上。但那�
         </h2>
 
         <div class="post-snippet"><p>本来原题是个体存在的价值在于记忆的延续。不过鉴于星系一词杂揉于上篇投机文章中倍受批评，经反思我也分部分写吧。单摘星系。</p>
-<p>平行星系的思考超出我的思考范畴，这方面的书和资料也没有接触过。就字面意思的理解，可能是我们所在的星球是星系之一，所有的动植物包括土壤空气等，在外太空都有一个接近于完全copy的第二星球存在。这其中尤其以人类为核心、并且约等同于人类的高级生物在平行星系存在。</p>
-<p>平行线可以是两条、三条和多条，那么平等星系就不止两个，类地球行星数量可能有无数个，具体数量取决于（对于地球文明来说）观测、发现的外星信号的空间和时间距离。</p>
-<p>平行星系文明发展的程度，可能超过地球或者落后于地球。这一点自然会产生地球文明起源、远至太空大爆炸理论或更远的、类同于“我从哪里来”这样的原问等等。</p>
-<p>从上面粗略一想的依据来说，更应属于是物理学范围。</p>
-<p>如果平等星系理论所指的是更抽象的思想范畴，譬如个体的精神意志必然在另一维度空间中存在映照或备份，那可能就属于哲学。</p>
-<p>或者还有其他含义和指向。不管从哪个角度来说，都是相当烧脑之事。如果能形成系统的理论，相较于传统的哲学及其分支心理学、逻辑学等，拓展、证实平等星系理论必然是更需要摧毁自己头脑和肉体的强大天才，于普通人来说，确实就到了脱离地球的境界了，小心哦。</p>
-<p>将思维放得如此之远，回视芸芸众生和自己，确实渺苍海之一粟、觉宇宙之无穷，让我今天特别担心滑向虚无，把那些救世的理念捏成更小的zip文件搁置起来，赞同和投入天地不仁、以万物为刍狗的思想。</p>
-<p>只在哥仑布和哥白尼这两位哥哥确立的这一大坨球上思考，相对无压力。关于我存在的意义是什么，有千百种答案，系统和理论高度达到确立流派和形成哲学发展分支的，也有很多。譬如语言学，在狭义上讲是话语和文字，在哲学意义上讲就是关联存在主义的哲学体系。不管问题的提出、解答、证实、结论，这些方面的理解和思考，，，略略略</p>
-</div>
+<p>平行星系的思考超出我的思考范畴，这方面的书和资料也没有接触过。就字面意思的理解，可能是我们所在的星球是星系之一，所有的动植物包括土壤空气等，在外太空都有一个接近于</div>
       </div>
     
       <div class="post-item">
@@ -5964,106 +5432,8 @@ photoshop在最好的时代，最能发挥的是在苹果电脑mac上。但那�
           </a>
         </h2>
 
-        <div class="post-snippet"><p>这是一篇基础帮助说明文档。</p>
-<p>本来特别想早点写并想安排到前两天，就像对这为数不多的朋友说的，“我是把大家当朋友，不希望看到你们被金钱左右了生活”。现在提笔愿望倒并不强，一是基本上没有什么用处（然并卵），前面从没听过劝的、现在也为时已晚；二是没有系统上的思维构造相同的第二者，也无从理解；三是以前我思考问题的着眼点更多的局限于专制和独裁统治下被蒙弊和愚化的中国人，今天想法有了一点点改变。目前一国现状毕竟只是历史长河中的一瞬，相信它的翻篇应该和相信朝鲜会完蛋一样没什么可质疑和担心的。那么群体的智力、心理的改善，就没有那么可着急的。过于局限在此，所做所产出必然被带低了高度。举例说，穿越到清朝，耗费一生的时间告诉版图内的全体人们，“这是一个不久即被工业取代、产业升级以及民主、自由思想所取代的政府，君权、行政体系更替，跪拜、辫子消失的行政政权”，即使取得成效，于全体人类愈来愈快的进程来说，意义未必有多大（更不必说扩展至星系思维了）。那么基于第三点的我希望能帮助认识的朋友这出发点，实在也没什么值得去帮的。</p>
-<p></p>
-<p>一、投机的危害</p>
-<p>普通人购买股票就是等同于吸毒。永生无法脱离。磨炼数年，也未必能做到安心空仓一天。</p>
-<p>为此需要付出早9点到晚3点的注意力、忐忑心情、专注度。所有工作日里。</p>
-<p>本来最便宜的东西是金钱，能用钱解决的事情，都是是廉价的。可是做了投机就是用所有珍贵的去购买金钱。</p>
-<p>永远不会再有平淡、安稳的时间了。</p>
-<p>利弗莫尔讲过一个小故事：做投机有些成就了，在每次宴会上都会有人问，“能不能告诉我买哪支股票”，开始的时候我会耐心的告诉他我的研究成果、买哪去比较好。但是后来聚会问起时多数会说还没买在观望呢，也有买了的但无法在恰当的点位抛出。所以我觉得说得如此明确具体的操作都基本等同白费。后来我开始微笑着拒绝给他们建议了，再后来我变得有些不耐烦，我意识到，如果你尊重一个人一个行业，你会不会不同样去问他们？譬如说律师和医生，你会在聚会上这样问他们，“嗨，摩根律师，你能不能帮我找个案子，我明天去帮他打赢从而赚一笔”，或者“斯坦利医生，你能给我介绍个患者，我明天去帮他做个手术赚笔大钱吗”。你不会，因为你知道，他们经过十多年学院学习、工作实习、助理花一生的时间去做这件事，从而稍稍能靠专业养家糊口。那么我想问，你凭什么觉得我不用任何学习，明天就能从股市获得投入的十倍，哦不对他们想获得百倍，用不是一年而是一天的时间做到。我觉得这是对我行业的侮辱。</p>
-<p>这故事我反复讲过，然并卵。</p>
-<p>利弗莫尔引导了1929年经济危机，通过做空股市差点让华尔街永远关门，最后是五大银行家摩根他们联合请求，没有把股市砸到底。</p>
-<p>人生的最后，利弗莫尔开枪自杀，死时身上仅剩10块钱。</p>
-<p>二、基本投机思维的确立</p>
-<p>首先要看书，至少100本。如果没有时间看或看不进去或压根从小不爱看书的，就不必往下看了。</p>
-<p>启蒙的第一本就是刚才故事中写利弗莫尔和他写的《股票作手回忆录》、《股票大作手操盘术》。</p>
-<p>其次对世界和人生的思维有全盘的颠覆和重构。然后去除所有散户思维。因为这些都是错的。</p>
-<p>三、具体词语阐释</p>
-<p>A、错误的词</p>
-<p>1、补仓</p>
-<p>这是首当其冲最伤害的观念，压根不应该存在。</p>
-<p>如果跌了，后面还会再跌，续跌的概率远超反转的概率。简单的概率运算，好理解也不好理解。</p>
-<p>2、抢反弹</p>
-<p>成功概率很高的起始做法。但带来很严重的后果。获利过小、回报率低、稍有延迟的卖出会付出巨大的失利。会扰乱操作的步骤和行为、以及心理。</p>
-<p>3、低买高卖</p>
-<p>完全是一种幻想。是一种不可能达到的完美。反映到实际操作中就是抢反弹，抢最低点买入、最高点卖出。</p>
-<p>结局基本上是买在半山腰、卖在山脚下。</p>
-<p>4、被套</p>
-<p>这也不应存在在字典里。</p>
-<p>如果亏损，就直接卖出，找寻更好的股票。</p>
-<p>如果亏损，就避开市场对利润的冲击，等待下一个时机。</p>
-<p>市场永远存在，美国的市场已经存在200年，英国的300年了，荷兰的500年了。当然，中国目前这俩可能很短，哈哈。</p>
-<p>5、买便宜股</p>
-<p>你上过学，你知道同学的学习情况吧。那么很简单，学习好的、能拿高分的，永远能拿高分。</p>
-<p>如果考试题难，少得了几分，那学习差的会得零分。</p>
-<p>如果有进步，那都是发生在学习好的学生身上。因为他们有更好的习惯、严格的自律、联明且懂得怎样提高的大脑。</p>
-<p>学习差的会越来越差，直到缀学。</p>
-<p>所以永远要勇敢的买200块钱一股的茅台、不能买2块钱的长虹。就像支持好学生一样，赌他们能考上大学比赌差生能顺利读完三年中学来得靠谱。电视不用几年就会被注明提高的投影取代，电视盒子也让电视机本身能接收频道变得不重要。</p>
-<p>6、把投入看成实际的金钱</p>
-<p>这一点要求太高、几乎没人达到。</p>
-<p>在一开口谈赚和亏时，就已经输了。</p>
-<p>和市场要求专业人士去做一样（我指的不是中国那些半调子亏到1毛钱的基金经理），如果能以稍专业的眼光去看待你的投入，那着眼点不应在“钱”上，而是走势。</p>
-<p>只要追寻一种走势，如果向上，就做多、如果向下，就做空。和钱有任何关系吗？</p>
-<p>一个医生不会在做手术的时候计算他能从这美人身上拿多少钱，一个律师也不会在法庭开庭的时候计算佣金，任何一个群众演员也不会在出镜时计算拿多少片酬和获得怎么样的人生。</p>
-<p>反正我正确的时候都是把钱看成粪土的时候。</p>
-<p>7、庄、队</p>
-<p>跟庄、国家队等。</p>
-<p>根本不存在庄。想坐庄想操控市场的利弗莫尔结局已经写入教科书。想在伦敦铜市场逆势疯狂操作的中国国家队成员，也完蛋了。想在香港逆势以国家的力量保卫市场、对抗整个东南亚危机的中国队，也没有告诉咱们失败和损失的程度，不过随后数年的物价指数和的房价走势我想大家都知道。</p>
-<p>从入市第一天，就应该确立的基本观念即是没有庄家和大资金，任何体量的资金，在市场里都是随波逐流的小钱，且本质原因是如果想做正确、就要尊重市场。</p>
-<p>这其实基本上是所有正确的教科书第一页就应该确立的。</p>
-<p>与之相附带需要提的，就是绝不能听小道消息、朋友荐股。如果有真神，世界将是他的。</p>
-<p></p>
-<p>B、正确的词</p>
-<p>1、趋势</p>
-<p>看到这个词，如果对技术稍有研究的话就能很容易的归类为趋势操作技术。</p>
-<p>多说句。股市里之前我一直认为没有唯一的正确做法、只有适合自己的做法。如果一种做法个人执行很多年，有足够的经验和教训，那么它能赚钱，就是正确的。</p>
-<p>最近也没细想这个问题，上述应该不是那么正确。就像这个世界有更高级的运转规则一样，更低一层次的，赢面毕竟小些。</p>
-<p>趋势技术的缺点是不太好把握方向转换的时间和位置。</p>
-<p>但这也恰好就是它和“低买高卖”绝不想容的重要特点之一。它需要等趋势形成了、判断的正确率上升了再执行买卖，放弃最低部的低价、放弃最顶部的完美利润，用中间换取正确率。</p>
-<p>2、高买低卖</p>
-<p>这一点是我最有心得、经过残酷的实战巨额的损失后获得的最切实最能保证获利的做法。</p>
-<p>只要是上涨的时候，就买入，涨得越凶越买，绝不考虑站在最高点、巨大的风险。这其实就是上面列举的那个好学生的例子一样，恰是最有安全保证的事情。</p>
-<p>且一定、永远在上涨的时候才去买。我知道这需要克服最大的心理障碍，因为这是一种反人类先天原始固有心理的行为。</p>
-<p>现实中，如果你站在楼层的阳台，永远是一楼阳台随便站、安全，楼层越高、越头晕目眩越感觉危险。上述做法就是要求能做到如此的反人类，脱离地心引力。</p>
-<p>其实写到这里，应该也能发现了，许多观念确实是需要系统性的理论和思维重构才能解决的。总线一条无法理解也永远不可能做到。这就是大多数人终其一生也无法在股市获利一样。</p>
-<p>如果没有这头脑和智商，看到这里打住也行了。</p>
-<p>3、在跨越前面高点之后买入</p>
-<p>名词是压力位和支撑位。</p>
-<p>也有简单的理论逻辑（逻辑越简单越有效）。最高点的转折点位，是买入和卖出同时进行且人数与资金最多的时候。这一形成最高点的转折，从此成为所有彼时参与人群心理永远的记忆。当然，对大多数人来说是像伤痛一样每蓬阴雨即作痛。再则，跨越此点是（截至……之后的）所有资金都不再受困了（我是指，解套）。</p>
-<p>这条让我说迷糊了。举例吧。</p>
-<p>2009－2015年不用着急抄到1900的底，坦坦然然悠闲6年的时光，静候3600点超过2009年高点时买入，静享3600以后的利润。简单、易行、符合上述所有条条的本质原则。</p>
-<p>不管参与的早了晚了，都没关系，市场永远在那里，只要想进就进，机会每天有无数无数次。比容颜都牢固都不变。</p>
-<p>再如这轮下跌，我当时建议清仓、严禁反对补仓的点位大约是4900点。当时的原话是清仓、然后等待上破5200点时再买入就行了。这一建议就是本条对压力位的具体执行做法，“上破5200之后再买”。不必预先有正确的神一样的5200是最高点的判断，而是在突发情况之后，有正确的处理方法以及更重要的磨炼出来的操作原则。</p>
-<p>4、右侧交易</p>
-<p>我愿将它命名为右侧交易。永远（本文好多时候加了这种绝对词，不得不强调因为无法在这种零散的点上让读者理解或改变什么）不要因为左侧的走势过高而不敢买、也永远不要因为左侧的走势有个新的低点而抢底。因为它肯定不是最高或最低的点。</p>
-<p>这样计算吧：自上证建立以来，有6000天交易日，即6000条日线。转折性质的日线大约有300根。那么很好计算了，抢底、补仓，正确和成功的概率只有5％！</p>
-<p>股市里所有概率小于53％（零头来自佣金和税费支出）的行为，长远、多次离散后结局都是失败的。</p>
-<p>特别是这些正确的做法，教材上都有详细的阐释和说明，更细节部分，我这小文无法展开。但我欢迎您就最细节之处和我探讨。</p>
-<p>四、如何选股（时间太晚暂略）</p>
-<p>周每天加班到9点恰又要每天写一篇，写到现在已经累了，幸好是我能较熟和较轻松的主题。还有几大条以后写续吧。</p>
-<p>说点目前的。</p>
-<p>五、现阶段看法和策略</p>
-<p>1、买和卖的</p>
-<p>今天指数下探到3600点，恰好是2009年最高点。支撑力度应该不小（支持理论是支撑线的群体心理），算支撑度时计算前期突破时的线型、时间。</p>
-<p>暂时不必卖了。但应该看成是刚刚买入（如果是每天都看盘应该把自己划归日内交易者、如果不是相应延长至短线交易者及长线交易者），计算好自己承担的损失比例，严格执行。（又涉及止损位唉关联太多啊，懂得不屑、不懂的不明白）</p>
-<p>其实按前述条框，做法不是很简单的，就是清仓、等超过5200点买入（或下一平台「又是关联而未写的理论」）。</p>
-<p>2、目前市场性质</p>
-<p>多数惊慌的投资者称为熊市了。虽然有譬如高点下跌20％为确认线，但个人认为熊市要有时间长度的。仅仅十根绿线即使深度再深，也是完全可以确定为回调无疑的。</p>
-<p>况且，如同上涨必有下探回调、下跌也会有反弹。越迅猛下跌反弹也会相应迅猛。所以完全不必惊慌。同时也不必上触5000点就卖出。因为又是突破即买入的节奏。</p>
-<p>所有这些具体的，到了真正的未来市场走势时，都是不确定、随时变化的。所以说重要的不是判断、而是面临现实时的做法。</p>
-<p>六、个人故事</p>
-<p>曾经沧海的时候，都能影响俺本应拥有的大好姻缘，说多了都是泪啊～</p>
-<p>谁让我请吃饭我给谁讲，一定。</p>
-<p>七、其他想说的</p>
-<p>其实，退一步讲，虽然我对目前能看到这博客的朋友们N久以来都不赞成炒股、在群里也严禁讨论股票、对新想开户的各种吓唬以及后面常无耻的讽刺和落井下石两句。但股市确实应该成为资产保值及增值的手段，因为这个还是比较好的。经济长期看几乎任何国家都是向好，因为人类在进步，国家只不过是行政性划分、消亡待有时。那个体的国家就不会脱离人类太久。</p>
-<p>股市几乎是群体性、不可控事件的代表之一，类比战争也没什么。疯狂的时候参见了荷兰郁金香事件就行。就是说，它会上涨到超越你想像的地步（多头逼空），也会下跌到无法想像的深度（逼多），像2008年上证1600点。3000点也完全可以当作目前中国经济的中间平衡一线。（这也是前述中高点做多、低点做空的心理依据）</p>
-<p>那么不考虑其他因素，在目前市场和点位上，以随机漫步理论「未写」随手抽取几支股票买入并持有，也是完全没有问题的。</p>
-<p>只不过确实需要淡然放之，这点又没人做得到。获利时会有红红的双眼、兴奋与激动；失利时会有沮丧和难眠。</p>
-<p>“唯有金钱的损失，才是深及肺腑的持久之痛”，我某次也许感情受挫或其他共震原因但肯定是期货市场损失了2万块钱（就是客观清晰准确）时反复叨念出来的精辟之句。</p>
-<p>所有还是回归到开头，如果不怕炒股毁坏了你的生活、或者确实想拿投机当做自己的事业，方可进场。</p>
-</div>
+        <div class="post-snippet"><p>这是一篇基础帮助说明文档。</p><br>
+<p>本来特别想早点写并想安排到前两天，就像对这为数不多的朋友说的，“我是把大家当朋友，不希望看到你们被金钱左右了生活”。现在提笔愿望倒并不强，一是基本上没有什么用处（然并卵），前面从没听过劝的、现在也为时已晚；二是没有系统上的思维构造相同的第二者，也</div>
       </div>
     
       <div class="post-item">
@@ -6079,46 +5449,7 @@ photoshop在最好的时代，最能发挥的是在苹果电脑mac上。但那�
         <div class="post-snippet"><p>一、</p>
 <p>个体在做出行为的时候，涉及彼情彼景的东西太多，心情影响结果，于是结局迥异。</p>
 <p>戒除这些，需要要做的很多，但立言之本在立身，身正，浩气、才气、底蕴充盈才可写出舒适可读的文字。我也希望我最终能做到。</p>
-<p>之所以这样想，在于昨天写的别扭、以及许久天以前也没有解决的问题：博客中写出的，顾及他人而无法舒张思想，导致行文断续、阅读者不说浪费时间吧也是根本无从得知所言何义。</p>
-<p>就像一个朋友扫了两眼博客后回复，“我本骚气，这不挺好么，不用寒暄太多，太顾及读者了会走窄”。瞬间像电与光，顿悟啊。</p>
-<p>昨天那篇改来改去省略的一个词是ml，make love，但凡涉及类似用辞，也不过是为了更恰切描述罢了，本来纯净却反而让畏缩给弄浊了。随后给朋友回复以示感谢道，“感谢开释，我将抛开他人的看法”，他又简单的说就算给他们启蒙。这一回复也实在是惊了，幸亏他是半人半神的混合体，能秒秒化解冲击。近几年我为数不多的有点思考和进步也拜其所赐。这一瞬间知音之感恨无琴以谢摔。</p>
-<p>二、</p>
-<p>顺势多说开一点，父母以及相关联的观念在N个时代以来如何成为艺术心中的桎固。</p>
-<p>3、譬如，后现代主义宣言条列中有至关重要的一条就是“断绝和父母的关系”，这在中国几乎是不可能解决的难题，从非常窄义上讲有些学者理解为孝及道德层面，我是不赞同，我认为在哲学层面上其实是和主体性、自我、个体主义等相关，这也是现代主义思潮演进过程中初始的一小个阶段。</p>
-<p>个人与他人的关系并不构成自我身份及诠释，随后才出现“我思故我在”的存在主义，（再随后是）对自我的寻找和诠释不在于主体，（再随后是）在于抽象的符号和语言，（再随后是）身份的分解，（再随后）是关系着解构和结构。（不要说思考带来的超强快乐了，像这样的词语，读来都馨香满口啊哈哈）</p>
-<p>注：每一个括号里的随后指向一个哲学发展时期。</p>
-<p>要不换白话说这事，就是对神权的颠覆和父权的颠覆涉及主体的承认和存在的承认（以及以后的再解构等等）。</p>
-<p>而我们毫无疑问的连最基本的层面都跳不出、没整也不想整明白就跑出来人事艺术了。</p>
-<p>2、如果这难于理解，那就往前推古典主义。人是根本、人是可统一、自足，人性是普遍性、能掌握知识（知识论）和超越历史，进而是可以理性思考且理性是不可怀疑的确定性，然后就是“我思故我在”。</p>
-<p>1、如果这难于理解，再往前推。人属于神，带有原罪生活在世界中，生命是预先设定，思想和行为受公认世界观限定，任务和意义在于寻找到归属。这基本上就是尼采以前的基督教时代。</p>
-<p>再往前不说了，即使我们，时代也已经跨过。</p>
-<p>三、</p>
-<p>下面这一小部分我还想添一句很好听的话，因为今天谈及鲁迅了哈哈。</p>
-<p>鲁迅对尼采误解的那句话，这事儿从学校开始影响所有唯物主义者（信奉这那主义的，基本处在1860史前蒙昧阶段，基本也是物质至上的原因了）。</p>
-<p>尼采所说的上帝死了无疑绝非字面意义的死亡，而是经过超前于世界的视野和思维，说出对人的认识和思索，从神那里拿回了人在未来（即现代和后现代）的主体性。就如同上面3、2、1倒叙条中划断了基督教、古典和现代的界线（凡高在绘画史上也是这个作用，当然凡高都没有尼采这样瞬息间裂变了时代的突兀）。</p>
-<p>引用福柯的话吧。</p>
-<p>『尼采發現了人和上帝互相隸屬的交點，上帝死亡和人的死亡同義，……那麼人的死亡是哲學起點的復還。從今以後，我們再也不能在死人的廢墟上思考。』」</p>
-<p>这些词，当然，基本上都不是字面意义哈。</p>
-<p>四、</p>
-<p>生活和交往的圈子，太决定人的一些本质的东西。或者所敬服的一个人，很容易的就以一句话改变生活和工作轨迹。</p>
-<p>当然除非像我的轨迹这样太顽冥。</p>
-<p>这点根源触及逐渐深远且影响不易觉察。唯有行年渐晚或有所感，亦或未必能看清。</p>
-<p>简单如朋友询问辞职、工作、行业这样的问题。该怎么回答呢。每个人的追求绝逼不同，内心所要的也不一样。或者你说那至少要先养活自己、别谈那么高深的、实际问题解决。但但但，时间多么有限，过于功利性就是在抛弃自己的生命和时间。也许每个人都是这样的，但也许每个人都是错的呢。就像对于生命的看法，你可以认为是对资源的占有、对身体所感到的快乐、是稳定性的恬适、是安全感的归属之心等等。但实际上，我觉得好像应该是对文明的积累的使用、对知和未知的发现、对痛苦和反思之下生命的体验、对于思考和各种感觉的拥有、对记忆能长伴一生的独占（区别于所有生物）、失败、失去等等等等，太多。</p>
-<p>或者我解释一条。因为有了前人的文明，即使最普遍简单如书籍，那么在其中所体验和感知到的，瞬间如同又认识和结交了个性鲜明的朋友，他们有如此的才华和智慧，在我别于其他生物的头脑和心灵里，延展了无数难以描述的感觉和体验。而对于个体，在所能及的行业和能力内，对文明延续所能做出的东西。这点我也相信因人而不同（就像思考所带来的感觉，有人快乐有有平淡无奇有人痛苦，还有更多是根本不思考和不承认不思考）必然理解和最终的观点而不同。</p>
-<p>那么如何认识共同爱好的朋友，在带来内心确认的价值中，获得少见的稀有的感觉。</p>
-<p>反正我是没有做好。</p>
-<p>五、</p>
-<p>那么一位艺术家，当然不会出自房地产商，我认识也不少了，在上一篇say say art中略有提及的思维和整体的价值观念上，没有过人之处，那作品的高度必然受限。</p>
-<p>而与众不同又绝不是身体、行为、方式等的不同。</p>
-<p>它应该是高度、超越、唯其具有、不被理解的。</p>
-<p>但太难了。每一个小小的方面，都牵到整个价值体系的重建。他也许能做到抛弃一切从头来过，或者来场说走即走的辞职旅行。但头脑中的世界，也许是终生唯一的。</p>
-<p>这个话题可惜了，和朋友在3月份聊过，如此的宏大宽泛，但只写了这么一点而想睡了。先晚安吧。</p>
-<p>借尼采书名。重估一切价值的尝试。</p>
-<p>虽然可能只在青少年时代接触才会有所改变和作用。不过我也建议看看。</p>
-<p>六、</p>
-<p>虽然本文寒喧不少，不过本文就是寒喧的，开始起的名字是致谢今天的两个朋友，才只写了一个呢。</p>
-<p>谁也别批评我。</p>
-</div>
+<p>之所以这样想，在于昨天写的别扭、以及许久天以前也没有解</div>
       </div>
     
       <div class="post-item">
@@ -6131,19 +5462,11 @@ photoshop在最好的时代，最能发挥的是在苹果电脑mac上。但那�
           </a>
         </h2>
 
-        <div class="post-snippet"><p><small><i>想动键的时候才发现已到这点。但新博初创，还是想保持一日一更的节奏，至少要力追..的节奏吧。&lt;/small&gt;&lt;/p&gt;</i>
+        <div class="post-snippet"><p><small><i>想动键的时候才发现已到这点。但新博初创，还是想保持一日一更的节奏，至少要力追..的节奏吧。</small></p></i>
 <p>一直觉得依旧深邃。</p>
 <p>感觉表述出的理论还是有些见地。</p>
 <p>也许是有。</p>
-<p>但直到刚刚才发现，情况好像不妙。</p>
-<p>信心满满的对一位创作话剧的朋友长篇大论，又不辞辛苦的找出旧年行文佐证。翻阅那些文字，才觉沧海桑田，当年文中罗列的风云人物已成陈迹之感了，当时的看法今天看来也已经有了浅涩的时间印记，那现在的思考中即使在一些本质看法上依旧有可取之外，也已经使我慨叹，多么的不思进取。</p>
-<p>唯一庆幸的可能就剩对比的价值了。</p>
-<p>soso现在再写什么可能就是变成对过去视点的重审，我也懒得再续写下去了。大约也就是艺术要有超越世俗的观点，有自己独创的东西、要有批判、有超越而不被理解的，有挑战、在当下的中国要有对强权和独裁说不的东西，当然必不可少的行文的优美。至于反过来如果说因譬如外因等不得不做出的妥协和媚俗的部分、降格以被接受的部分，则是每个人在心中关乎自己所做事情的价值所在的部分了。当然，或也可佐艺术起源于闲适而非劳动。</p>
-<p>这一天也突然觉得，即使是真正的艺术，它的声音和所能影响的，也许都是极小极小，而我以前想的是极大极大。如果它能突然影响到甚大，那它一定是因通俗甚或某些外力。也许在这个时代，我们不必站在过于的地方要求什么，特别是面对集体失声的时候。</p>
-<p>不管能做到哪一层面，去做一件事情、更早的去做，按理想和内心的追求去做，毕竟要有开始。追求内心理想的人，即使于己生活贫困、于外不被理解，但他也是人生的胜者和世界的主人。</p>
-<p>愿艺术和坚持能以自律和勤奋，相携以沫。</p>
-</small></p>
-</div>
+<p>但直到刚刚才发现，情况好像不妙。</p></div>
       </div>
     
       <div class="post-item">
@@ -6156,7 +5479,8 @@ photoshop在最好的时代，最能发挥的是在苹果电脑mac上。但那�
           </a>
         </h2>
 
-        <div class="post-snippet"><p>想到自己不是企鹅、不生活在南极冰川大陆，不是每年仅靠几个月中捕几条鱼维持生命，而是有如此丰富的食物、水来心情让生活享受，感到非常幸运。</p>
+        <div class="post-snippet">想到自己不是企鹅、不生活在南极冰川大陆，不是每年仅靠几个月中捕几条鱼维持生命，而是有如此丰富的食物、水来心情让生活享受，感到非常幸运。
+
 </div>
       </div>
     
@@ -6207,8 +5531,8 @@ const hitTemplate = function(hit) {
 search.addWidget(
   instantsearch.widgets.searchBox({
     container: '#search-searchbar',
-    placeholder: 'Search into posts...',
-    poweredBy: true // This is required if you're on the free Community plan
+    placeholder: 'Search into posts...'
+//    poweredBy: true // This is required if you're on the free Community plan
   })
 );
 

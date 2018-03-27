@@ -684,6 +684,22 @@
     
 
     
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
       <link rel="mask-icon" href="/mask-icon.svg" color="#ff00b4">
     
 
@@ -773,6 +789,29 @@
   
 
   
+
+.tag-cloud {
+list-style: none;
+word-break:keep-all;
+padding: 0;
+padding-right: 6%;
+text-align: justify; 
+font-size: 16px;
+a{
+display: inline-block;
+margin: 0 12px 12px 0; 
+}}
+
+.archive-group {
+margin: 15px;
+border-top: 1px solid;
+}
+.archive-item {
+margin-left: 12px;
+}
+.post-tags {
+  text-align: left;
+}
 
 .tag-cloud {
 list-style: none;
@@ -4420,8 +4459,8 @@ const hitTemplate = function(hit) {
 search.addWidget(
   instantsearch.widgets.searchBox({
     container: '#search-searchbar',
-    placeholder: 'Search into posts...',
-    poweredBy: true // This is required if you're on the free Community plan
+    placeholder: 'Search into posts...'
+//    poweredBy: true // This is required if you're on the free Community plan
   })
 );
 
