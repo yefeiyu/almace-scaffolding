@@ -4419,36 +4419,11 @@ margin-left: 12px;
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css" />
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css" />
 
-<div id="search-searchbar">
-  <!-- SearchBox widget will appear here -->
-</div>
-
-<div id="refinement-list">
-  <!-- RefinementList widget will appear here -->
-</div>
-
-<div id="hits">
-  <!-- Hits widget will appear here -->
-</div>
-
-<div id="current-refined-values">
-  <!-- CurrentRefinedValues widget will appear here -->
-</div>
-
-<div id="clear-all">
-  <!-- ClearAll widget will appear here -->
-</div>
-
-<div id="pagination">
-  <!-- Pagination widget will appear here -->
-</div>
-
 <script>
 const search = instantsearch({
   appId: 'K8RBXW3ZB3',
   apiKey: '8df621e14c62c84bc6c75ea248a3c757',
-  indexName: 'K8RBXW3ZB3',
-  urlSync: true
+  indexName: 'K8RBXW3ZB3'
 });
 
 const hitTemplate = function(hit) {
@@ -4480,63 +4455,61 @@ const hitTemplate = function(hit) {
   `;
 }
 
- // initialize RefinementList
-  search.addWidget(
-    instantsearch.widgets.refinementList({
-      container: '#refinement-list',
-      attributeName: 'category'
-    })
-  );
 
-  // initialize SearchBox
-  search.addWidget(
-    instantsearch.widgets.searchBox({
-      container: '#search-searchbar', //#search-box',
-      placeholder: 'Search for products'
-    })
-  );
+search.addWidget(
+  instantsearch.widgets.searchBox({
+    container: '#search-searchbar',
+    placeholder: 'Search into posts...'
+//    poweredBy: true // This is required if you're on the free Community plan
+  })
+);
 
-  // initialize hits widget
-  search.addWidget(
-    instantsearch.widgets.hits({
-      container: '#hits'
-    })
-  );
+search.addWidget(
+  instantsearch.widgets.hits({
+    container: '#search-hits',
+    templates: {
+      item: hitTemplate
+    }
+  })
+);
 
-// initialize currentRefinedValues
-  search.addWidget(
-    instantsearch.widgets.currentRefinedValues({
-      container: '#current-refined-values',
-      // This widget can also contain a clear all link to remove all filters,
-      // we disable it in this example since we use `clearAll` widget on its own.
-      clearAll: false
-    })
-  );
-
-  // initialize clearAll
-  search.addWidget(
-    instantsearch.widgets.clearAll({
-      container: '#clear-all',
-      templates: {
-        link: 'Reset everything'
-      },
-      autoHideContainer: false
-    })
-  );
-
-  // initialize pagination
-  search.addWidget(
-    instantsearch.widgets.pagination({
-      container: '#pagination',
-      maxPages: 20,
-      // default is to scroll to 'body', here we disable this behavior
-      scrollTo: false
-    })
-  );
-
-  search.start();
+search.start();
 </script>
 
+<style>
+.ais-search-box {
+  max-width: 90%;
+  margin-bottom: 15px;
+}
+.post-item {
+  margin-bottom: 30px;
+}
+.post-link .ais-Highlight {
+  color: #111;
+  font-style: normal;
+  text-decoration: underline;
+}
+.post-breadcrumbs {
+  color: #424242;
+  display: block;
+}
+.post-breadcrumb {
+  font-size: 18px;
+  color: #424242;
+}
+.post-breadcrumb .ais-Highlight {
+  font-weight: bold;
+  font-style: normal;
+}
+.post-snippet .ais-Highlight {
+  color: #2a7ae2;
+  font-style: normal;
+  font-weight: bold;
+}
+.post-snippet img {
+  display: none;
+}
+</style>
 
    </div>
 </div>
