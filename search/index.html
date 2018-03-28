@@ -4439,13 +4439,6 @@ const search = instantsearch({
   urlSync: true
 });
 
-  // initialize RefinementList
-  search.addWidget(
-    instantsearch.widgets.refinementList({
-      container: '#refinement-list',
-      attributeName: 'category'
-    })
-  );
 
   // initialize SearchBox
   search.addWidget(
