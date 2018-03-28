@@ -4446,7 +4446,7 @@ const hitTemplate = function(hit) {
   }
 
   const content = hit._highlightResult.html.value;
-  
+
   return `
     <div class="post-item">
       <span class="post-meta">${date}</span>
@@ -4457,21 +4457,6 @@ const hitTemplate = function(hit) {
   `;
 }
 
-<div id="refinement-list">
-  <!-- RefinementList widget will appear here -->
-</div>
-
-<div id="current-refined-values">
-  <!-- CurrentRefinedValues widget will appear here -->
-</div>
-
-<div id="clear-all">
-  <!-- ClearAll widget will appear here -->
-</div>
-
-<div id="pagination">
-  <!-- Pagination widget will appear here -->
-</div>
 
 search.addWidget(
   instantsearch.widgets.searchBox({
@@ -4489,46 +4474,7 @@ search.addWidget(
     }
   })
 );
-// initialize RefinementList
-  search.addWidget(
-    instantsearch.widgets.refinementList({
-      container: '#refinement-list',
-      attributeName: 'category'
-    })
-    );
 
-
-// initialize currentRefinedValues
-  search.addWidget(
-    instantsearch.widgets.currentRefinedValues({
-      container: '#current-refined-values',
-      // This widget can also contain a clear all link to remove all filters,
-      // we disable it in this example since we use `clearAll` widget on its own.
-      clearAll: false
-    })
-  );
-
-  // initialize clearAll
-  search.addWidget(
-    instantsearch.widgets.clearAll({
-      container: '#clear-all',
-      templates: {
-        link: 'Reset everything'
-      },
-      autoHideContainer: false
-    })
-  );
-
-  // initialize pagination
-  search.addWidget(
-    instantsearch.widgets.pagination({
-      container: '#pagination',
-      maxPages: 20,
-      // default is to scroll to 'body', here we disable this behavior
-      scrollTo: false
-    })
-  );
-    
 search.start();
 </script>
 
@@ -5570,7 +5516,7 @@ const hitTemplate = function(hit) {
   }
 
   const content = hit._highlightResult.html.value;
-  
+
   return `
     <div class="post-item">
       <span class="post-meta">${date}</span>
@@ -5581,21 +5527,6 @@ const hitTemplate = function(hit) {
   `;
 }
 
-<div id="refinement-list">
-  <!-- RefinementList widget will appear here -->
-</div>
-
-<div id="current-refined-values">
-  <!-- CurrentRefinedValues widget will appear here -->
-</div>
-
-<div id="clear-all">
-  <!-- ClearAll widget will appear here -->
-</div>
-
-<div id="pagination">
-  <!-- Pagination widget will appear here -->
-</div>
 
 search.addWidget(
   instantsearch.widgets.searchBox({
@@ -5613,46 +5544,7 @@ search.addWidget(
     }
   })
 );
-// initialize RefinementList
-  search.addWidget(
-    instantsearch.widgets.refinementList({
-      container: '#refinement-list',
-      attributeName: 'category'
-    })
-    );
 
-
-// initialize currentRefinedValues
-  search.addWidget(
-    instantsearch.widgets.currentRefinedValues({
-      container: '#current-refined-values',
-      // This widget can also contain a clear all link to remove all filters,
-      // we disable it in this example since we use `clearAll` widget on its own.
-      clearAll: false
-    })
-  );
-
-  // initialize clearAll
-  search.addWidget(
-    instantsearch.widgets.clearAll({
-      container: '#clear-all',
-      templates: {
-        link: 'Reset everything'
-      },
-      autoHideContainer: false
-    })
-  );
-
-  // initialize pagination
-  search.addWidget(
-    instantsearch.widgets.pagination({
-      container: '#pagination',
-      maxPages: 20,
-      // default is to scroll to 'body', here we disable this behavior
-      scrollTo: false
-    })
-  );
-    
 search.start();
 </script>
 
