@@ -4428,8 +4428,6 @@ const search = instantsearch({
   indexName: 'K8RBXW3ZB3'
 });
 
-const instantsearch = require('instantsearch.js');
-
 const hitTemplate = function(hit) {
   let date = '';
   if (hit.date) {
@@ -5553,8 +5551,6 @@ const search = instantsearch({
   apiKey: '8df621e14c62c84bc6c75ea248a3c757',
   indexName: 'K8RBXW3ZB3'
 });
-
-const instantsearch = require('instantsearch.js');
 
 const hitTemplate = function(hit) {
   let date = '';

@@ -10,8 +10,6 @@ const search = instantsearch({
   indexName: '{{ site.algolia.index_name }}'
 });
 
-const instantsearch = require('instantsearch.js');
-
 const hitTemplate = function(hit) {
   let date = '';
   if (hit.date) {
@@ -40,22 +38,6 @@ const hitTemplate = function(hit) {
     </div>
   `;
 }
-
-<div id="refinement-list">
-  <!-- RefinementList widget will appear here -->
-</div>
-
-<div id="current-refined-values">
-  <!-- CurrentRefinedValues widget will appear here -->
-</div>
-
-<div id="clear-all">
-  <!-- ClearAll widget will appear here -->
-</div>
-
-<div id="pagination">
-  <!-- Pagination widget will appear here -->
-</div>
 
 search.addWidget(
   instantsearch.widgets.searchBox({
