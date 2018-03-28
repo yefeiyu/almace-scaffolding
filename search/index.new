@@ -4480,7 +4480,7 @@ search.start();
 
 <style>
 .ais-search-box {
-  max-width: 90%;
+  max-width: 110%;
   margin-bottom: 15px;
 }
 .post-item {
@@ -5550,7 +5550,7 @@ search.start();
 
 <style>
 .ais-search-box {
-  max-width: 90%;
+  max-width: 110%;
   margin-bottom: 15px;
 }
 .post-item {
