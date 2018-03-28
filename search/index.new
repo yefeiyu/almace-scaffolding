@@ -4416,64 +4416,57 @@ margin-left: 12px;
       <hr>
 
       <div id="search-hits"> </div>
-      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css"><script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0"></script>
+      <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
+
+<div id="search-box">
+  <!-- SearchBox widget will appear here -->
+</div>
+
+<div id="refinement-list">
+  <!-- RefinementList widget will appear here -->
+</div>
+
+<div id="hits">
+  <!-- Hits widget will appear here -->
+</div>
 
 <script>
 const search = instantsearch({
-  appId: 'K8RBXW3ZB3',
-  apiKey: '8df621e14c62c84bc6c75ea248a3c757',
-  indexName: 'K8RBXW3ZB3'
+  appId: 'latency',
+  apiKey: '6be0576ff61c053d5f9a3225e2a90f76',
+  indexName: 'instant_search',
+  urlSync: true
 });
 
-const hitTemplate = function(hit) {
-  let date = '';
-  if (hit.date) {
-    date = moment.unix(hit.date).format('MMM D, YYYY');
-  }
+  // initialize RefinementList
+  search.addWidget(
+    instantsearch.widgets.refinementList({
+      container: '#refinement-list',
+      attributeName: 'category'
+    })
+  );
 
-  let url = `${hit.url}#${hit.anchor}`;
+  // initialize SearchBox
+  search.addWidget(
+    instantsearch.widgets.searchBox({
+      container: '#search-box',
+      placeholder: 'Search for products'
+    })
+  );
 
-  const title = hit._highlightResult.title.value;
+  // initialize hits widget
+  search.addWidget(
+    instantsearch.widgets.hits({
+      container: '#hits'
+    })
+  );
 
-  let breadcrumbs = '';
-  if (hit._highlightResult.headings) {
-    breadcrumbs = hit._highlightResult.headings.map(match => {
-      return `<span class="post-breadcrumb">${match.value}</span>`
-    }).join(' > ')
-  }
-
-  const content = hit._highlightResult.html.value;
-
-  return `
-    <div class="post-item">
-      <span class="post-meta">${date}</span>
-      <h2><a class="post-link" href="${url}">${title}</a></h2>
-      <a href="${url}" class="post-breadcrumbs">${breadcrumbs}</a>
-      <div class="post-snippet">${content}</div>
-    </div>
-  `;
-}
-
-
-search.addWidget(
-  instantsearch.widgets.searchBox({
-    container: '#search-searchbar',
-    placeholder: 'Search into posts...'
-//    poweredBy: true // This is required if you're on the free Community plan
-  })
-);
-
-search.addWidget(
-  instantsearch.widgets.hits({
-    container: '#search-hits',
-    templates: {
-      item: hitTemplate
-    }
-  })
-);
-
-search.start();
+  search.start();
 </script>
+
 
    </div>
 </div>
@@ -5448,64 +5441,57 @@ I don't understand this sen</div>
     
   </div>
 
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css"><script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
+
+<div id="search-box">
+  <!-- SearchBox widget will appear here -->
+</div>
+
+<div id="refinement-list">
+  <!-- RefinementList widget will appear here -->
+</div>
+
+<div id="hits">
+  <!-- Hits widget will appear here -->
+</div>
 
 <script>
 const search = instantsearch({
-  appId: 'K8RBXW3ZB3',
-  apiKey: '8df621e14c62c84bc6c75ea248a3c757',
-  indexName: 'K8RBXW3ZB3'
+  appId: 'latency',
+  apiKey: '6be0576ff61c053d5f9a3225e2a90f76',
+  indexName: 'instant_search',
+  urlSync: true
 });
 
-const hitTemplate = function(hit) {
-  let date = '';
-  if (hit.date) {
-    date = moment.unix(hit.date).format('MMM D, YYYY');
-  }
+  // initialize RefinementList
+  search.addWidget(
+    instantsearch.widgets.refinementList({
+      container: '#refinement-list',
+      attributeName: 'category'
+    })
+  );
 
-  let url = `${hit.url}#${hit.anchor}`;
+  // initialize SearchBox
+  search.addWidget(
+    instantsearch.widgets.searchBox({
+      container: '#search-box',
+      placeholder: 'Search for products'
+    })
+  );
 
-  const title = hit._highlightResult.title.value;
+  // initialize hits widget
+  search.addWidget(
+    instantsearch.widgets.hits({
+      container: '#hits'
+    })
+  );
 
-  let breadcrumbs = '';
-  if (hit._highlightResult.headings) {
-    breadcrumbs = hit._highlightResult.headings.map(match => {
-      return `<span class="post-breadcrumb">${match.value}</span>`
-    }).join(' > ')
-  }
-
-  const content = hit._highlightResult.html.value;
-
-  return `
-    <div class="post-item">
-      <span class="post-meta">${date}</span>
-      <h2><a class="post-link" href="${url}">${title}</a></h2>
-      <a href="${url}" class="post-breadcrumbs">${breadcrumbs}</a>
-      <div class="post-snippet">${content}</div>
-    </div>
-  `;
-}
-
-
-search.addWidget(
-  instantsearch.widgets.searchBox({
-    container: '#search-searchbar',
-    placeholder: 'Search into posts...'
-//    poweredBy: true // This is required if you're on the free Community plan
-  })
-);
-
-search.addWidget(
-  instantsearch.widgets.hits({
-    container: '#search-hits',
-    templates: {
-      item: hitTemplate
-    }
-  })
-);
-
-search.start();
+  search.start();
 </script>
+
 
 
   <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
