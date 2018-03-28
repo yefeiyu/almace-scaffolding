@@ -39,13 +39,6 @@ const search = instantsearch({
     })
   );
 
-  // initialize hits widget
-  search.addWidget(
-    instantsearch.widgets.hits({
-      container: '#hits'
-    })
-  );
-
   search.start();
 </script>
 
