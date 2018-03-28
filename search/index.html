@@ -4419,7 +4419,7 @@ margin-left: 12px;
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css" />
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css" />
 
-<div id="search-box">
+<div id="search-searchbar">
   <!-- SearchBox widget will appear here -->
 </div>
 
@@ -4431,20 +4431,77 @@ margin-left: 12px;
   <!-- Hits widget will appear here -->
 </div>
 
+<div id="current-refined-values">
+  <!-- CurrentRefinedValues widget will appear here -->
+</div>
+
+<div id="clear-all">
+  <!-- ClearAll widget will appear here -->
+</div>
+
+<div id="pagination">
+  <!-- Pagination widget will appear here -->
+</div>
+
 <script>
 const search = instantsearch({
-  appId: 'latency',
-  apiKey: '6be0576ff61c053d5f9a3225e2a90f76',
-  indexName: 'instant_search',
+  appId: 'K8RBXW3ZB3',
+  apiKey: '8df621e14c62c84bc6c75ea248a3c757',
+  indexName: 'K8RBXW3ZB3',
   urlSync: true
 });
 
+ // initialize RefinementList
+  search.addWidget(
+    instantsearch.widgets.refinementList({
+      container: '#refinement-list',
+      attributeName: 'category'
+    })
+  );
 
   // initialize SearchBox
   search.addWidget(
     instantsearch.widgets.searchBox({
-      container: '#search-box',
+      container: '#search-searchbar', //#search-box',
       placeholder: 'Search for products'
+    })
+  );
+
+  // initialize hits widget
+  search.addWidget(
+    instantsearch.widgets.hits({
+      container: '#hits'
+    })
+  );
+
+// initialize currentRefinedValues
+  search.addWidget(
+    instantsearch.widgets.currentRefinedValues({
+      container: '#current-refined-values',
+      // This widget can also contain a clear all link to remove all filters,
+      // we disable it in this example since we use `clearAll` widget on its own.
+      clearAll: false
+    })
+  );
+
+  // initialize clearAll
+  search.addWidget(
+    instantsearch.widgets.clearAll({
+      container: '#clear-all',
+      templates: {
+        link: 'Reset everything'
+      },
+      autoHideContainer: false
+    })
+  );
+
+  // initialize pagination
+  search.addWidget(
+    instantsearch.widgets.pagination({
+      container: '#pagination',
+      maxPages: 20,
+      // default is to scroll to 'body', here we disable this behavior
+      scrollTo: false
     })
   );
 
