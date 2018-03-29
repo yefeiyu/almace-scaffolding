@@ -4443,7 +4443,7 @@ const hitTemplate = function(hit) {
     }).join(' > ')
   }
 
-  const content = hit._highlightResult.html.value;
+ const content = hit._highlightResult.html && hit._highlightResult.html.value || "";
 
   return `
     <div class="post-item">
@@ -4460,7 +4460,7 @@ search.addWidget(
   instantsearch.widgets.searchBox({
     container: '#search-searchbar',
     placeholder: 'Search into posts...'
-//    poweredBy: true // This is required if you're on the free Community plan
+    poweredBy: true // This is required if you're on the free Community plan
   })
 );
 
@@ -4478,7 +4478,7 @@ search.start();
 
 <style>
 .ais-search-box {
-  max-width: 110%;
+  max-width: 100%;
   margin-bottom: 15px;
 }
 .post-item {
