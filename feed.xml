@@ -137,7 +137,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>首页</title>
   <subtitle>y.g.i</subtitle>
-  <updated>2018-03-30T15:35:48+08:00</updated>
+  <updated>2018-03-30T15:49:31+08:00</updated>
   <id>http://0.0.0.0:4321/</id>
   <generator uri="https://sparanoid.com/lab/amsf/" version="1.1.10">Almace Scaffolding</generator>
 
@@ -150,6 +150,45 @@
     <email>yefeiyu@gmail.com</email>
   </author>
 
+  
+    
+      
+
+      
+
+      <entry>
+        <title>The hero in dreams</title>
+        <id>http://0.0.0.0:4321/life/2018/03/30/the-hero-in-dreams.html</id>
+        <link rel="alternate" type="text/html" href="http://0.0.0.0:4321/life/2018/03/30/the-hero-in-dreams.html" />
+        <published>2018-03-30T00:00:00+08:00</published>
+
+        
+          <updated>2018-03-30T00:00:00+08:00</updated>
+        
+
+        <author>
+          <name>yefeiyu</name>
+          <uri>http://yefeiyu.github.io</uri>
+          <email>yefeiyu@gmail.com</email>
+        </author>
+
+        <content type="html" xml:base="http://0.0.0.0:4321/">
+          
+            &lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-1&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;1&lt;/span&gt; &lt;/h2&gt;
+&lt;/div&gt;
+
+          
+          
+        
+      
+        </content>
+
+        
+          <summary>1 </summary>
+        
+      </entry>
+    
   
     
       
