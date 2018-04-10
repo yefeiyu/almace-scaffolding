@@ -9,6 +9,102 @@
 #+TAGS: pc,修改,记录
 #+CATEGORIES: mobile
 
+* <2018-04-10 二>
+** How to execute command on startup (rc.local alternative) 
+ which involves use of systemd here:
+***    Create a service:
+#+BEGIN_SRC 
+    sudo vi /etc/systemd/system/rc-local.service
+#+END_SRC
+***    Add your code there:
+#+BEGIN_SRC 
+    [Unit]
+    Description=/etc/rc.local Compatibility
+    ConditionPathExists=/etc/rc.local
+
+    [Service]
+    Type=forking
+    ExecStart=/etc/rc.local start
+    TimeoutSec=0
+    StandardOutput=tty
+    RemainAfterExit=yes
+    SysVStartPriority=99
+
+    [Install]
+    WantedBy=multi-user.target
+#+END_SRC
+***    Create and make sure /etc/rc.local is executable and add this code inside it:
+#+BEGIN_SRC 
+        sudo chmod +x /etc/rc.local
+#+END_SRC
+#+BEGIN_SRC 
+    #!/bin/sh -e
+    #
+    # rc.local
+    #
+    # This script is executed at the end of each multiuser runlevel.
+    # Make sure that the script will "exit 0" on success or any other
+    # value on error.
+    #
+    # In order to enable or disable this script just change the execution
+    # bits.
+    #
+    # By default this script does nothing.
+
+    exit 0
+#+END_SRC
+***    Enable the service:
+#+BEGIN_SRC 
+    sudo systemctl enable rc-local
+#+END_SRC
+***    Start service and check status:
+#+BEGIN_SRC 
+    sudo systemctl start rc-local.service
+    sudo systemctl status rc-local.service
+
+#+END_SRC
+
+    If all goes well you can add your code to the /etc/rc.local file then restart it.
+
+** openbox close sleep and screensaver
+#+BEGIN_SRC 
+
+#xset s 300      #设置屏保时间为300秒，时间单位为秒
+#xset s 0        #关闭屏幕保护
+#xset dpms 0 0 0 # 三个数值分别为Standby、Suspend、Off，单位秒
+#xset -dpms      #关闭电源管理
+
+#+END_SRC
+** openbox environment setup
+Setting up your environment
+
+If you would like to set environment variables that will affect everything run in your current session (including Openbox), you can place them in ~/.config/openbox/environment. Here's an example ~/.config/openbox/environment file:
+#+BEGIN_SRC 
+# Set up my own path
+export PATH=$HOME/bin:$PATH
+
+# Change the language used from the system's default
+export LC_CTYPE=ja_JP.utf8
+
+# SCIM for typing non-english characters
+export XMODIFIERS=@im=SCIM
+export GTK_IM_MODULE=scim
+export QT_IM_MODULE=scim
+#+END_SRC
+
+** openbox keyblinding setup, ~/.config/openbox/rc.xml
+#+BEGIN_SRC 
+    <!-- Keybindings for running applications -->
+    <keybind key="W-e">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>kfmclient</name>
+        </startupnotify>
+        <command>pcmanfm</command>
+      </action>
+    </keybind>
+#+END_SRC
 
 * <2017-06-01 四>
 chane the _app/assets/themes/curtana/_less/common.less

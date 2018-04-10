@@ -1,0 +1,17 @@
+#+STARTUP: showall
+#+STARTUP: hidestars
+#+OPTIONS: H:2 num:nil tags:nil toc:nil timestamps:t
+#+LAYOUT: post
+#+AUTHOR: yefeiyu
+#+DATE: 2018-04-09 一 11:20
+#+TITLE: About fonts antialias
+#+DESCRIPTION: change the fonts to antialiasing
+#+TAGS: pc, fonts, antialise
+#+CATEGORIES: soft
+
+Add this code to `/etc/fonts/fonts.conf`
+<match target="font" >
+  <edit mode="assign" name="antialias" >
+   <bool>false</bool>
+  </edit>
+ </match>
