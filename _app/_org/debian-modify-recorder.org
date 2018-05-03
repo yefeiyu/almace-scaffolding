@@ -9,6 +9,25 @@
 #+TAGS: openbox, debian, modify, docker
 #+CATEGORIES: soft
 
+* <2018-04-11 三>
+** modify the fcitx didn't work under openbox OS.
+#+BEGIN_SRC 
+cd /usr/share/applications
+;;pay attention to the folder is application, not applications.
+ls fc*
+cp fcitx.desktop ~/.config/autostart/
+#+END_SRC
+** Modify the problem of the wifi 固件缺失
+sai firmware-linux-free
+git clone git://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git
+git clone git://git.kernel.org/pub/scm/linux/kernel/git/romieu/linux-firmware.git
+sudo cp -r linux-firmware/rtl_nic/ /lib/firmware/
+sudo update-initramfs -u
+lspci
+lspci -nn | grep Network
+s discover --vendor-id --model-id pci | uniq
+sai firmware-brcm80211
+
 * <2018-04-10 二>
 ** How to execute command on startup (rc.local alternative) 
  which involves use of systemd here:

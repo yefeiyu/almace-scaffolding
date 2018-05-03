@@ -5,7 +5,7 @@
 #+AUTHOR: yefeiyu
 #+DATE: 2016-05-02 一 12:10
 #+TITLE: 在github中搭建用org-mode和org2jekyll发布及用lunr.js中文搜索的jekyll静态独立博客
-#+DESCRIPTION: 
+#+DESCRIPTION: New blog build
 #+TAGS: github,emacs,org-mode,org2jekyll,lunr.js,jekyll-lunr-js-search,lunr-languages,gem,bundle,bundler,npm,ruby,scheme,color,markdown,html,md,blog,switype,博客
 #+CATEGORIES: soft
 #+EXTRA-YAML-HEADERS: theme: \nplugin: \nscheme-text: "#2b003b"\nscheme-link: "#00008b"\nscheme-hover: "#"\nscheme-code: "#"\nscheme-bg: "#ffe7e5"\nscheme-hero-text: "#ffc3c3"\nscheme-hero-link: "#daab87"\nscheme-hero-bg: "#5b005b"\nscheme-bg-light: true\n
