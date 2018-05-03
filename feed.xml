@@ -137,7 +137,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>首页</title>
   <subtitle>y.g.i</subtitle>
-  <updated>2018-05-03T11:03:55+08:00</updated>
+  <updated>2018-05-03T15:50:33+08:00</updated>
   <id>http://0.0.0.0:4321/</id>
   <generator uri="https://sparanoid.com/lab/amsf/" version="1.1.10">Almace Scaffolding</generator>
 
@@ -181,12 +181,12 @@
 譬如 &amp;lt;s-Tab可以生成&lt;br /&gt;
 &lt;/p&gt;
 &lt;pre class=&quot;example&quot;&gt;
-#+BEGIN_SRC c
+#+BEGIN_SRC c (or css or lisp or ruby)
 
 #+END_SRC
 &lt;/pre&gt;
 &lt;p&gt;
-在其中插入代码。需要注意的是，不同的代码需要在SRC后面定义，如c或lisp。&lt;br /&gt;
+在其中插入代码。需要注意的是，不同的代码需要在'SRC'后面定义，如c或`lisp`。&lt;br /&gt;
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -232,6 +232,24 @@
 &lt;/div&gt;
 &lt;/div&gt;
 
+&lt;div id=&quot;outline-container-sec-4&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-4&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;4&lt;/span&gt; 附加一个短引用的格式，org-mode中使用的&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-4&quot;&gt;
+&lt;p&gt;
+&lt;code&gt;hello&lt;/code&gt; Renders as verbatim&lt;br /&gt;
+&lt;code&gt;hello&lt;/code&gt; Renders as code&lt;br /&gt;
+=hello'= Fails to render as verbatim&lt;br /&gt;
+~hello'~ Fails to render as code&lt;br /&gt;
+&lt;/p&gt;
+&lt;pre class=&quot;example&quot;&gt;
+=hello= Renders as verbatim
+~hello~ Renders as code
+=hello'= Fails to render as verbatim
+~hello'~ Fails to render as code
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
           
           
         
@@ -240,6 +258,112 @@
 
         
           <summary>1 通过babel方式在org-mode中插入代码&amp;lt;div class=&quot;ou</summary>
+        
+      </entry>
+    
+  
+    
+      
+
+      
+
+      <entry>
+        <title>重拾kindle dxg，做第二显示屏</title>
+        <id>http://0.0.0.0:4321/mobile/2018/05/03/%E9%87%8D%E6%8B%BEkindle-dxg-%E5%81%9A%E7%AC%AC%E4%BA%8C%E6%98%BE%E7%A4%BA%E5%99%A8.html</id>
+        <link rel="alternate" type="text/html" href="http://0.0.0.0:4321/mobile/2018/05/03/%E9%87%8D%E6%8B%BEkindle-dxg-%E5%81%9A%E7%AC%AC%E4%BA%8C%E6%98%BE%E7%A4%BA%E5%99%A8.html" />
+        <published>2018-05-03T00:00:00+08:00</published>
+
+        
+          <updated>2018-05-03T00:00:00+08:00</updated>
+        
+
+        <author>
+          <name>yefeiyu</name>
+          <uri>http://yefeiyu.github.io</uri>
+          <email>yefeiyu@gmail.com</email>
+        </author>
+
+        <content type="html" xml:base="http://0.0.0.0:4321/">
+          
+            &lt;p&gt;
+主机使用debian&lt;br /&gt;
+&lt;/p&gt;
+&lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-1&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;1&lt;/span&gt; vnc第二显示屏&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-1&quot;&gt;
+&lt;p&gt;
+安装x11vnc&lt;br /&gt;
+use openbox desktop, and add the conf fill to ~/.config/autostart/x11vnc.desktop&lt;br /&gt;
+&lt;/p&gt;
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre class=&quot;src src-conf&quot;&gt;[&lt;span class=&quot;org-type&quot;&gt;Desktop Entry&lt;/span&gt;]
+&lt;span class=&quot;org-variable-name&quot;&gt;Type&lt;/span&gt;=Application
+&lt;span class=&quot;org-variable-name&quot;&gt;Name&lt;/span&gt;=X11VNC Server
+&lt;span class=&quot;org-variable-name&quot;&gt;Exec&lt;/span&gt;=x11vnc -forever
+&lt;span class=&quot;org-variable-name&quot;&gt;Terminal&lt;/span&gt;=false
+&lt;span class=&quot;org-variable-name&quot;&gt;Hidden&lt;/span&gt;=false
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+kindle dxg jailbreak, install usbnetwork, install launchpad&lt;br /&gt;
+connect to debian: &lt;code&gt;;debugOn&lt;/code&gt;, &lt;code&gt;`usbNetwork&lt;/code&gt;.&lt;br /&gt;
+the launchpad/kindlevncviewer.ini is&lt;br /&gt;
+&lt;/p&gt;
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre class=&quot;src src-conf&quot;&gt;[&lt;span class=&quot;org-type&quot;&gt;Actions&lt;/span&gt;]
+;; start kindlevncviewer, connect to 192.168.50.1:1
+&lt;span class=&quot;org-variable-name&quot;&gt;X Z&lt;/span&gt; = !/mnt/us/kindlevncviewer/kvncviewer.sh 192.168.2.1:1 &amp;amp;
+&lt;span class=&quot;org-variable-name&quot;&gt;X X&lt;/span&gt; = !/mnt/us/kindlevncviewer/kvncviewer.sh 192.168.2.1:0 &amp;amp;
+&lt;span class=&quot;org-variable-name&quot;&gt;X F&lt;/span&gt; = !/mnt/us/usbnet/refresh_kindledxg &amp;amp;
+;; start kindlevncviewer, connect to somehostviawifi:1
+&lt;span class=&quot;org-variable-name&quot;&gt;X W&lt;/span&gt; = !/mnt/us/kindlevncviewer/kvncviewer.sh somehostviawifi:1 &amp;amp;
+;; example with a password:
+&lt;span class=&quot;org-variable-name&quot;&gt;;V W&lt;/span&gt; = !/mnt/us/kindlevncviewer/kvncviewer.sh -password this_is_the_password so
+;; stop kindlevncviewer
+&lt;span class=&quot;org-variable-name&quot;&gt;X Q&lt;/span&gt; = !killall kindlevncviewer
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;
+connect debian with Shift X X&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-2&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-2&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;2&lt;/span&gt; sent book to dxg&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-2&quot;&gt;
+&lt;p&gt;
+download kindlegen from Amazon.com&lt;br /&gt;
+&lt;a href=&quot;https://www.amazon.com/gp/feature.html?docId=1000765211&quot;&gt;https://www.amazon.com/gp/feature.html?docId=1000765211&lt;/a&gt;&lt;br /&gt;
+tar xvzf kindelgen&amp;#x2026;tar.gz&lt;br /&gt;
+&lt;code&gt;./kindlegen book.epub or txt&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;scp book.mobi root@192.168.2.2:/mnt/us/document/&lt;/code&gt;&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+add a file which name is &lt;code&gt;refresh_kindledxg&lt;/code&gt; to &lt;i&gt;usbnet&lt;/i&gt;, the content is&lt;br /&gt;
+&lt;/p&gt;
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre class=&quot;src src-conf&quot;&gt;dbus-send --system /default com.lab126.powerd.resuming int32:1
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;
+use Shift X F refresh&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+          
+          
+        
+      
+        </content>
+
+        
+          <summary>主机使用debian1 vnc第二显示屏&amp;lt;div</summary>
         
       </entry>
     
@@ -278,47 +402,53 @@ Install the new stretch OS of Debian 9, If we to configurate the blog environmen
 &lt;p&gt;
 [&lt;a href=&quot;https://docs.docker.com/install/linux/docker-ce/debian/#install-using-the-repository&quot;&gt;https://docs.docker.com/install/linux/docker-ce/debian/#install-using-the-repository&lt;/a&gt;](Get Docker CE for Debian)&lt;br /&gt;
 &lt;/p&gt;
-&lt;pre class=&quot;example&quot;&gt;
-sudo apt-get install      apt-transport-https      ca-certificates      curl      gnupg2      software-properties-common
-curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre class=&quot;src src-c&quot;&gt;&lt;span class=&quot;org-type&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;org-variable-name&quot;&gt;apt&lt;/span&gt;-get install      apt-transport-https      ca-certificates      curl      gnupg2      software-properties-common
+curl -fsSL https:&lt;span class=&quot;org-comment-delimiter&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;org-comment&quot;&gt;download.docker.com/linux/debian/gpg | sudo apt-key add -&lt;/span&gt;
 sudo apt-key fingerprint 0EBFCD88
-sudo add-apt-repository    &quot;deb [arch=amd64] https://download.docker.com/linux/debian \
-   $(lsb_release -cs) \
-   stable&quot;
+sudo add-apt-repository    &lt;span class=&quot;org-string&quot;&gt;&quot;deb [arch=amd64] https://download.docker.com/linux/debian \&lt;/span&gt;
+&lt;span class=&quot;org-string&quot;&gt;   $(lsb_release -cs) \&lt;/span&gt;
+&lt;span class=&quot;org-string&quot;&gt;   stable&quot;&lt;/span&gt;
 sudo apt-get update
 sudo apt-get install docker-ce
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
 &lt;div id=&quot;outline-container-sec-2&quot; class=&quot;outline-2&quot;&gt;
 &lt;h2 id=&quot;sec-2&quot;&gt;Pull my docker repository&lt;/h2&gt;
 &lt;div class=&quot;outline-text-2&quot; id=&quot;text-2&quot;&gt;
-&lt;pre class=&quot;example&quot;&gt;
-s docker pull xxmm/ruby-node-grunt:v1
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre class=&quot;src src-c&quot;&gt;s docker &lt;span class=&quot;org-type&quot;&gt;pull&lt;/span&gt; &lt;span class=&quot;org-variable-name&quot;&gt;xxmm&lt;/span&gt;/ruby-node-grunt:v1
 &lt;/pre&gt;
+&lt;/div&gt;
 &lt;p&gt;
 xxmm/ruby-node-grunt:v1 FROM starefossen/ruby-node, the Dockerfile is:&lt;br /&gt;
 &lt;/p&gt;
-&lt;pre class=&quot;example&quot;&gt;
-FROM starefossen/ruby-node
+&lt;div class=&quot;org-src-container&quot;&gt;
 
-RUN apt-get update &amp;amp;&amp;amp; \
+&lt;pre class=&quot;src src-ruby&quot;&gt;&lt;span class=&quot;org-type&quot;&gt;FROM&lt;/span&gt; starefossen/ruby-node
+
+&lt;span class=&quot;org-type&quot;&gt;RUN&lt;/span&gt; apt-get update &amp;amp;&amp;amp; \
     apt-get -y install apt-utils sudo &amp;amp;&amp;amp; \
     useradd -d /home/xx -m -s /bin/bash xx &amp;amp;&amp;amp; \
-    echo xx:xx | chpasswd &amp;amp;&amp;amp; \
+    echo xx&lt;span class=&quot;org-constant&quot;&gt;:xx&lt;/span&gt; | chpasswd &amp;amp;&amp;amp; \
     adduser xx sudo &amp;amp;&amp;amp; \
     npm install -g bower grunt-cli
-USER xx
-RUN mkdir /home/xx/.ssh/ &amp;amp;&amp;amp; \
+&lt;span class=&quot;org-type&quot;&gt;USER&lt;/span&gt; xx
+&lt;span class=&quot;org-type&quot;&gt;RUN&lt;/span&gt; mkdir /home/xx/.ssh/ &amp;amp;&amp;amp; \
     mkdir /home/xx/mt/ &amp;amp;&amp;amp; \
-    mkdir -p /home/xx/gh/yefeiyu.github.io/
-COPY .bash_aliases /home/xx/
-COPY Gemfile /home/xx/gh/yefeiyu.github.io/
-COPY package.json /home/xx/gh/yefeiyu.github.io/
-WORKDIR /home/xx/gh/yefeiyu.github.io/
-RUN bundle install &amp;amp;&amp;amp; \
+    mkdir -&lt;span class=&quot;org-builtin&quot;&gt;p&lt;/span&gt; /home/xx/gh/yefeiyu.github.io/
+&lt;span class=&quot;org-type&quot;&gt;COPY&lt;/span&gt; .bash_aliases /home/xx/
+&lt;span class=&quot;org-type&quot;&gt;COPY&lt;/span&gt; &lt;span class=&quot;org-type&quot;&gt;Gemfile&lt;/span&gt; /home/xx/gh/yefeiyu.github.io/
+&lt;span class=&quot;org-type&quot;&gt;COPY&lt;/span&gt; package.json /home/xx/gh/yefeiyu.github.io/
+&lt;span class=&quot;org-type&quot;&gt;WORKDIR&lt;/span&gt; /home/xx/gh/yefeiyu.github.io/
+&lt;span class=&quot;org-type&quot;&gt;RUN&lt;/span&gt; bundle install &amp;amp;&amp;amp; \
     rm *
 &lt;/pre&gt;
+&lt;/div&gt;
 &lt;p&gt;
 As we seen, which add the user of xx, and created the environment needed for the blog. The steps is created 3 folders, copy 3 documents which build environment needed and bundle install.&lt;br /&gt;
 &lt;/p&gt;
@@ -327,9 +457,11 @@ As we seen, which add the user of xx, and created the environment needed for the
 &lt;div id=&quot;outline-container-sec-3&quot; class=&quot;outline-2&quot;&gt;
 &lt;h2 id=&quot;sec-3&quot;&gt;Use docker for jekyll blog&lt;/h2&gt;
 &lt;div class=&quot;outline-text-2&quot; id=&quot;text-3&quot;&gt;
-&lt;pre class=&quot;example&quot;&gt;
-docker run -ti --rm -u 0 -p 4321:4321 -p 35729:35729 -v /home/xx/gh/yefeiyu.github.io/:/home/xx/gh/yefeiyu.github.io/ -v /home/xx/.ssh/:/home/xx/.ssh/ xxmm/ruby-node-grunt:v1 grunt serve
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre class=&quot;src src-c&quot;&gt;&lt;span class=&quot;org-type&quot;&gt;docker&lt;/span&gt; &lt;span class=&quot;org-variable-name&quot;&gt;run&lt;/span&gt; -ti --rm -u 0 -p 4321:4321 -p 35729:35729 -v /home/xx/gh/yefeiyu.github.io/:/home/xx/gh/yefeiyu.github.io/ -v /home/xx/.ssh/:/home/xx/.ssh/ xxmm/ruby-node-grunt:v1 grunt serve
 &lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;
 It's so simple!&lt;br /&gt;
@@ -4463,7 +4595,7 @@ $ gem sources -l
 &lt;/p&gt;
 &lt;pre class=&quot;example&quot;&gt;
 &amp;lt;a href=&quot;&quot; title=&quot;查看所有标签&quot;&amp;gt;&amp;lt;i class=&quot;icon-fixed-width icon-tags&quot;&amp;gt;&amp;lt;/i&amp;gt; 标签云&amp;lt;/a&amp;gt;
-&amp;lt;span title=&quot;标签总数&quot;&amp;gt;160&amp;lt;/span&amp;gt;
+&amp;lt;span title=&quot;标签总数&quot;&amp;gt;170&amp;lt;/span&amp;gt;
 &amp;lt;div id=&quot;tag-cloud&quot;&amp;gt;
 {\% assign first = site.tags.first \%}
 {\% assign max = first[1].size \%}
