@@ -4684,6 +4684,29 @@ margin-left: 12px;
   text-align: left;
 }
 
+.tag-cloud {
+list-style: none;
+word-break:keep-all;
+padding: 0;
+padding-right: 6%;
+text-align: justify; 
+font-size: 16px;
+a{
+display: inline-block;
+margin: 0 12px 12px 0; 
+}}
+
+.archive-group {
+margin: 15px;
+border-top: 1px solid;
+}
+.archive-item {
+margin-left: 12px;
+}
+.post-tags {
+  text-align: left;
+}
+
 </style>
 
 <!-- Main navigation with current page / categoriy highlighted -->
@@ -4943,6 +4966,23 @@ search.start();
   <div id="search-searchbar"></div>
 
   <div class="post-list" id="search-hits">
+    
+      <div class="post-item">
+        
+        <span class="post-meta">May 16, 2018</span>
+
+        <h2>
+          <a class="post-link" href="/mobile/2018/05/16/resolved-ios-10.3.3-jb-error.html">
+            resolved iOS 10.3.3 JB error
+          </a>
+        </h2>
+
+        <div class="post-snippet"><p>
+yalu越狱每周签名，直接使用Impackor会出现错误，需要先清理锁定项。步骤如下：<br >
+插上手机，打开943程序，点选xcode-revolke，去掉上次遗留在手机里的锁定项。<br >
+退出943。<br >
+打开944程序，Device-InstallPackage-yalu10</div>
+      </div>
     
       <div class="post-item">
         

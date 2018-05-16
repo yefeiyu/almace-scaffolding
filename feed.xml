@@ -137,7 +137,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>首页</title>
   <subtitle>y.g.i</subtitle>
-  <updated>2018-05-03T15:50:33+08:00</updated>
+  <updated>2018-05-16T16:28:20+08:00</updated>
   <id>http://0.0.0.0:4321/</id>
   <generator uri="https://sparanoid.com/lab/amsf/" version="1.1.10">Almace Scaffolding</generator>
 
@@ -150,6 +150,58 @@
     <email>yefeiyu@gmail.com</email>
   </author>
 
+  
+    
+      
+
+      
+
+      <entry>
+        <title>resolved iOS 10.3.3 JB error</title>
+        <id>http://0.0.0.0:4321/mobile/2018/05/16/resolved-ios-10.3.3-jb-error.html</id>
+        <link rel="alternate" type="text/html" href="http://0.0.0.0:4321/mobile/2018/05/16/resolved-ios-10.3.3-jb-error.html" />
+        <published>2018-05-16T00:00:00+08:00</published>
+
+        
+          <updated>2018-05-16T00:00:00+08:00</updated>
+        
+
+        <author>
+          <name>yefeiyu</name>
+          <uri>http://yefeiyu.github.io</uri>
+          <email>yefeiyu@gmail.com</email>
+        </author>
+
+        <content type="html" xml:base="http://0.0.0.0:4321/">
+          
+            &lt;p&gt;
+yalu越狱每周签名，直接使用Impackor会出现错误，需要先清理锁定项。步骤如下：&lt;br /&gt;
+插上手机，打开943程序，点选xcode-revolke，去掉上次遗留在手机里的锁定项。&lt;br /&gt;
+退出943。&lt;br /&gt;
+打开944程序，Device-InstallPackage-yalu102_beta7.ipa(此处不必使用10.0版本可以直接用10.3.3版本的ipa)&lt;br /&gt;
+jb。&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+944 download address:&lt;br /&gt;
+&lt;a href=&quot;https://cache.saurik.com/impactor/l64/Impactor64_0.9.44.tgz&quot;&gt;https://cache.saurik.com/impactor/l64/Impactor64_0.9.44.tgz&lt;/a&gt;&lt;br /&gt;
+943 download address:&lt;br /&gt;
+&lt;a href=&quot;https://cache.saurik.com/impactor/l64/Impactor64_0.9.43.tgz&quot;&gt;https://cache.saurik.com/impactor/l64/Impactor64_0.9.43.tgz&lt;/a&gt;&lt;br /&gt;
+yalu102 download address:&lt;br /&gt;
+&lt;a href=&quot;https://yalujailbreak.org/files/yalu102_beta7.ipa&quot;&gt;https://yalujailbreak.org/files/yalu102_beta7.ipa&lt;/a&gt;&lt;br /&gt;
+&lt;/p&gt;
+
+          
+          
+        
+      
+        </content>
+
+        
+          <summary>yalu越狱每周签名，直接使用Impackor会出现错误，需要先清理锁定项。步骤如下：插上手机，打开943程序，点选xcode-revolke，去掉上次遗留在手机里的锁定项。退出943。打开944程序，Device-InstallPackage-yalu10</summary>
+        
+      </entry>
+    
   
     
       
@@ -4595,7 +4647,7 @@ $ gem sources -l
 &lt;/p&gt;
 &lt;pre class=&quot;example&quot;&gt;
 &amp;lt;a href=&quot;&quot; title=&quot;查看所有标签&quot;&amp;gt;&amp;lt;i class=&quot;icon-fixed-width icon-tags&quot;&amp;gt;&amp;lt;/i&amp;gt; 标签云&amp;lt;/a&amp;gt;
-&amp;lt;span title=&quot;标签总数&quot;&amp;gt;170&amp;lt;/span&amp;gt;
+&amp;lt;span title=&quot;标签总数&quot;&amp;gt;171&amp;lt;/span&amp;gt;
 &amp;lt;div id=&quot;tag-cloud&quot;&amp;gt;
 {\% assign first = site.tags.first \%}
 {\% assign max = first[1].size \%}
