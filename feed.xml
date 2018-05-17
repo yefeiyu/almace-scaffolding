@@ -137,7 +137,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>首页</title>
   <subtitle>y.g.i</subtitle>
-  <updated>2018-05-16T16:28:20+08:00</updated>
+  <updated>2018-05-17T10:03:09+08:00</updated>
   <id>http://0.0.0.0:4321/</id>
   <generator uri="https://sparanoid.com/lab/amsf/" version="1.1.10">Almace Scaffolding</generator>
 
@@ -566,73 +566,155 @@ The local need the node_modules folder.&lt;br /&gt;
         <content type="html" xml:base="http://0.0.0.0:4321/">
           
             &lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
-&lt;h2 id=&quot;sec-1&quot;&gt;&lt;span class=&quot;timestamp-wrapper&quot;&gt;&lt;span class=&quot;timestamp&quot;&gt;&amp;lt;2018-04-10 二&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;sec-1&quot;&gt;&lt;span class=&quot;timestamp-wrapper&quot;&gt;&lt;span class=&quot;timestamp&quot;&gt;&amp;lt;2018-05-17 四&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;div class=&quot;outline-text-2&quot; id=&quot;text-1&quot;&gt;
 &lt;/div&gt;&lt;div id=&quot;outline-container-sec-1-1&quot; class=&quot;outline-3&quot;&gt;
-&lt;h3 id=&quot;sec-1-1&quot;&gt;How to execute command on startup (rc.local alternative)&lt;/h3&gt;
+&lt;h3 id=&quot;sec-1-1&quot;&gt;;;off words break&lt;/h3&gt;
 &lt;div class=&quot;outline-text-3&quot; id=&quot;text-1-1&quot;&gt;
+&lt;p&gt;
+&lt;code&gt;(global-visual-line-mode t)&lt;/code&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-1-2&quot; class=&quot;outline-3&quot;&gt;
+&lt;h3 id=&quot;sec-1-2&quot;&gt;use pandoc convert html to org-mode file&lt;/h3&gt;
+&lt;div class=&quot;outline-text-3&quot; id=&quot;text-1-2&quot;&gt;
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre class=&quot;src src-java&quot;&gt;% pandoc -o cheatsheet.org -f html -t org &lt;span class=&quot;org-string&quot;&gt;'http://sce2.umkc.edu/BIT/burrise/pl/modeling/qanda.html'&lt;/span&gt;
+ Fetching http:&lt;span class=&quot;org-comment-delimiter&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;org-comment&quot;&gt;sce2.umkc.edu/BIT/burrise/pl/modeling/qanda.html...&lt;/span&gt;
+ pandoc: Cannot decode &lt;span class=&quot;org-type&quot;&gt;byte&lt;/span&gt; &lt;span class=&quot;org-string&quot;&gt;'\x92'&lt;/span&gt;: &lt;span class=&quot;org-constant&quot;&gt;Data&lt;/span&gt;.&lt;span class=&quot;org-constant&quot;&gt;Text&lt;/span&gt;.&lt;span class=&quot;org-constant&quot;&gt;Internal&lt;/span&gt;.&lt;span class=&quot;org-constant&quot;&gt;Encoding&lt;/span&gt;.Fusion.streamUtf8: Invalid UTF-8 stream
+ %
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+UPDATE: It looks like the problem was with web-page it self! I tried it with another HTML website and it works juts fine (need some formatting but almost all the job has been done, thanks to pandoc):&lt;br /&gt;
+&lt;/p&gt;
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre class=&quot;src src-c&quot;&gt;% curl http:&lt;span class=&quot;org-comment-delimiter&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;org-comment&quot;&gt;anh.cs.luc.edu/170/notes/CSharpHtml/sorting.html  &amp;gt; foo.html &lt;/span&gt;
+% pandoc -o foo.org -f html -t org foo.html
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;outline-container-sec-2&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-2&quot;&gt;&lt;span class=&quot;timestamp-wrapper&quot;&gt;&lt;span class=&quot;timestamp&quot;&gt;&amp;lt;2018-04-11 三&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-2&quot;&gt;
+&lt;/div&gt;&lt;div id=&quot;outline-container-sec-2-1&quot; class=&quot;outline-3&quot;&gt;
+&lt;h3 id=&quot;sec-2-1&quot;&gt;modify the fcitx didn't work under openbox OS.&lt;/h3&gt;
+&lt;div class=&quot;outline-text-3&quot; id=&quot;text-2-1&quot;&gt;
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre class=&quot;src src-c&quot;&gt;cd /usr/share/applications
+;;pay attention to the folder &lt;span class=&quot;org-type&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;org-variable-name&quot;&gt;application&lt;/span&gt;, &lt;span class=&quot;org-variable-name&quot;&gt;not&lt;/span&gt; applications.
+ls fc*
+cp fcitx.desktop ~/.config/autostart/
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-2-2&quot; class=&quot;outline-3&quot;&gt;
+&lt;h3 id=&quot;sec-2-2&quot;&gt;Modify the problem of the wifi 固件缺失&lt;/h3&gt;
+&lt;div class=&quot;outline-text-3&quot; id=&quot;text-2-2&quot;&gt;
+&lt;p&gt;
+sai firmware-linux-free&lt;br /&gt;
+git clone git://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git&lt;br /&gt;
+git clone git://git.kernel.org/pub/scm/linux/kernel/git/romieu/linux-firmware.git&lt;br /&gt;
+sudo cp -r linux-firmware/rtl_nic/ &lt;i&gt;lib/firmware&lt;/i&gt;&lt;br /&gt;
+sudo update-initramfs -u&lt;br /&gt;
+lspci&lt;br /&gt;
+lspci -nn | grep Network&lt;br /&gt;
+s discover &amp;#x2013;vendor-id &amp;#x2013;model-id pci | uniq&lt;br /&gt;
+sai firmware-brcm80211&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;outline-container-sec-3&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-3&quot;&gt;&lt;span class=&quot;timestamp-wrapper&quot;&gt;&lt;span class=&quot;timestamp&quot;&gt;&amp;lt;2018-04-10 二&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-3&quot;&gt;
+&lt;/div&gt;&lt;div id=&quot;outline-container-sec-3-1&quot; class=&quot;outline-3&quot;&gt;
+&lt;h3 id=&quot;sec-3-1&quot;&gt;How to execute command on startup (rc.local alternative)&lt;/h3&gt;
+&lt;div class=&quot;outline-text-3&quot; id=&quot;text-3-1&quot;&gt;
 &lt;p&gt;
 which involves use of systemd here:&lt;br /&gt;
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;ul class=&quot;org-ul&quot;&gt;&lt;li&gt;&lt;a id=&quot;sec-1-1-1&quot; name=&quot;sec-1-1-1&quot;&gt;&lt;/a&gt;Create a service:&lt;br /&gt;&lt;div class=&quot;outline-text-4&quot; id=&quot;text-1-1-1&quot;&gt;
-&lt;pre class=&quot;example&quot;&gt;
-sudo vi /etc/systemd/system/rc-local.service
+&lt;ul class=&quot;org-ul&quot;&gt;&lt;li&gt;&lt;a id=&quot;sec-3-1-1&quot; name=&quot;sec-3-1-1&quot;&gt;&lt;/a&gt;Create a service:&lt;br /&gt;&lt;div class=&quot;outline-text-4&quot; id=&quot;text-3-1-1&quot;&gt;
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre class=&quot;src src-c&quot;&gt;&lt;span class=&quot;org-type&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;org-variable-name&quot;&gt;vi&lt;/span&gt; /etc/systemd/system/rc-local.service
 &lt;/pre&gt;
 &lt;/div&gt;
+&lt;/div&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a id=&quot;sec-1-1-2&quot; name=&quot;sec-1-1-2&quot;&gt;&lt;/a&gt;Add your code there:&lt;br /&gt;&lt;div class=&quot;outline-text-4&quot; id=&quot;text-1-1-2&quot;&gt;
-&lt;pre class=&quot;example&quot;&gt;
-[Unit]
-Description=/etc/rc.local Compatibility
-ConditionPathExists=/etc/rc.local
+&lt;li&gt;&lt;a id=&quot;sec-3-1-2&quot; name=&quot;sec-3-1-2&quot;&gt;&lt;/a&gt;Add your code there:&lt;br /&gt;&lt;div class=&quot;outline-text-4&quot; id=&quot;text-3-1-2&quot;&gt;
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre class=&quot;src src-sh&quot;&gt;[Unit]
+&lt;span class=&quot;org-variable-name&quot;&gt;Description&lt;/span&gt;=/etc/rc.local Compatibility
+&lt;span class=&quot;org-variable-name&quot;&gt;ConditionPathExists&lt;/span&gt;=/etc/rc.local
 
 [Service]
-Type=forking
-ExecStart=/etc/rc.local start
-TimeoutSec=0
-StandardOutput=tty
-RemainAfterExit=yes
-SysVStartPriority=99
+&lt;span class=&quot;org-variable-name&quot;&gt;Type&lt;/span&gt;=forking
+&lt;span class=&quot;org-variable-name&quot;&gt;ExecStart&lt;/span&gt;=/etc/rc.local start
+&lt;span class=&quot;org-variable-name&quot;&gt;TimeoutSec&lt;/span&gt;=0
+&lt;span class=&quot;org-variable-name&quot;&gt;StandardOutput&lt;/span&gt;=tty
+&lt;span class=&quot;org-variable-name&quot;&gt;RemainAfterExit&lt;/span&gt;=yes
+&lt;span class=&quot;org-variable-name&quot;&gt;SysVStartPriority&lt;/span&gt;=99
 
 [Install]
-WantedBy=multi-user.target
+&lt;span class=&quot;org-variable-name&quot;&gt;WantedBy&lt;/span&gt;=multi-user.target
 &lt;/pre&gt;
 &lt;/div&gt;
+&lt;/div&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a id=&quot;sec-1-1-3&quot; name=&quot;sec-1-1-3&quot;&gt;&lt;/a&gt;Create and make sure /etc/rc.local is executable and add this code inside it:&lt;br /&gt;&lt;div class=&quot;outline-text-4&quot; id=&quot;text-1-1-3&quot;&gt;
-&lt;pre class=&quot;example&quot;&gt;
-sudo chmod +x /etc/rc.local
-&lt;/pre&gt;
-&lt;pre class=&quot;example&quot;&gt;
-#!/bin/sh -e
-#
-# rc.local
-#
-# This script is executed at the end of each multiuser runlevel.
-# Make sure that the script will &quot;exit 0&quot; on success or any other
-# value on error.
-#
-# In order to enable or disable this script just change the execution
-# bits.
-#
-# By default this script does nothing.
+&lt;li&gt;&lt;a id=&quot;sec-3-1-3&quot; name=&quot;sec-3-1-3&quot;&gt;&lt;/a&gt;Create and make sure /etc/rc.local is executable and add this code inside it:&lt;br /&gt;&lt;div class=&quot;outline-text-4&quot; id=&quot;text-3-1-3&quot;&gt;
+&lt;div class=&quot;org-src-container&quot;&gt;
 
-exit 0
+&lt;pre class=&quot;src src-c&quot;&gt;&lt;span class=&quot;org-type&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;org-variable-name&quot;&gt;chmod&lt;/span&gt; +x /etc/rc.local
 &lt;/pre&gt;
 &lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a id=&quot;sec-1-1-4&quot; name=&quot;sec-1-1-4&quot;&gt;&lt;/a&gt;Enable the service:&lt;br /&gt;&lt;div class=&quot;outline-text-4&quot; id=&quot;text-1-1-4&quot;&gt;
-&lt;pre class=&quot;example&quot;&gt;
-sudo systemctl enable rc-local
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre class=&quot;src src-sh&quot;&gt;&lt;span class=&quot;org-comment-delimiter&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;org-comment&quot;&gt;!/bin/&lt;/span&gt;&lt;span class=&quot;org-keyword&quot;&gt;sh&lt;/span&gt;&lt;span class=&quot;org-comment&quot;&gt; -e&lt;/span&gt;
+&lt;span class=&quot;org-comment-delimiter&quot;&gt;#&lt;/span&gt;
+&lt;span class=&quot;org-comment-delimiter&quot;&gt;# &lt;/span&gt;&lt;span class=&quot;org-comment&quot;&gt;rc.local&lt;/span&gt;
+&lt;span class=&quot;org-comment-delimiter&quot;&gt;#&lt;/span&gt;
+&lt;span class=&quot;org-comment-delimiter&quot;&gt;# &lt;/span&gt;&lt;span class=&quot;org-comment&quot;&gt;This script is executed at the end of each multiuser runlevel.&lt;/span&gt;
+&lt;span class=&quot;org-comment-delimiter&quot;&gt;# &lt;/span&gt;&lt;span class=&quot;org-comment&quot;&gt;Make sure that the script will &quot;exit 0&quot; on success or any other&lt;/span&gt;
+&lt;span class=&quot;org-comment-delimiter&quot;&gt;# &lt;/span&gt;&lt;span class=&quot;org-comment&quot;&gt;value on error.&lt;/span&gt;
+&lt;span class=&quot;org-comment-delimiter&quot;&gt;#&lt;/span&gt;
+&lt;span class=&quot;org-comment-delimiter&quot;&gt;# &lt;/span&gt;&lt;span class=&quot;org-comment&quot;&gt;In order to enable or disable this script just change the execution&lt;/span&gt;
+&lt;span class=&quot;org-comment-delimiter&quot;&gt;# &lt;/span&gt;&lt;span class=&quot;org-comment&quot;&gt;bits.&lt;/span&gt;
+&lt;span class=&quot;org-comment-delimiter&quot;&gt;#&lt;/span&gt;
+&lt;span class=&quot;org-comment-delimiter&quot;&gt;# &lt;/span&gt;&lt;span class=&quot;org-comment&quot;&gt;By default this script does nothing.&lt;/span&gt;
+
+&lt;span class=&quot;org-keyword&quot;&gt;exit&lt;/span&gt; 0
 &lt;/pre&gt;
 &lt;/div&gt;
+&lt;/div&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a id=&quot;sec-1-1-5&quot; name=&quot;sec-1-1-5&quot;&gt;&lt;/a&gt;Start service and check status:&lt;br /&gt;&lt;div class=&quot;outline-text-4&quot; id=&quot;text-1-1-5&quot;&gt;
-&lt;pre class=&quot;example&quot;&gt;
-sudo systemctl start rc-local.service
+&lt;li&gt;&lt;a id=&quot;sec-3-1-4&quot; name=&quot;sec-3-1-4&quot;&gt;&lt;/a&gt;Enable the service:&lt;br /&gt;&lt;div class=&quot;outline-text-4&quot; id=&quot;text-3-1-4&quot;&gt;
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre class=&quot;src src-c&quot;&gt;sudo systemctl &lt;span class=&quot;org-type&quot;&gt;enable&lt;/span&gt; &lt;span class=&quot;org-variable-name&quot;&gt;rc&lt;/span&gt;-local
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;sec-3-1-5&quot; name=&quot;sec-3-1-5&quot;&gt;&lt;/a&gt;Start service and check status:&lt;br /&gt;&lt;div class=&quot;outline-text-4&quot; id=&quot;text-3-1-5&quot;&gt;
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre class=&quot;src src-c&quot;&gt;sudo systemctl &lt;span class=&quot;org-type&quot;&gt;start&lt;/span&gt; &lt;span class=&quot;org-variable-name&quot;&gt;rc&lt;/span&gt;-local.service
 sudo systemctl status rc-local.service
 &lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;
 If all goes well you can add your code to the /etc/rc.local file then restart it.&lt;br /&gt;
@@ -641,20 +723,22 @@ If all goes well you can add your code to the /etc/rc.local file then restart it
 &lt;/li&gt;&lt;/ul&gt;
 &lt;/div&gt;
 
-&lt;div id=&quot;outline-container-sec-1-2&quot; class=&quot;outline-3&quot;&gt;
-&lt;h3 id=&quot;sec-1-2&quot;&gt;openbox close sleep and screensaver&lt;/h3&gt;
-&lt;div class=&quot;outline-text-3&quot; id=&quot;text-1-2&quot;&gt;
-&lt;pre class=&quot;example&quot;&gt;
-#xset s 300      #设置屏保时间为300秒，时间单位为秒
-#xset s 0        #关闭屏幕保护
-#xset dpms 0 0 0 # 三个数值分别为Standby、Suspend、Off，单位秒
-#xset -dpms      #关闭电源管理
+&lt;div id=&quot;outline-container-sec-3-2&quot; class=&quot;outline-3&quot;&gt;
+&lt;h3 id=&quot;sec-3-2&quot;&gt;openbox close sleep and screensaver&lt;/h3&gt;
+&lt;div class=&quot;outline-text-3&quot; id=&quot;text-3-2&quot;&gt;
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre class=&quot;src src-sh&quot;&gt;&lt;span class=&quot;org-comment-delimiter&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;org-comment&quot;&gt;xset s 300      #&amp;#35774;&amp;#32622;&amp;#23631;&amp;#20445;&amp;#26102;&amp;#38388;&amp;#20026;300&amp;#31186;&amp;#65292;&amp;#26102;&amp;#38388;&amp;#21333;&amp;#20301;&amp;#20026;&amp;#31186;&lt;/span&gt;
+&lt;span class=&quot;org-comment-delimiter&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;org-comment&quot;&gt;xset s 0        #&amp;#20851;&amp;#38381;&amp;#23631;&amp;#24149;&amp;#20445;&amp;#25252;&lt;/span&gt;
+&lt;span class=&quot;org-comment-delimiter&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;org-comment&quot;&gt;xset dpms 0 0 0 # &amp;#19977;&amp;#20010;&amp;#25968;&amp;#20540;&amp;#20998;&amp;#21035;&amp;#20026;Standby&amp;#12289;Suspend&amp;#12289;Off&amp;#65292;&amp;#21333;&amp;#20301;&amp;#31186;&lt;/span&gt;
+&lt;span class=&quot;org-comment-delimiter&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;org-comment&quot;&gt;xset -dpms      #&amp;#20851;&amp;#38381;&amp;#30005;&amp;#28304;&amp;#31649;&amp;#29702;&lt;/span&gt;
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&quot;outline-container-sec-1-3&quot; class=&quot;outline-3&quot;&gt;
-&lt;h3 id=&quot;sec-1-3&quot;&gt;openbox environment setup&lt;/h3&gt;
-&lt;div class=&quot;outline-text-3&quot; id=&quot;text-1-3&quot;&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-3-3&quot; class=&quot;outline-3&quot;&gt;
+&lt;h3 id=&quot;sec-3-3&quot;&gt;openbox environment setup&lt;/h3&gt;
+&lt;div class=&quot;outline-text-3&quot; id=&quot;text-3-3&quot;&gt;
 &lt;p&gt;
 Setting up your environment&lt;br /&gt;
 &lt;/p&gt;
@@ -662,30 +746,33 @@ Setting up your environment&lt;br /&gt;
 &lt;p&gt;
 If you would like to set environment variables that will affect everything run in your current session (including Openbox), you can place them in ~/.config/openbox/environment. Here's an example ~/.config/openbox/environment file:&lt;br /&gt;
 &lt;/p&gt;
-&lt;pre class=&quot;example&quot;&gt;
-# Set up my own path
-export PATH=$HOME/bin:$PATH
+&lt;div class=&quot;org-src-container&quot;&gt;
 
-# Change the language used from the system's default
-export LC_CTYPE=ja_JP.utf8
+&lt;pre class=&quot;src src-sh&quot;&gt;&lt;span class=&quot;org-comment-delimiter&quot;&gt;# &lt;/span&gt;&lt;span class=&quot;org-comment&quot;&gt;Set up my own path&lt;/span&gt;
+&lt;span class=&quot;org-builtin&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;org-variable-name&quot;&gt;PATH&lt;/span&gt;=$&lt;span class=&quot;org-variable-name&quot;&gt;HOME&lt;/span&gt;/bin:$&lt;span class=&quot;org-variable-name&quot;&gt;PATH&lt;/span&gt;
 
-# SCIM for typing non-english characters
-export XMODIFIERS=@im=SCIM
-export GTK_IM_MODULE=scim
-export QT_IM_MODULE=scim
+&lt;span class=&quot;org-comment-delimiter&quot;&gt;# &lt;/span&gt;&lt;span class=&quot;org-comment&quot;&gt;Change the language used from the system's default&lt;/span&gt;
+&lt;span class=&quot;org-builtin&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;org-variable-name&quot;&gt;LC_CTYPE&lt;/span&gt;=ja_JP.utf8
+
+&lt;span class=&quot;org-comment-delimiter&quot;&gt;# &lt;/span&gt;&lt;span class=&quot;org-comment&quot;&gt;SCIM for typing non-english characters&lt;/span&gt;
+&lt;span class=&quot;org-builtin&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;org-variable-name&quot;&gt;XMODIFIERS&lt;/span&gt;=@&lt;span class=&quot;org-variable-name&quot;&gt;im&lt;/span&gt;=SCIM
+&lt;span class=&quot;org-builtin&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;org-variable-name&quot;&gt;GTK_IM_MODULE&lt;/span&gt;=scim
+&lt;span class=&quot;org-builtin&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;org-variable-name&quot;&gt;QT_IM_MODULE&lt;/span&gt;=scim
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;div id=&quot;outline-container-sec-1-4&quot; class=&quot;outline-3&quot;&gt;
-&lt;h3 id=&quot;sec-1-4&quot;&gt;openbox keyblinding setup, ~/.config/openbox/rc.xml&lt;/h3&gt;
-&lt;div class=&quot;outline-text-3&quot; id=&quot;text-1-4&quot;&gt;
-&lt;pre class=&quot;example&quot;&gt;
-&amp;lt;!-- Keybindings for running applications --&amp;gt;
-&amp;lt;keybind key=&quot;W-e&quot;&amp;gt;
-  &amp;lt;action name=&quot;Execute&quot;&amp;gt;
+&lt;div id=&quot;outline-container-sec-3-4&quot; class=&quot;outline-3&quot;&gt;
+&lt;h3 id=&quot;sec-3-4&quot;&gt;openbox keyblinding setup, ~/.config/openbox/rc.xml&lt;/h3&gt;
+&lt;div class=&quot;outline-text-3&quot; id=&quot;text-3-4&quot;&gt;
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre class=&quot;src src-c&quot;&gt;&amp;lt;&lt;span class=&quot;org-negation-char&quot;&gt;!&lt;/span&gt;-- Keybindings &lt;span class=&quot;org-keyword&quot;&gt;for&lt;/span&gt; running applications --&amp;gt;
+&amp;lt;keybind key=&lt;span class=&quot;org-string&quot;&gt;&quot;W-e&quot;&lt;/span&gt;&amp;gt;
+  &amp;lt;action name=&lt;span class=&quot;org-string&quot;&gt;&quot;Execute&quot;&lt;/span&gt;&amp;gt;
     &amp;lt;startupnotify&amp;gt;
-      &amp;lt;enabled&amp;gt;true&amp;lt;/enabled&amp;gt;
+      &amp;lt;enabled&amp;gt;&lt;span class=&quot;org-constant&quot;&gt;true&lt;/span&gt;&amp;lt;/enabled&amp;gt;
       &amp;lt;name&amp;gt;kfmclient&amp;lt;/name&amp;gt;
     &amp;lt;/startupnotify&amp;gt;
     &amp;lt;command&amp;gt;pcmanfm&amp;lt;/command&amp;gt;
@@ -695,49 +782,42 @@ export QT_IM_MODULE=scim
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;div id=&quot;outline-container-sec-2&quot; class=&quot;outline-2&quot;&gt;
-&lt;h2 id=&quot;sec-2&quot;&gt;&lt;span class=&quot;timestamp-wrapper&quot;&gt;&lt;span class=&quot;timestamp&quot;&gt;&amp;lt;2017-06-01 四&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-2&quot;&gt;
+&lt;div id=&quot;outline-container-sec-4&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-4&quot;&gt;&lt;span class=&quot;timestamp-wrapper&quot;&gt;&lt;span class=&quot;timestamp&quot;&gt;&amp;lt;2017-06-01 四&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-4&quot;&gt;
 &lt;p&gt;
 chane the _app/assets/themes/curtana/_less/common.less&lt;br /&gt;
-table {&lt;br /&gt;
 &lt;/p&gt;
+&lt;div class=&quot;org-src-container&quot;&gt;
 
-&lt;p&gt;
-tr:nth-child(even){background-color: #f5f2ff}&lt;br /&gt;
-&lt;/p&gt;
+&lt;pre class=&quot;src src-java&quot;&gt;table {
 
+&lt;span class=&quot;org-constant&quot;&gt;tr&lt;/span&gt;:nth-child(even){background-color: #f5f2ff}
+
+th {
+    background-color: #cC0Ff0;
+    &lt;span class=&quot;org-constant&quot;&gt;color&lt;/span&gt;: white;
+}
+     &lt;span class=&quot;org-comment-delimiter&quot;&gt;// &lt;/span&gt;&lt;span class=&quot;org-comment&quot;&gt;TODO: responsive table support&lt;/span&gt;
+-    &lt;span class=&quot;org-comment-delimiter&quot;&gt;// &lt;/span&gt;&lt;span class=&quot;org-comment&quot;&gt;display: inline-block;&lt;/span&gt;
+-    &lt;span class=&quot;org-comment-delimiter&quot;&gt;// &lt;/span&gt;&lt;span class=&quot;org-comment&quot;&gt;overflow-x: auto;&lt;/span&gt;
+-    &lt;span class=&quot;org-comment-delimiter&quot;&gt;// &lt;/span&gt;&lt;span class=&quot;org-comment&quot;&gt;white-space: nowrap;&lt;/span&gt;
++    display: inline-block;
++    overflow-x: auto;
++    white-space: nowrap;
+}
+&lt;/pre&gt;
+&lt;/div&gt;
 &lt;p&gt;
-th {&lt;br /&gt;
-    background-color: #cC0Ff0;&lt;br /&gt;
-    color: white;&lt;br /&gt;
-}&lt;br /&gt;
-     // TODO: responsive table support&lt;br /&gt;
-&lt;/p&gt;
-&lt;ul class=&quot;org-ul&quot;&gt;
-&lt;li&gt;// display: inline-block;&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;// overflow-x: auto;&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;// white-space: nowrap;&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;display: inline-block;&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;overflow-x: auto;&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;white-space: nowrap;&lt;br /&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-}&lt;br /&gt;
 and then the TABLE had 横拉滚动条&lt;br /&gt;
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&quot;outline-container-sec-3&quot; class=&quot;outline-2&quot;&gt;
-&lt;h2 id=&quot;sec-3&quot;&gt;&lt;span class=&quot;timestamp-wrapper&quot;&gt;&lt;span class=&quot;timestamp&quot;&gt;&amp;lt;2017-04-14 五&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-3&quot;&gt;
+&lt;div id=&quot;outline-container-sec-5&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-5&quot;&gt;&lt;span class=&quot;timestamp-wrapper&quot;&gt;&lt;span class=&quot;timestamp&quot;&gt;&amp;lt;2017-04-14 五&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-5&quot;&gt;
 &lt;p&gt;
 A friend sent me an email with a JPEG photo in the middle of the text. The picture is so big, most of it is outside the screen and I want to view it with an outside image viewer and not in Gnus. How do I save an image that is included in the email in Gnus, if it's not just an ordinary attachment?&lt;br /&gt;
 &lt;/p&gt;
@@ -745,12 +825,12 @@ A friend sent me an email with a JPEG photo in the middle of the text. The pictu
 &lt;p&gt;
 The command you need is gnus-summary-save-parts. You have an inline image, which implies that you received an HTML mail. An inline image is an instance of a so-called MIME part, where MIME is an Internet standard governing email-related things such as non-text attachments.&lt;br /&gt;
 &lt;/p&gt;
+&lt;div class=&quot;org-src-container&quot;&gt;
 
-&lt;p&gt;
-L ;;list all group of gnus&lt;br /&gt;
-X m ;;save image to ~/&lt;br /&gt;
-&lt;/p&gt;
-
+&lt;pre class=&quot;src src-java&quot;&gt;L ;;list all group of gnus
+&lt;span class=&quot;org-type&quot;&gt;X&lt;/span&gt; &lt;span class=&quot;org-variable-name&quot;&gt;m&lt;/span&gt; ;;save &lt;span class=&quot;org-type&quot;&gt;image&lt;/span&gt; &lt;span class=&quot;org-variable-name&quot;&gt;to&lt;/span&gt; ~/
+&lt;/pre&gt;
+&lt;/div&gt;
 &lt;p&gt;
 debian chrome extensions installation is not enabled.&lt;br /&gt;
 se /etc/environment&lt;br /&gt;
@@ -759,9 +839,9 @@ CHROMIUM_FLAGS='&amp;#x2013;enable-remote-extensions'&lt;br /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id=&quot;outline-container-sec-4&quot; class=&quot;outline-2&quot;&gt;
-&lt;h2 id=&quot;sec-4&quot;&gt;&lt;span class=&quot;timestamp-wrapper&quot;&gt;&lt;span class=&quot;timestamp&quot;&gt;&amp;lt;2017-04-13 四&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-4&quot;&gt;
+&lt;div id=&quot;outline-container-sec-6&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-6&quot;&gt;&lt;span class=&quot;timestamp-wrapper&quot;&gt;&lt;span class=&quot;timestamp&quot;&gt;&amp;lt;2017-04-13 四&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-6&quot;&gt;
 &lt;p&gt;
 export WINEARCH=win32&lt;br /&gt;
 export WINEPREFIX=$HOME/.mynewwine32prefix/&lt;br /&gt;
@@ -785,9 +865,9 @@ s apt-get install -f&lt;br /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id=&quot;outline-container-sec-5&quot; class=&quot;outline-2&quot;&gt;
-&lt;h2 id=&quot;sec-5&quot;&gt;&lt;span class=&quot;timestamp-wrapper&quot;&gt;&lt;span class=&quot;timestamp&quot;&gt;&amp;lt;2017-03-02 四&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-5&quot;&gt;
+&lt;div id=&quot;outline-container-sec-7&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-7&quot;&gt;&lt;span class=&quot;timestamp-wrapper&quot;&gt;&lt;span class=&quot;timestamp&quot;&gt;&amp;lt;2017-03-02 四&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-7&quot;&gt;
 &lt;p&gt;
 install wine-qq on debian&lt;br /&gt;
 &lt;a href=&quot;http://www.longene.org/forum/viewtopic.php?f=6&amp;amp;t=30516&quot;&gt;http://www.longene.org/forum/viewtopic.php?f=6&amp;amp;t=30516&lt;/a&gt;&lt;br /&gt;
@@ -795,9 +875,9 @@ install wine-qq on debian&lt;br /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id=&quot;outline-container-sec-6&quot; class=&quot;outline-2&quot;&gt;
-&lt;h2 id=&quot;sec-6&quot;&gt;&lt;span class=&quot;timestamp-wrapper&quot;&gt;&lt;span class=&quot;timestamp&quot;&gt;&amp;lt;2017-01-24 二&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-6&quot;&gt;
+&lt;div id=&quot;outline-container-sec-8&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-8&quot;&gt;&lt;span class=&quot;timestamp-wrapper&quot;&gt;&lt;span class=&quot;timestamp&quot;&gt;&amp;lt;2017-01-24 二&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-8&quot;&gt;
 &lt;p&gt;
 change emacs' color in terminator, add this line to .bashrc&lt;br /&gt;
 export TERM=xterm-256color&lt;br /&gt;
@@ -818,9 +898,9 @@ define the font by #gnome-tweak-tool&lt;br /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id=&quot;outline-container-sec-7&quot; class=&quot;outline-2&quot;&gt;
-&lt;h2 id=&quot;sec-7&quot;&gt;&lt;span class=&quot;timestamp-wrapper&quot;&gt;&lt;span class=&quot;timestamp&quot;&gt;&amp;lt;2016-12-19 一&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-7&quot;&gt;
+&lt;div id=&quot;outline-container-sec-9&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-9&quot;&gt;&lt;span class=&quot;timestamp-wrapper&quot;&gt;&lt;span class=&quot;timestamp&quot;&gt;&amp;lt;2016-12-19 一&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-9&quot;&gt;
 &lt;p&gt;
 #spni -g n ;; to install npm's extension n&lt;br /&gt;
 #s n 7.2.1 ;;to install nodejs v7.2.1&lt;br /&gt;
@@ -828,9 +908,9 @@ define the font by #gnome-tweak-tool&lt;br /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id=&quot;outline-container-sec-8&quot; class=&quot;outline-2&quot;&gt;
-&lt;h2 id=&quot;sec-8&quot;&gt;&lt;span class=&quot;timestamp-wrapper&quot;&gt;&lt;span class=&quot;timestamp&quot;&gt;&amp;lt;2016-08-23 二&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-8&quot;&gt;
+&lt;div id=&quot;outline-container-sec-10&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-10&quot;&gt;&lt;span class=&quot;timestamp-wrapper&quot;&gt;&lt;span class=&quot;timestamp&quot;&gt;&amp;lt;2016-08-23 二&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-10&quot;&gt;
 &lt;p&gt;
 .emacs&lt;br /&gt;
 L625&lt;br /&gt;
@@ -838,9 +918,9 @@ L625&lt;br /&gt;
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&quot;outline-container-sec-9&quot; class=&quot;outline-2&quot;&gt;
-&lt;h2 id=&quot;sec-9&quot;&gt;&lt;span class=&quot;timestamp-wrapper&quot;&gt;&lt;span class=&quot;timestamp&quot;&gt;&amp;lt;2016-08-25 四&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-9&quot;&gt;
+&lt;div id=&quot;outline-container-sec-11&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-11&quot;&gt;&lt;span class=&quot;timestamp-wrapper&quot;&gt;&lt;span class=&quot;timestamp&quot;&gt;&amp;lt;2016-08-25 四&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-11&quot;&gt;
 &lt;p&gt;
 sudo apt-get install bleachbit&lt;br /&gt;
 sudo apt-get install sweeper&lt;br /&gt;
@@ -870,7 +950,7 @@ alias gl='git pull'&lt;br /&gt;
         </content>
 
         
-          <summary>&amp;lt;2018-04-10 二&amp;gt;</summary>
+          <summary>&amp;lt;2018-05-17 四&amp;gt;</summary>
         
       </entry>
     

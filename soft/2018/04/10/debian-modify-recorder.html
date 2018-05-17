@@ -142,7 +142,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
 <!-- Define a description for better SEO result -->
-<meta name="description" content="&amp;lt;2018-04-10 二&amp;gt; How to execute command on startup (rc.local alternative) which involves use of systemd here: Create a service: sudo vi /etc/systemd/system/rc-local.service Add your code there: [Unit] Description=/etc/rc.local Compatibility ConditionPathExists=/etc/rc.local [Service] ...">
+<meta name="description" content="&amp;lt;2018-05-17 四&amp;gt; ;;off words break (global-visual-line-mode t) use pandoc convert html to org-mode file % pandoc -o cheatsheet.org -f html -t org 'http://sce2.umkc.edu/BIT/burrise/pl/modeling/qanda.html' Fetching http://sce2.umkc.edu/BIT/burrise/pl/modeling/qanda.html... pandoc: Canno...">
 
 <!-- Cheome Web App theme color -->
 <meta name="theme-color" content="#ff00b4">
@@ -714,7 +714,7 @@
 <meta property="og:site_name" content="首页">
 <meta property="og:title" content="Debian modify recorder">
 <meta property="og:url" content="http://0.0.0.0:4321/soft/2018/04/10/debian-modify-recorder.html">
-<meta property="og:description" content="&amp;lt;2018-04-10 二&amp;gt; How to execute command on startup (rc.local alternative) which involves use of systemd here: Create a service: sudo vi /etc/systemd/system/rc-local.service Add your code there: [Unit] Description=/etc/rc.local Compatibility ConditionPathExists=/etc/rc.local [Service] ...">
+<meta property="og:description" content="&amp;lt;2018-05-17 四&amp;gt; ;;off words break (global-visual-line-mode t) use pandoc convert html to org-mode file % pandoc -o cheatsheet.org -f html -t org 'http://sce2.umkc.edu/BIT/burrise/pl/modeling/qanda.html' Fetching http://sce2.umkc.edu/BIT/burrise/pl/modeling/qanda.html... pandoc: Canno...">
 <meta property="og:image" content="http://0.0.0.0:4321/logo.png">
 
 <meta name="twitter:card" content="summary_large_image">
@@ -729,9 +729,9 @@
   <meta property="article:published_time" content="2018-04-10T00:00:00+08:00">
   <meta property="article:modified_time" content="">
   <meta name="twitter:label1" value="Words">
-  <meta name="twitter:data1" value="947 words">
+  <meta name="twitter:data1" value="1303 words">
   <meta name="twitter:label2" value="Reading time">
-  <meta name="twitter:data2" value="4 mins">
+  <meta name="twitter:data2" value="6 mins">
 
 
 <!-- Post specified styles -->
@@ -5060,73 +5060,155 @@ margin-left: 12px;
   <!-- Post content -->
   <div class="post-content">
     <div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="timestamp-wrapper"><span class="timestamp">&lt;2018-04-10 二&gt;</span></span></h2>
+<h2 id="sec-1"><span class="timestamp-wrapper"><span class="timestamp">&lt;2018-05-17 四&gt;</span></span></h2>
 <div class="outline-text-2" id="text-1">
 </div><div id="outline-container-sec-1-1" class="outline-3">
-<h3 id="sec-1-1">How to execute command on startup (rc.local alternative)</h3>
+<h3 id="sec-1-1">;;off words break</h3>
 <div class="outline-text-3" id="text-1-1">
+<p>
+<code>(global-visual-line-mode t)</code><br >
+</p>
+</div>
+</div>
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2">use pandoc convert html to org-mode file</h3>
+<div class="outline-text-3" id="text-1-2">
+<div class="org-src-container">
+
+<pre class="src src-java">% pandoc -o cheatsheet.org -f html -t org <span class="org-string">'http://sce2.umkc.edu/BIT/burrise/pl/modeling/qanda.html'</span>
+ Fetching http:<span class="org-comment-delimiter">//</span><span class="org-comment">sce2.umkc.edu/BIT/burrise/pl/modeling/qanda.html...</span>
+ pandoc: Cannot decode <span class="org-type">byte</span> <span class="org-string">'\x92'</span>: <span class="org-constant">Data</span>.<span class="org-constant">Text</span>.<span class="org-constant">Internal</span>.<span class="org-constant">Encoding</span>.Fusion.streamUtf8: Invalid UTF-8 stream
+ %
+</pre>
+</div>
+
+<p>
+UPDATE: It looks like the problem was with web-page it self! I tried it with another HTML website and it works juts fine (need some formatting but almost all the job has been done, thanks to pandoc):<br >
+</p>
+<div class="org-src-container">
+
+<pre class="src src-c">% curl http:<span class="org-comment-delimiter">//</span><span class="org-comment">anh.cs.luc.edu/170/notes/CSharpHtml/sorting.html  &gt; foo.html </span>
+% pandoc -o foo.org -f html -t org foo.html
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="timestamp-wrapper"><span class="timestamp">&lt;2018-04-11 三&gt;</span></span></h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1">modify the fcitx didn't work under openbox OS.</h3>
+<div class="outline-text-3" id="text-2-1">
+<div class="org-src-container">
+
+<pre class="src src-c">cd /usr/share/applications
+;;pay attention to the folder <span class="org-type">is</span> <span class="org-variable-name">application</span>, <span class="org-variable-name">not</span> applications.
+ls fc*
+cp fcitx.desktop ~/.config/autostart/
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2">Modify the problem of the wifi 固件缺失</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+sai firmware-linux-free<br >
+git clone git://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git<br >
+git clone git://git.kernel.org/pub/scm/linux/kernel/git/romieu/linux-firmware.git<br >
+sudo cp -r linux-firmware/rtl_nic/ <i>lib/firmware</i><br >
+sudo update-initramfs -u<br >
+lspci<br >
+lspci -nn | grep Network<br >
+s discover &#x2013;vendor-id &#x2013;model-id pci | uniq<br >
+sai firmware-brcm80211<br >
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="timestamp-wrapper"><span class="timestamp">&lt;2018-04-10 二&gt;</span></span></h2>
+<div class="outline-text-2" id="text-3">
+</div><div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1">How to execute command on startup (rc.local alternative)</h3>
+<div class="outline-text-3" id="text-3-1">
 <p>
 which involves use of systemd here:<br >
 </p>
 </div>
-<ul class="org-ul"><li><a id="sec-1-1-1" name="sec-1-1-1"></a>Create a service:<br ><div class="outline-text-4" id="text-1-1-1">
-<pre class="example">
-sudo vi /etc/systemd/system/rc-local.service
+<ul class="org-ul"><li><a id="sec-3-1-1" name="sec-3-1-1"></a>Create a service:<br ><div class="outline-text-4" id="text-3-1-1">
+<div class="org-src-container">
+
+<pre class="src src-c"><span class="org-type">sudo</span> <span class="org-variable-name">vi</span> /etc/systemd/system/rc-local.service
 </pre>
 </div>
+</div>
 </li>
-<li><a id="sec-1-1-2" name="sec-1-1-2"></a>Add your code there:<br ><div class="outline-text-4" id="text-1-1-2">
-<pre class="example">
-[Unit]
-Description=/etc/rc.local Compatibility
-ConditionPathExists=/etc/rc.local
+<li><a id="sec-3-1-2" name="sec-3-1-2"></a>Add your code there:<br ><div class="outline-text-4" id="text-3-1-2">
+<div class="org-src-container">
+
+<pre class="src src-sh">[Unit]
+<span class="org-variable-name">Description</span>=/etc/rc.local Compatibility
+<span class="org-variable-name">ConditionPathExists</span>=/etc/rc.local
 
 [Service]
-Type=forking
-ExecStart=/etc/rc.local start
-TimeoutSec=0
-StandardOutput=tty
-RemainAfterExit=yes
-SysVStartPriority=99
+<span class="org-variable-name">Type</span>=forking
+<span class="org-variable-name">ExecStart</span>=/etc/rc.local start
+<span class="org-variable-name">TimeoutSec</span>=0
+<span class="org-variable-name">StandardOutput</span>=tty
+<span class="org-variable-name">RemainAfterExit</span>=yes
+<span class="org-variable-name">SysVStartPriority</span>=99
 
 [Install]
-WantedBy=multi-user.target
+<span class="org-variable-name">WantedBy</span>=multi-user.target
 </pre>
 </div>
+</div>
 </li>
-<li><a id="sec-1-1-3" name="sec-1-1-3"></a>Create and make sure /etc/rc.local is executable and add this code inside it:<br ><div class="outline-text-4" id="text-1-1-3">
-<pre class="example">
-sudo chmod +x /etc/rc.local
-</pre>
-<pre class="example">
-#!/bin/sh -e
-#
-# rc.local
-#
-# This script is executed at the end of each multiuser runlevel.
-# Make sure that the script will "exit 0" on success or any other
-# value on error.
-#
-# In order to enable or disable this script just change the execution
-# bits.
-#
-# By default this script does nothing.
+<li><a id="sec-3-1-3" name="sec-3-1-3"></a>Create and make sure /etc/rc.local is executable and add this code inside it:<br ><div class="outline-text-4" id="text-3-1-3">
+<div class="org-src-container">
 
-exit 0
+<pre class="src src-c"><span class="org-type">sudo</span> <span class="org-variable-name">chmod</span> +x /etc/rc.local
 </pre>
 </div>
-</li>
-<li><a id="sec-1-1-4" name="sec-1-1-4"></a>Enable the service:<br ><div class="outline-text-4" id="text-1-1-4">
-<pre class="example">
-sudo systemctl enable rc-local
+<div class="org-src-container">
+
+<pre class="src src-sh"><span class="org-comment-delimiter">#</span><span class="org-comment">!/bin/</span><span class="org-keyword">sh</span><span class="org-comment"> -e</span>
+<span class="org-comment-delimiter">#</span>
+<span class="org-comment-delimiter"># </span><span class="org-comment">rc.local</span>
+<span class="org-comment-delimiter">#</span>
+<span class="org-comment-delimiter"># </span><span class="org-comment">This script is executed at the end of each multiuser runlevel.</span>
+<span class="org-comment-delimiter"># </span><span class="org-comment">Make sure that the script will "exit 0" on success or any other</span>
+<span class="org-comment-delimiter"># </span><span class="org-comment">value on error.</span>
+<span class="org-comment-delimiter">#</span>
+<span class="org-comment-delimiter"># </span><span class="org-comment">In order to enable or disable this script just change the execution</span>
+<span class="org-comment-delimiter"># </span><span class="org-comment">bits.</span>
+<span class="org-comment-delimiter">#</span>
+<span class="org-comment-delimiter"># </span><span class="org-comment">By default this script does nothing.</span>
+
+<span class="org-keyword">exit</span> 0
 </pre>
 </div>
+</div>
 </li>
-<li><a id="sec-1-1-5" name="sec-1-1-5"></a>Start service and check status:<br ><div class="outline-text-4" id="text-1-1-5">
-<pre class="example">
-sudo systemctl start rc-local.service
+<li><a id="sec-3-1-4" name="sec-3-1-4"></a>Enable the service:<br ><div class="outline-text-4" id="text-3-1-4">
+<div class="org-src-container">
+
+<pre class="src src-c">sudo systemctl <span class="org-type">enable</span> <span class="org-variable-name">rc</span>-local
+</pre>
+</div>
+</div>
+</li>
+<li><a id="sec-3-1-5" name="sec-3-1-5"></a>Start service and check status:<br ><div class="outline-text-4" id="text-3-1-5">
+<div class="org-src-container">
+
+<pre class="src src-c">sudo systemctl <span class="org-type">start</span> <span class="org-variable-name">rc</span>-local.service
 sudo systemctl status rc-local.service
 </pre>
+</div>
 
 <p>
 If all goes well you can add your code to the /etc/rc.local file then restart it.<br >
@@ -5135,20 +5217,22 @@ If all goes well you can add your code to the /etc/rc.local file then restart it
 </li></ul>
 </div>
 
-<div id="outline-container-sec-1-2" class="outline-3">
-<h3 id="sec-1-2">openbox close sleep and screensaver</h3>
-<div class="outline-text-3" id="text-1-2">
-<pre class="example">
-#xset s 300      #设置屏保时间为300秒，时间单位为秒
-#xset s 0        #关闭屏幕保护
-#xset dpms 0 0 0 # 三个数值分别为Standby、Suspend、Off，单位秒
-#xset -dpms      #关闭电源管理
+<div id="outline-container-sec-3-2" class="outline-3">
+<h3 id="sec-3-2">openbox close sleep and screensaver</h3>
+<div class="outline-text-3" id="text-3-2">
+<div class="org-src-container">
+
+<pre class="src src-sh"><span class="org-comment-delimiter">#</span><span class="org-comment">xset s 300      #&#35774;&#32622;&#23631;&#20445;&#26102;&#38388;&#20026;300&#31186;&#65292;&#26102;&#38388;&#21333;&#20301;&#20026;&#31186;</span>
+<span class="org-comment-delimiter">#</span><span class="org-comment">xset s 0        #&#20851;&#38381;&#23631;&#24149;&#20445;&#25252;</span>
+<span class="org-comment-delimiter">#</span><span class="org-comment">xset dpms 0 0 0 # &#19977;&#20010;&#25968;&#20540;&#20998;&#21035;&#20026;Standby&#12289;Suspend&#12289;Off&#65292;&#21333;&#20301;&#31186;</span>
+<span class="org-comment-delimiter">#</span><span class="org-comment">xset -dpms      #&#20851;&#38381;&#30005;&#28304;&#31649;&#29702;</span>
 </pre>
 </div>
 </div>
-<div id="outline-container-sec-1-3" class="outline-3">
-<h3 id="sec-1-3">openbox environment setup</h3>
-<div class="outline-text-3" id="text-1-3">
+</div>
+<div id="outline-container-sec-3-3" class="outline-3">
+<h3 id="sec-3-3">openbox environment setup</h3>
+<div class="outline-text-3" id="text-3-3">
 <p>
 Setting up your environment<br >
 </p>
@@ -5156,30 +5240,33 @@ Setting up your environment<br >
 <p>
 If you would like to set environment variables that will affect everything run in your current session (including Openbox), you can place them in ~/.config/openbox/environment. Here's an example ~/.config/openbox/environment file:<br >
 </p>
-<pre class="example">
-# Set up my own path
-export PATH=$HOME/bin:$PATH
+<div class="org-src-container">
 
-# Change the language used from the system's default
-export LC_CTYPE=ja_JP.utf8
+<pre class="src src-sh"><span class="org-comment-delimiter"># </span><span class="org-comment">Set up my own path</span>
+<span class="org-builtin">export</span> <span class="org-variable-name">PATH</span>=$<span class="org-variable-name">HOME</span>/bin:$<span class="org-variable-name">PATH</span>
 
-# SCIM for typing non-english characters
-export XMODIFIERS=@im=SCIM
-export GTK_IM_MODULE=scim
-export QT_IM_MODULE=scim
+<span class="org-comment-delimiter"># </span><span class="org-comment">Change the language used from the system's default</span>
+<span class="org-builtin">export</span> <span class="org-variable-name">LC_CTYPE</span>=ja_JP.utf8
+
+<span class="org-comment-delimiter"># </span><span class="org-comment">SCIM for typing non-english characters</span>
+<span class="org-builtin">export</span> <span class="org-variable-name">XMODIFIERS</span>=@<span class="org-variable-name">im</span>=SCIM
+<span class="org-builtin">export</span> <span class="org-variable-name">GTK_IM_MODULE</span>=scim
+<span class="org-builtin">export</span> <span class="org-variable-name">QT_IM_MODULE</span>=scim
 </pre>
 </div>
 </div>
+</div>
 
-<div id="outline-container-sec-1-4" class="outline-3">
-<h3 id="sec-1-4">openbox keyblinding setup, ~/.config/openbox/rc.xml</h3>
-<div class="outline-text-3" id="text-1-4">
-<pre class="example">
-&lt;!-- Keybindings for running applications --&gt;
-&lt;keybind key="W-e"&gt;
-  &lt;action name="Execute"&gt;
+<div id="outline-container-sec-3-4" class="outline-3">
+<h3 id="sec-3-4">openbox keyblinding setup, ~/.config/openbox/rc.xml</h3>
+<div class="outline-text-3" id="text-3-4">
+<div class="org-src-container">
+
+<pre class="src src-c">&lt;<span class="org-negation-char">!</span>-- Keybindings <span class="org-keyword">for</span> running applications --&gt;
+&lt;keybind key=<span class="org-string">"W-e"</span>&gt;
+  &lt;action name=<span class="org-string">"Execute"</span>&gt;
     &lt;startupnotify&gt;
-      &lt;enabled&gt;true&lt;/enabled&gt;
+      &lt;enabled&gt;<span class="org-constant">true</span>&lt;/enabled&gt;
       &lt;name&gt;kfmclient&lt;/name&gt;
     &lt;/startupnotify&gt;
     &lt;command&gt;pcmanfm&lt;/command&gt;
@@ -5189,49 +5276,42 @@ export QT_IM_MODULE=scim
 </div>
 </div>
 </div>
+</div>
 
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="timestamp-wrapper"><span class="timestamp">&lt;2017-06-01 四&gt;</span></span></h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="timestamp-wrapper"><span class="timestamp">&lt;2017-06-01 四&gt;</span></span></h2>
+<div class="outline-text-2" id="text-4">
 <p>
 chane the _app/assets/themes/curtana/_less/common.less<br >
-table {<br >
 </p>
+<div class="org-src-container">
 
-<p>
-tr:nth-child(even){background-color: #f5f2ff}<br >
-</p>
+<pre class="src src-java">table {
 
+<span class="org-constant">tr</span>:nth-child(even){background-color: #f5f2ff}
+
+th {
+    background-color: #cC0Ff0;
+    <span class="org-constant">color</span>: white;
+}
+     <span class="org-comment-delimiter">// </span><span class="org-comment">TODO: responsive table support</span>
+-    <span class="org-comment-delimiter">// </span><span class="org-comment">display: inline-block;</span>
+-    <span class="org-comment-delimiter">// </span><span class="org-comment">overflow-x: auto;</span>
+-    <span class="org-comment-delimiter">// </span><span class="org-comment">white-space: nowrap;</span>
++    display: inline-block;
++    overflow-x: auto;
++    white-space: nowrap;
+}
+</pre>
+</div>
 <p>
-th {<br >
-    background-color: #cC0Ff0;<br >
-    color: white;<br >
-}<br >
-     // TODO: responsive table support<br >
-</p>
-<ul class="org-ul">
-<li>// display: inline-block;<br >
-</li>
-<li>// overflow-x: auto;<br >
-</li>
-<li>// white-space: nowrap;<br >
-</li>
-<li>display: inline-block;<br >
-</li>
-<li>overflow-x: auto;<br >
-</li>
-<li>white-space: nowrap;<br >
-</li>
-</ul>
-<p>
-}<br >
 and then the TABLE had 横拉滚动条<br >
 </p>
 </div>
 </div>
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3"><span class="timestamp-wrapper"><span class="timestamp">&lt;2017-04-14 五&gt;</span></span></h2>
-<div class="outline-text-2" id="text-3">
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="timestamp-wrapper"><span class="timestamp">&lt;2017-04-14 五&gt;</span></span></h2>
+<div class="outline-text-2" id="text-5">
 <p>
 A friend sent me an email with a JPEG photo in the middle of the text. The picture is so big, most of it is outside the screen and I want to view it with an outside image viewer and not in Gnus. How do I save an image that is included in the email in Gnus, if it's not just an ordinary attachment?<br >
 </p>
@@ -5239,12 +5319,12 @@ A friend sent me an email with a JPEG photo in the middle of the text. The pictu
 <p>
 The command you need is gnus-summary-save-parts. You have an inline image, which implies that you received an HTML mail. An inline image is an instance of a so-called MIME part, where MIME is an Internet standard governing email-related things such as non-text attachments.<br >
 </p>
+<div class="org-src-container">
 
-<p>
-L ;;list all group of gnus<br >
-X m ;;save image to ~/<br >
-</p>
-
+<pre class="src src-java">L ;;list all group of gnus
+<span class="org-type">X</span> <span class="org-variable-name">m</span> ;;save <span class="org-type">image</span> <span class="org-variable-name">to</span> ~/
+</pre>
+</div>
 <p>
 debian chrome extensions installation is not enabled.<br >
 se /etc/environment<br >
@@ -5253,9 +5333,9 @@ CHROMIUM_FLAGS='&#x2013;enable-remote-extensions'<br >
 </div>
 </div>
 
-<div id="outline-container-sec-4" class="outline-2">
-<h2 id="sec-4"><span class="timestamp-wrapper"><span class="timestamp">&lt;2017-04-13 四&gt;</span></span></h2>
-<div class="outline-text-2" id="text-4">
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6"><span class="timestamp-wrapper"><span class="timestamp">&lt;2017-04-13 四&gt;</span></span></h2>
+<div class="outline-text-2" id="text-6">
 <p>
 export WINEARCH=win32<br >
 export WINEPREFIX=$HOME/.mynewwine32prefix/<br >
@@ -5279,9 +5359,9 @@ s apt-get install -f<br >
 </div>
 </div>
 
-<div id="outline-container-sec-5" class="outline-2">
-<h2 id="sec-5"><span class="timestamp-wrapper"><span class="timestamp">&lt;2017-03-02 四&gt;</span></span></h2>
-<div class="outline-text-2" id="text-5">
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7"><span class="timestamp-wrapper"><span class="timestamp">&lt;2017-03-02 四&gt;</span></span></h2>
+<div class="outline-text-2" id="text-7">
 <p>
 install wine-qq on debian<br >
 <a href="http://www.longene.org/forum/viewtopic.php?f=6&t=30516">http://www.longene.org/forum/viewtopic.php?f=6&t=30516</a><br >
@@ -5289,9 +5369,9 @@ install wine-qq on debian<br >
 </div>
 </div>
 
-<div id="outline-container-sec-6" class="outline-2">
-<h2 id="sec-6"><span class="timestamp-wrapper"><span class="timestamp">&lt;2017-01-24 二&gt;</span></span></h2>
-<div class="outline-text-2" id="text-6">
+<div id="outline-container-sec-8" class="outline-2">
+<h2 id="sec-8"><span class="timestamp-wrapper"><span class="timestamp">&lt;2017-01-24 二&gt;</span></span></h2>
+<div class="outline-text-2" id="text-8">
 <p>
 change emacs' color in terminator, add this line to .bashrc<br >
 export TERM=xterm-256color<br >
@@ -5312,9 +5392,9 @@ define the font by #gnome-tweak-tool<br >
 </div>
 </div>
 
-<div id="outline-container-sec-7" class="outline-2">
-<h2 id="sec-7"><span class="timestamp-wrapper"><span class="timestamp">&lt;2016-12-19 一&gt;</span></span></h2>
-<div class="outline-text-2" id="text-7">
+<div id="outline-container-sec-9" class="outline-2">
+<h2 id="sec-9"><span class="timestamp-wrapper"><span class="timestamp">&lt;2016-12-19 一&gt;</span></span></h2>
+<div class="outline-text-2" id="text-9">
 <p>
 #spni -g n ;; to install npm's extension n<br >
 #s n 7.2.1 ;;to install nodejs v7.2.1<br >
@@ -5322,9 +5402,9 @@ define the font by #gnome-tweak-tool<br >
 </div>
 </div>
 
-<div id="outline-container-sec-8" class="outline-2">
-<h2 id="sec-8"><span class="timestamp-wrapper"><span class="timestamp">&lt;2016-08-23 二&gt;</span></span></h2>
-<div class="outline-text-2" id="text-8">
+<div id="outline-container-sec-10" class="outline-2">
+<h2 id="sec-10"><span class="timestamp-wrapper"><span class="timestamp">&lt;2016-08-23 二&gt;</span></span></h2>
+<div class="outline-text-2" id="text-10">
 <p>
 .emacs<br >
 L625<br >
@@ -5332,9 +5412,9 @@ L625<br >
 </p>
 </div>
 </div>
-<div id="outline-container-sec-9" class="outline-2">
-<h2 id="sec-9"><span class="timestamp-wrapper"><span class="timestamp">&lt;2016-08-25 四&gt;</span></span></h2>
-<div class="outline-text-2" id="text-9">
+<div id="outline-container-sec-11" class="outline-2">
+<h2 id="sec-11"><span class="timestamp-wrapper"><span class="timestamp">&lt;2016-08-25 四&gt;</span></span></h2>
+<div class="outline-text-2" id="text-11">
 <p>
 sudo apt-get install bleachbit<br >
 sudo apt-get install sweeper<br >
