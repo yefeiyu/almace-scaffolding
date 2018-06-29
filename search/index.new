@@ -4707,6 +4707,282 @@ margin-left: 12px;
   text-align: left;
 }
 
+.tag-cloud {
+list-style: none;
+word-break:keep-all;
+padding: 0;
+padding-right: 6%;
+text-align: justify; 
+font-size: 16px;
+a{
+display: inline-block;
+margin: 0 12px 12px 0; 
+}}
+
+.archive-group {
+margin: 15px;
+border-top: 1px solid;
+}
+.archive-item {
+margin-left: 12px;
+}
+.post-tags {
+  text-align: left;
+}
+
+.tag-cloud {
+list-style: none;
+word-break:keep-all;
+padding: 0;
+padding-right: 6%;
+text-align: justify; 
+font-size: 16px;
+a{
+display: inline-block;
+margin: 0 12px 12px 0; 
+}}
+
+.archive-group {
+margin: 15px;
+border-top: 1px solid;
+}
+.archive-item {
+margin-left: 12px;
+}
+.post-tags {
+  text-align: left;
+}
+
+.tag-cloud {
+list-style: none;
+word-break:keep-all;
+padding: 0;
+padding-right: 6%;
+text-align: justify; 
+font-size: 16px;
+a{
+display: inline-block;
+margin: 0 12px 12px 0; 
+}}
+
+.archive-group {
+margin: 15px;
+border-top: 1px solid;
+}
+.archive-item {
+margin-left: 12px;
+}
+.post-tags {
+  text-align: left;
+}
+
+.tag-cloud {
+list-style: none;
+word-break:keep-all;
+padding: 0;
+padding-right: 6%;
+text-align: justify; 
+font-size: 16px;
+a{
+display: inline-block;
+margin: 0 12px 12px 0; 
+}}
+
+.archive-group {
+margin: 15px;
+border-top: 1px solid;
+}
+.archive-item {
+margin-left: 12px;
+}
+.post-tags {
+  text-align: left;
+}
+
+.tag-cloud {
+list-style: none;
+word-break:keep-all;
+padding: 0;
+padding-right: 6%;
+text-align: justify; 
+font-size: 16px;
+a{
+display: inline-block;
+margin: 0 12px 12px 0; 
+}}
+
+.archive-group {
+margin: 15px;
+border-top: 1px solid;
+}
+.archive-item {
+margin-left: 12px;
+}
+.post-tags {
+  text-align: left;
+}
+
+.tag-cloud {
+list-style: none;
+word-break:keep-all;
+padding: 0;
+padding-right: 6%;
+text-align: justify; 
+font-size: 16px;
+a{
+display: inline-block;
+margin: 0 12px 12px 0; 
+}}
+
+.archive-group {
+margin: 15px;
+border-top: 1px solid;
+}
+.archive-item {
+margin-left: 12px;
+}
+.post-tags {
+  text-align: left;
+}
+
+.tag-cloud {
+list-style: none;
+word-break:keep-all;
+padding: 0;
+padding-right: 6%;
+text-align: justify; 
+font-size: 16px;
+a{
+display: inline-block;
+margin: 0 12px 12px 0; 
+}}
+
+.archive-group {
+margin: 15px;
+border-top: 1px solid;
+}
+.archive-item {
+margin-left: 12px;
+}
+.post-tags {
+  text-align: left;
+}
+
+.tag-cloud {
+list-style: none;
+word-break:keep-all;
+padding: 0;
+padding-right: 6%;
+text-align: justify; 
+font-size: 16px;
+a{
+display: inline-block;
+margin: 0 12px 12px 0; 
+}}
+
+.archive-group {
+margin: 15px;
+border-top: 1px solid;
+}
+.archive-item {
+margin-left: 12px;
+}
+.post-tags {
+  text-align: left;
+}
+
+.tag-cloud {
+list-style: none;
+word-break:keep-all;
+padding: 0;
+padding-right: 6%;
+text-align: justify; 
+font-size: 16px;
+a{
+display: inline-block;
+margin: 0 12px 12px 0; 
+}}
+
+.archive-group {
+margin: 15px;
+border-top: 1px solid;
+}
+.archive-item {
+margin-left: 12px;
+}
+.post-tags {
+  text-align: left;
+}
+
+.tag-cloud {
+list-style: none;
+word-break:keep-all;
+padding: 0;
+padding-right: 6%;
+text-align: justify; 
+font-size: 16px;
+a{
+display: inline-block;
+margin: 0 12px 12px 0; 
+}}
+
+.archive-group {
+margin: 15px;
+border-top: 1px solid;
+}
+.archive-item {
+margin-left: 12px;
+}
+.post-tags {
+  text-align: left;
+}
+
+.tag-cloud {
+list-style: none;
+word-break:keep-all;
+padding: 0;
+padding-right: 6%;
+text-align: justify; 
+font-size: 16px;
+a{
+display: inline-block;
+margin: 0 12px 12px 0; 
+}}
+
+.archive-group {
+margin: 15px;
+border-top: 1px solid;
+}
+.archive-item {
+margin-left: 12px;
+}
+.post-tags {
+  text-align: left;
+}
+
+.tag-cloud {
+list-style: none;
+word-break:keep-all;
+padding: 0;
+padding-right: 6%;
+text-align: justify; 
+font-size: 16px;
+a{
+display: inline-block;
+margin: 0 12px 12px 0; 
+}}
+
+.archive-group {
+margin: 15px;
+border-top: 1px solid;
+}
+.archive-item {
+margin-left: 12px;
+}
+.post-tags {
+  text-align: left;
+}
+
 </style>
 
 <!-- Main navigation with current page / categoriy highlighted -->
@@ -4966,6 +5242,36 @@ search.start();
   <div id="search-searchbar"></div>
 
   <div class="post-list" id="search-hits">
+    
+      <div class="post-item">
+        
+        <span class="post-meta">Jun 29, 2018</span>
+
+        <h2>
+          <a class="post-link" href="/soft/2018/06/29/google-bbr-&-bandwagon-ssr%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B.html">
+            google bbr &amp; bandwagon ssr安装使用教程
+          </a>
+        </h2>
+
+        <div class="post-snippet"><div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> computer engine-VM 实例-ssh-在浏览器窗口中打开</h2>
+</</div>
+      </div>
+    
+      <div class="post-item">
+        
+        <span class="post-meta">Jun 29, 2018</span>
+
+        <h2>
+          <a class="post-link" href="/mobile/2018/06/29/%E4%B8%8E%E8%8B%B9%E6%9E%9C%E4%B8%BA%E6%95%8C-%E6%97%A0%E6%B3%95%E6%BF%80%E6%B4%BB%E7%BB%95%E8%BF%87icloud%E9%AA%8C%E8%AF%81%E8%BF%9B%E5%85%A5ios%E7%B3%BB%E7%BB%9F.html">
+            与苹果为敌——无法激活绕过icloud验证进入iOS系统
+          </a>
+        </h2>
+
+        <div class="post-snippet"><div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> 无法激活状态的前情</h2>
+<div class="outline-text-2" </div>
+      </div>
     
       <div class="post-item">
         

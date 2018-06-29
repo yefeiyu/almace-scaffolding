@@ -137,7 +137,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>首页</title>
   <subtitle>y.g.i</subtitle>
-  <updated>2018-05-17T10:03:09+08:00</updated>
+  <updated>2018-06-29T16:25:21+08:00</updated>
   <id>http://0.0.0.0:4321/</id>
   <generator uri="https://sparanoid.com/lab/amsf/" version="1.1.10">Almace Scaffolding</generator>
 
@@ -150,6 +150,289 @@
     <email>yefeiyu@gmail.com</email>
   </author>
 
+  
+    
+      
+
+      
+
+      <entry>
+        <title>google bbr &amp; bandwagon ssr安装使用教程</title>
+        <id>http://0.0.0.0:4321/soft/2018/06/29/google-bbr-&amp;-bandwagon-ssr%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B.html</id>
+        <link rel="alternate" type="text/html" href="http://0.0.0.0:4321/soft/2018/06/29/google-bbr-&-bandwagon-ssr%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B.html" />
+        <published>2018-06-29T00:00:00+08:00</published>
+
+        
+          <updated>2018-06-29T00:00:00+08:00</updated>
+        
+
+        <author>
+          <name>yefeiyu</name>
+          <uri>http://yefeiyu.github.io</uri>
+          <email>yefeiyu@gmail.com</email>
+        </author>
+
+        <content type="html" xml:base="http://0.0.0.0:4321/">
+          
+            &lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-1&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;1&lt;/span&gt; computer engine-VM 实例-ssh-在浏览器窗口中打开&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-2&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-2&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;2&lt;/span&gt; 遇到问题删除，新建&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-2&quot;&gt;
+&lt;p&gt;
+CentOS7-勾选http https防火墙（防火墙规则已建）&lt;br /&gt;
+VPC网络-外部IP地址（释放原来的）&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-3&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-3&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;3&lt;/span&gt; bbr开启&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-3&quot;&gt;
+&lt;p&gt;
+&lt;a href=&quot;https://teddysun.com/489.html&quot;&gt;https://teddysun.com/489.html&lt;/a&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-4&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-4&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;4&lt;/span&gt; ssr一键安装脚本&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-4&quot;&gt;
+&lt;p&gt;
+&lt;a href=&quot;https://shadowsocks.be/9.html&quot;&gt;https://shadowsocks.be/9.html&lt;/a&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-5&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-5&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;5&lt;/span&gt; Windows客户端下载地址：&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-5&quot;&gt;
+&lt;p&gt;
+&lt;a href=&quot;https://github.com/shadowsocksr-backup/shadowsocksr-csharp/releases&quot;&gt;https://github.com/shadowsocksr-backup/shadowsocksr-csharp/releases&lt;/a&gt;&lt;br /&gt;
+pac:&lt;br /&gt;
+&lt;a href=&quot;https://doub.io/ss-jc59/&quot;&gt;https://doub.io/ss-jc59/&lt;/a&gt;&lt;br /&gt;
+or derect download: &lt;a href=&quot;https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/other/pac.txt&quot;&gt;https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/other/pac.txt&lt;/a&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+          
+          
+        
+      
+        </content>
+
+        
+          <summary>1 computer engine-VM 实例-ssh-在浏览器窗口中打开&amp;lt;/</summary>
+        
+      </entry>
+    
+  
+    
+      
+
+      
+
+      <entry>
+        <title>与苹果为敌——无法激活绕过icloud验证进入iOS系统</title>
+        <id>http://0.0.0.0:4321/mobile/2018/06/29/%E4%B8%8E%E8%8B%B9%E6%9E%9C%E4%B8%BA%E6%95%8C-%E6%97%A0%E6%B3%95%E6%BF%80%E6%B4%BB%E7%BB%95%E8%BF%87icloud%E9%AA%8C%E8%AF%81%E8%BF%9B%E5%85%A5ios%E7%B3%BB%E7%BB%9F.html</id>
+        <link rel="alternate" type="text/html" href="http://0.0.0.0:4321/mobile/2018/06/29/%E4%B8%8E%E8%8B%B9%E6%9E%9C%E4%B8%BA%E6%95%8C-%E6%97%A0%E6%B3%95%E6%BF%80%E6%B4%BB%E7%BB%95%E8%BF%87icloud%E9%AA%8C%E8%AF%81%E8%BF%9B%E5%85%A5ios%E7%B3%BB%E7%BB%9F.html" />
+        <published>2018-06-29T00:00:00+08:00</published>
+
+        
+          <updated>2018-06-29T00:00:00+08:00</updated>
+        
+
+        <author>
+          <name>yefeiyu</name>
+          <uri>http://yefeiyu.github.io</uri>
+          <email>yefeiyu@gmail.com</email>
+        </author>
+
+        <content type="html" xml:base="http://0.0.0.0:4321/">
+          
+            &lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-1&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;1&lt;/span&gt; 无法激活状态的前情&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-1&quot;&gt;
+&lt;p&gt;
+一直越狱使用iOS9.0.2的手机，上周摔了屏幕，想到天才吧花点贵钱换个原装屏。天才吧的政策是手机必须非越狱状态才提供维修服务，不得已只好搜索一下越狱擦除工具。开始的时候使用Cydia eraser（原Cydia Impactor），提供无ota无法使用；继尔使用SemiRestore，成功擦除。&lt;br /&gt;
+擦除后发现不能激活，再次上网搜索，发现是9.0-9.1关闭了（即使正常状态下手机恢复）激活通道。&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-2&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-2&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;2&lt;/span&gt; 绕过激活开启手机&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-2&quot;&gt;
+&lt;p&gt;
+SemiRestore擦除保留了越狱系统，擦除时强制要求在Cydia下载Openssh。这一措施为下述这方案提供ssh控制手机的支持。&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-2-1&quot; class=&quot;outline-3&quot;&gt;
+&lt;h3 id=&quot;sec-2-1&quot;&gt;&lt;span class=&quot;section-number-3&quot;&gt;2.1&lt;/span&gt; 开始使用bypass iCloud activation修改DNS后网页版，得到safari网页版系统，能使用部分手机功能。&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-2-2&quot; class=&quot;outline-3&quot;&gt;
+&lt;h3 id=&quot;sec-2-2&quot;&gt;&lt;span class=&quot;section-number-3&quot;&gt;2.2&lt;/span&gt; 然后看到这个贴子&lt;/h3&gt;
+&lt;div class=&quot;outline-text-3&quot; id=&quot;text-2-2&quot;&gt;
+&lt;p&gt;
+（&lt;a href=&quot;https://www.reddit.com/r/jailbreak/comments/82y50o/question_cant_activate_after_semi_restore_on_902/%EF%BC%89%E7%9A%84%E6%AD%A5%E9%AA%A4&quot;&gt;https://www.reddit.com/r/jailbreak/comments/82y50o/question_cant_activate_after_semi_restore_on_902/%EF%BC%89%E7%9A%84%E6%AD%A5%E9%AA%A4&lt;/a&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Yeah 9.0.2 has no tfp0 enabled. Hmm, can you send file to your device through SSH ? If so, then try this :&lt;br /&gt;
+download this nvrampatcher and place to root folder (/)&lt;br /&gt;
+ssh your device, login as root, pass alpine&lt;br /&gt;
+type&amp;amp;enter: chmod +x nvrampatcher&lt;br /&gt;
+type&amp;amp;enter: ./nvrampatcher&lt;br /&gt;
+wait until it say &quot;Applying kernel patch&amp;#x2026; done&quot; then good&lt;br /&gt;
+type&amp;amp;enter: nvram -p&lt;br /&gt;
+type&amp;amp;enter: nvram com.apple.System.boot-nonce=GENERATOR_BLOBS&lt;br /&gt;
+then type&amp;amp;enter: nvram -p&lt;br /&gt;
+if the string nvram com.apple.System.boot-nonce=0xxx is appear, then good, your Generator has been set. Do upgrade from 9.0.2 to jailbroken firmware (in your case which is 11.0 - 11.1.2) with latest (unofficial) futurerestore v173.&lt;br /&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+试了启动tpf0（&lt;a href=&quot;https://mrmad.com.tw/cl0ver%EF%BC%89%EF%BC%8C%E4%BA%A6%E6%9C%AA%E8%83%BD%E6%BF%80%E6%B4%BB%E3%80%82%EF%BC%88%E8%BF%99%E7%AF%87%E6%96%87%E7%AB%A0%E4%B8%AD%E9%97%B4%E7%BF%BB%E8%AF%91%E6%9C%89%E7%82%B9%E5%B0%8F%E7%BC%BA%E6%BC%8F%EF%BC%8C%E9%9C%80%E8%A6%81%E5%88%86%E5%88%AB%E4%B8%8B%E8%BD%BD%E5%B9%B6%E5%B0%87%E3%80%8Ccl0ver%E6%AA%94%E6%A1%88%E3%80%8D%E8%88%87%E3%80%8Coffsets.dat%E6%AA%94%E6%A1%88%E3%80%8D%E6%8B%B7%E8%B4%9D%E5%88%B0%E6%89%8B%E6%9C%BA%EF%BC%8C%E6%9C%80%E5%A5%BD%E7%9C%8B%E5%8E%9F%E6%96%87https://yalujailbreak.net/enable-tpf0-ios-9-jailbreak/&quot;&gt;https://mrmad.com.tw/cl0ver%EF%BC%89%EF%BC%8C%E4%BA%A6%E6%9C%AA%E8%83%BD%E6%BF%80%E6%B4%BB%E3%80%82%EF%BC%88%E8%BF%99%E7%AF%87%E6%96%87%E7%AB%A0%E4%B8%AD%E9%97%B4%E7%BF%BB%E8%AF%91%E6%9C%89%E7%82%B9%E5%B0%8F%E7%BC%BA%E6%BC%8F%EF%BC%8C%E9%9C%80%E8%A6%81%E5%88%86%E5%88%AB%E4%B8%8B%E8%BD%BD%E5%B9%B6%E5%B0%87%E3%80%8Ccl0ver%E6%AA%94%E6%A1%88%E3%80%8D%E8%88%87%E3%80%8Coffsets.dat%E6%AA%94%E6%A1%88%E3%80%8D%E6%8B%B7%E8%B4%9D%E5%88%B0%E6%89%8B%E6%9C%BA%EF%BC%8C%E6%9C%80%E5%A5%BD%E7%9C%8B%E5%8E%9F%E6%96%87https://yalujailbreak.net/enable-tpf0-ios-9-jailbreak/&lt;/a&gt;）&lt;br /&gt;
+看来它似乎只支持iphone5S以下。&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-2-3&quot; class=&quot;outline-3&quot;&gt;
+&lt;h3 id=&quot;sec-2-3&quot;&gt;&lt;span class=&quot;section-number-3&quot;&gt;2.3&lt;/span&gt; 然后看到这个贴子，&lt;a href=&quot;https://www.reddit.com/r/jailbreak/comments/8bjs2k/discussion_dont_attempt_semirestorecydia/%EF%BC%8C%E7%9B%B4%E6%8E%A5%E5%B0%86/Applications/Setup.app%E6%94%B9%E5%90%8D%E5%8D%B3%E5%8F%AF%E3%80%82%E9%87%8D%E5%90%AF%E5%90%8E%E7%9B%B4%E6%8E%A5%E7%BB%95%E8%BF%87Activation%E8%BF%9B%E5%85%A5%E7%B3%BB%E7%BB%9F&quot;&gt;https://www.reddit.com/r/jailbreak/comments/8bjs2k/discussion_dont_attempt_semirestorecydia/%EF%BC%8C%E7%9B%B4%E6%8E%A5%E5%B0%86/Applications/Setup.app%E6%94%B9%E5%90%8D%E5%8D%B3%E5%8F%AF%E3%80%82%E9%87%8D%E5%90%AF%E5%90%8E%E7%9B%B4%E6%8E%A5%E7%BB%95%E8%BF%87Activation%E8%BF%9B%E5%85%A5%E7%B3%BB%E7%BB%9F&lt;/a&gt;。&lt;/h3&gt;
+&lt;div class=&quot;outline-text-3&quot; id=&quot;text-2-3&quot;&gt;
+&lt;p&gt;
+这个网页的回贴中，似乎只有facetime和imessage不能使用。但是的我手机是涉及icloud的整个系统不能使用。可能是该贴主要讨论的是5s之前的手机。在苹果新64位系统中，已经作了相关补丁，即不通过icloud注册，无法打开通讯录等。而原本旧版手机是锁机状态下通过盲人模式进入通讯录可以激活系统的。&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-3&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-3&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;3&lt;/span&gt; 使用手机能流畅使用的具体方法&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-3&quot;&gt;
+&lt;/div&gt;&lt;div id=&quot;outline-container-sec-3-1&quot; class=&quot;outline-3&quot;&gt;
+&lt;h3 id=&quot;sec-3-1&quot;&gt;&lt;span class=&quot;section-number-3&quot;&gt;3.1&lt;/span&gt; 无法使用app store&lt;/h3&gt;
+&lt;div class=&quot;outline-text-3&quot; id=&quot;text-3-1&quot;&gt;
+&lt;p&gt;
+在cydia下载kstore。凡是app store中打开app的页面显示“K”标志的，可以下载使用。&lt;br /&gt;
+在cydia下载appcake（源cydia.iphonecake.com），非官方商店。&lt;br /&gt;
+如果上述商店仍然存在无法下载的app，则需要通过对app进行脱壳后传送并安装。详见第四部分“脱壳”。&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-3-2&quot; class=&quot;outline-3&quot;&gt;
+&lt;h3 id=&quot;sec-3-2&quot;&gt;&lt;span class=&quot;section-number-3&quot;&gt;3.2&lt;/span&gt; 无法使用通讯录&lt;/h3&gt;
+&lt;div class=&quot;outline-text-3&quot; id=&quot;text-3-2&quot;&gt;
+&lt;p&gt;
+appcake搜索下载allcontacts pro，同步google联系人至手机。&lt;br /&gt;
+如果在app store中下载其他的contacts同步工具，也可以完成此项工作。可选择范围可能扩大至outlook contacts、qq通讯录等。&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-3-3&quot; class=&quot;outline-3&quot;&gt;
+&lt;h3 id=&quot;sec-3-3&quot;&gt;&lt;span class=&quot;section-number-3&quot;&gt;3.3&lt;/span&gt; 无法使用自带备忘录、提醒事项等&lt;/h3&gt;
+&lt;div class=&quot;outline-text-3&quot; id=&quot;text-3-3&quot;&gt;
+&lt;p&gt;
+使用google keep代替。&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-3-4&quot; class=&quot;outline-3&quot;&gt;
+&lt;h3 id=&quot;sec-3-4&quot;&gt;&lt;span class=&quot;section-number-3&quot;&gt;3.4&lt;/span&gt; 其他方法，目前看未发现不便之处。&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-4&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-4&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;4&lt;/span&gt; 脱壳&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-4&quot;&gt;
+&lt;p&gt;
+一般说来，需要在电脑端操作（未实验），或者在其他越狱手机上操作。下面以手机为例。&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-4-1&quot; class=&quot;outline-3&quot;&gt;
+&lt;h3 id=&quot;sec-4-1&quot;&gt;&lt;span class=&quot;section-number-3&quot;&gt;4.1&lt;/span&gt; cydia下载NewTerm 2, (源&lt;a href=&quot;https://cydia.hbang.ws&quot;&gt;https://cydia.hbang.ws&lt;/a&gt;)&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-4-2&quot; class=&quot;outline-3&quot;&gt;
+&lt;h3 id=&quot;sec-4-2&quot;&gt;&lt;span class=&quot;section-number-3&quot;&gt;4.2&lt;/span&gt; cydia下载clutch 2，（源cydia.ichitaso.com）&lt;/h3&gt;
+&lt;div class=&quot;outline-text-3&quot; id=&quot;text-4-2&quot;&gt;
+&lt;p&gt;
+clutch -i查看app编号&lt;br /&gt;
+clutch -d 01脱壳01号app，默认保存路径为/var/mobile/Documents/Dumped&lt;br /&gt;
+复制安装即可&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-4-3&quot; class=&quot;outline-3&quot;&gt;
+&lt;h3 id=&quot;sec-4-3&quot;&gt;&lt;span class=&quot;section-number-3&quot;&gt;4.3&lt;/span&gt; imovie&lt;/h3&gt;
+&lt;div class=&quot;outline-text-3&quot; id=&quot;text-4-3&quot;&gt;
+&lt;p&gt;
+这个软件也许用的人不多，其中用到icloud的一点是导入背景音乐库。&lt;br /&gt;
+由于icloud整体已经不能用，即使用itools和ifunbox也无法导入任何歌曲。&lt;br /&gt;
+经过测试，可以直接把mp3文件导入到imovie中。具体方法见第五条。&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-4-4&quot; class=&quot;outline-3&quot;&gt;
+&lt;h3 id=&quot;sec-4-4&quot;&gt;&lt;span class=&quot;section-number-3&quot;&gt;4.4&lt;/span&gt; cydia安装App Admin&lt;/h3&gt;
+&lt;div class=&quot;outline-text-3&quot; id=&quot;text-4-4&quot;&gt;
+&lt;p&gt;
+部分app的新版本无法成功脱壳，如腾迅系、阿里系，使用本插件下载旧版本脱壳（不知道其他脱壳工具是否可以脱新版本）。&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-5&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-5&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;5&lt;/span&gt; 和电脑互拷文件&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-5&quot;&gt;
+&lt;p&gt;
+如果单纯在手机上使用文件操作，则使用cydia下载Filza即可（由于无法使用icloud，我的正版ifile也无法验证注册）&lt;br /&gt;
+如果想使用电脑更方便的操作，那么就借助SemiRestore时强制安装的Openssh。在pc上安装winscp，或者cygwin等命令行工具，在linux下可以直接操作。&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-5-1&quot; class=&quot;outline-3&quot;&gt;
+&lt;h3 id=&quot;sec-5-1&quot;&gt;&lt;span class=&quot;section-number-3&quot;&gt;5.1&lt;/span&gt; 登陆、操作手机：&lt;/h3&gt;
+&lt;div class=&quot;outline-text-3&quot; id=&quot;text-5-1&quot;&gt;
+&lt;p&gt;
+ssh root@192.168.xxx.xxx（手机ip地址）&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-5-2&quot; class=&quot;outline-3&quot;&gt;
+&lt;h3 id=&quot;sec-5-2&quot;&gt;&lt;span class=&quot;section-number-3&quot;&gt;5.2&lt;/span&gt; 拷贝文件到手机：&lt;/h3&gt;
+&lt;div class=&quot;outline-text-3&quot; id=&quot;text-5-2&quot;&gt;
+&lt;p&gt;
+scp -r /localhost/xx.mp3 root@192.168.xxx.xxx&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-5-3&quot; class=&quot;outline-3&quot;&gt;
+&lt;h3 id=&quot;sec-5-3&quot;&gt;&lt;span class=&quot;section-number-3&quot;&gt;5.3&lt;/span&gt; 已经登陆手机，从电脑往手机上拷贝：&lt;/h3&gt;
+&lt;div class=&quot;outline-text-3&quot; id=&quot;text-5-3&quot;&gt;
+&lt;p&gt;
+scp -r xxx@192.168.xxx.xxx(电脑ip) &lt;i&gt;localhost&lt;/i&gt;.（手机所在文件夹位置）&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-5-4&quot; class=&quot;outline-3&quot;&gt;
+&lt;h3 id=&quot;sec-5-4&quot;&gt;&lt;span class=&quot;section-number-3&quot;&gt;5.4&lt;/span&gt; 将mp3文件拷贝到imovie&lt;/h3&gt;
+&lt;div class=&quot;outline-text-3&quot; id=&quot;text-5-4&quot;&gt;
+&lt;p&gt;
+先使用google drive或dropbox网盘工具下载mp3，如BusyBaby.mp3，导入到imove中。&lt;br /&gt;
+在NewTerm 2或者已登陆手机winscp命令行或linux ssh命令行中，使用命令find / -name BusyBaby.mp3，查看文件位置。如/private/var/mobile/Containers/Da\&lt;br /&gt;
+ta/Application/19FE5032-EB86-40AC-B2FE-9F023A27F0D8/Library/Application Support/Documents/SharedM\&lt;br /&gt;
+edia/Audio/BusyBaby.mp3，找到路径。&lt;br /&gt;
+最后使用命令scp拷贝。&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+          
+          
+        
+      
+        </content>
+
+        
+          <summary>1 无法激活状态的前情&amp;lt;div class=&quot;outline-text-2&quot; </summary>
+        
+      </entry>
+    
   
     
       
@@ -4727,7 +5010,7 @@ $ gem sources -l
 &lt;/p&gt;
 &lt;pre class=&quot;example&quot;&gt;
 &amp;lt;a href=&quot;&quot; title=&quot;查看所有标签&quot;&amp;gt;&amp;lt;i class=&quot;icon-fixed-width icon-tags&quot;&amp;gt;&amp;lt;/i&amp;gt; 标签云&amp;lt;/a&amp;gt;
-&amp;lt;span title=&quot;标签总数&quot;&amp;gt;171&amp;lt;/span&amp;gt;
+&amp;lt;span title=&quot;标签总数&quot;&amp;gt;183&amp;lt;/span&amp;gt;
 &amp;lt;div id=&quot;tag-cloud&quot;&amp;gt;
 {\% assign first = site.tags.first \%}
 {\% assign max = first[1].size \%}
