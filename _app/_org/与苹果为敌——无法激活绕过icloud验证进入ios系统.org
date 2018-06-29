@@ -32,7 +32,8 @@ if the string nvram com.apple.System.boot-nonce=0xxx is appear, then good, your 
 #+END_QUOTE
 试了启动tpf0（https://mrmad.com.tw/cl0ver），亦未能激活。（这篇文章中间翻译有点小缺漏，需要分别下载并將「cl0ver檔案」與「offsets.dat檔案」拷贝到手机，最好看原文https://yalujailbreak.net/enable-tpf0-ios-9-jailbreak/）
 看来它似乎只支持iphone5S以下。
-** 然后看到这个贴子，https://www.reddit.com/r/jailbreak/comments/8bjs2k/discussion_dont_attempt_semirestorecydia/，直接将/Applications/Setup.app改名即可。重启后直接绕过Activation进入系统。
+** others
+然后看到这个贴子，https://www.reddit.com/r/jailbreak/comments/8bjs2k/discussion_dont_attempt_semirestorecydia/，直接将/Applications/Setup.app改名即可。重启后直接绕过Activation进入系统。
 这个网页的回贴中，似乎只有facetime和imessage不能使用。但是的我手机是涉及icloud的整个系统不能使用。可能是该贴主要讨论的是5s之前的手机。在苹果新64位系统中，已经作了相关补丁，即不通过icloud注册，无法打开通讯录等。而原本旧版手机是锁机状态下通过盲人模式进入通讯录可以激活系统的。
 * 使用手机能流畅使用的具体方法
 ** 无法使用app store

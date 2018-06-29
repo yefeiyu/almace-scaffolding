@@ -137,7 +137,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>首页</title>
   <subtitle>y.g.i</subtitle>
-  <updated>2018-06-29T16:25:21+08:00</updated>
+  <updated>2018-06-29T16:32:31+08:00</updated>
   <id>http://0.0.0.0:4321/</id>
   <generator uri="https://sparanoid.com/lab/amsf/" version="1.1.10">Almace Scaffolding</generator>
 
@@ -295,9 +295,10 @@ if the string nvram com.apple.System.boot-nonce=0xxx is appear, then good, your 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&quot;outline-container-sec-2-3&quot; class=&quot;outline-3&quot;&gt;
-&lt;h3 id=&quot;sec-2-3&quot;&gt;&lt;span class=&quot;section-number-3&quot;&gt;2.3&lt;/span&gt; 然后看到这个贴子，&lt;a href=&quot;https://www.reddit.com/r/jailbreak/comments/8bjs2k/discussion_dont_attempt_semirestorecydia/%EF%BC%8C%E7%9B%B4%E6%8E%A5%E5%B0%86/Applications/Setup.app%E6%94%B9%E5%90%8D%E5%8D%B3%E5%8F%AF%E3%80%82%E9%87%8D%E5%90%AF%E5%90%8E%E7%9B%B4%E6%8E%A5%E7%BB%95%E8%BF%87Activation%E8%BF%9B%E5%85%A5%E7%B3%BB%E7%BB%9F&quot;&gt;https://www.reddit.com/r/jailbreak/comments/8bjs2k/discussion_dont_attempt_semirestorecydia/%EF%BC%8C%E7%9B%B4%E6%8E%A5%E5%B0%86/Applications/Setup.app%E6%94%B9%E5%90%8D%E5%8D%B3%E5%8F%AF%E3%80%82%E9%87%8D%E5%90%AF%E5%90%8E%E7%9B%B4%E6%8E%A5%E7%BB%95%E8%BF%87Activation%E8%BF%9B%E5%85%A5%E7%B3%BB%E7%BB%9F&lt;/a&gt;。&lt;/h3&gt;
+&lt;h3 id=&quot;sec-2-3&quot;&gt;&lt;span class=&quot;section-number-3&quot;&gt;2.3&lt;/span&gt; others&lt;/h3&gt;
 &lt;div class=&quot;outline-text-3&quot; id=&quot;text-2-3&quot;&gt;
 &lt;p&gt;
+然后看到这个贴子，&lt;a href=&quot;https://www.reddit.com/r/jailbreak/comments/8bjs2k/discussion_dont_attempt_semirestorecydia/%EF%BC%8C%E7%9B%B4%E6%8E%A5%E5%B0%86/Applications/Setup.app%E6%94%B9%E5%90%8D%E5%8D%B3%E5%8F%AF%E3%80%82%E9%87%8D%E5%90%AF%E5%90%8E%E7%9B%B4%E6%8E%A5%E7%BB%95%E8%BF%87Activation%E8%BF%9B%E5%85%A5%E7%B3%BB%E7%BB%9F&quot;&gt;https://www.reddit.com/r/jailbreak/comments/8bjs2k/discussion_dont_attempt_semirestorecydia/%EF%BC%8C%E7%9B%B4%E6%8E%A5%E5%B0%86/Applications/Setup.app%E6%94%B9%E5%90%8D%E5%8D%B3%E5%8F%AF%E3%80%82%E9%87%8D%E5%90%AF%E5%90%8E%E7%9B%B4%E6%8E%A5%E7%BB%95%E8%BF%87Activation%E8%BF%9B%E5%85%A5%E7%B3%BB%E7%BB%9F&lt;/a&gt;。&lt;br /&gt;
 这个网页的回贴中，似乎只有facetime和imessage不能使用。但是的我手机是涉及icloud的整个系统不能使用。可能是该贴主要讨论的是5s之前的手机。在苹果新64位系统中，已经作了相关补丁，即不通过icloud注册，无法打开通讯录等。而原本旧版手机是锁机状态下通过盲人模式进入通讯录可以激活系统的。&lt;br /&gt;
 &lt;/p&gt;
 &lt;/div&gt;
