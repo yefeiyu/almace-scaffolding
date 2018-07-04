@@ -8,7 +8,8 @@
 #+DESCRIPTION: 
 #+TAGS: anki, deck, subs2srs, aboboo, MKVExtractGUI2, SrtEdit, ASChange, speed
 #+CATEGORIES: soft
-#+EXTRA-YAML-HEADERS: theme: \nplugin: \nscheme-text: "#2b003b"\nscheme-link: "#00008b"\nscheme-hover: "#"\nscheme-code: "#"\nscheme-bg: "#ffe7e5"\nscheme-hero-text: "#ffc3c3"\nscheme-hero-link: "#daab87"\nscheme-hero-bg: "#5b005b"\nscheme-bg-light: true\n
+#+EXTRA-YAML-HEADERS: theme: \nplugin: \nscheme-text: "#ffffff"\nscheme-link: "#ff8540"\nscheme-hover: "#"\nscheme-code: "#"\nscheme-bg: "#6b1606"\nscheme-hero-text: "#8d3700"\nscheme-hero-link: "#ee4000"\nscheme-hero-bg: "#ffb580"\n
+
 
 * Download *.mkv film or U.S.drama
 * MKVExtractGUI2

@@ -145,7 +145,7 @@
 <meta name="description" content="1 无法激活状态的前情 一直越狱使用iOS9.0.2的手机，上周摔了屏幕，想到天才吧花点贵钱换个原装屏。天才吧的政策是手机必须非越狱状态才提供维修服务，不得已只好搜索一下越狱擦除工具。开始的时候使用Cydia eraser（原Cydia Impactor），提供无ota无法使用；继尔使用SemiRestore，成功擦除。 擦除后发现不能激活，再次上网搜索，发现是9.0-9.1关闭了（即使正常状态下手机恢复）激活通道。 2 绕过激活开启手机 SemiRestore擦除保留了越狱系统，擦除时强制要求在Cydia下载Openssh。这一措施为下述这方案提供ssh控制手机的支持。 2.1 开始使...">
 
 <!-- Cheome Web App theme color -->
-<meta name="theme-color" content="#ff00b4">
+<meta name="theme-color" content="#d2691e">
 
 <!-- Feed URL -->
 <link rel="alternate" href="/feed.xml" type="application/atom+xml">
@@ -684,7 +684,7 @@
     
 
     
-      <link rel="mask-icon" href="/mask-icon.svg" color="#ff00b4">
+      <link rel="mask-icon" href="/mask-icon.svg" color="#d2691e">
     
 
     
@@ -743,28 +743,76 @@
   */
   html {
     
+    background-color: #ffeebd;
+    
   }
 
   body {
     
+    color: #8b4513;
+    
 
+    
+    background-color: #ffeebd;
     
 
     
   }
 
   
-
+  a,
+  button {
+    color: #8b4513;
+  }
   
 
   
+  ::selection {
+    color: #d2691e;
+  }
+  
 
   
+  .navigation li a:hover,
+  .navigation li a:focus {
+    color: #;
+  }
   
+
+  
+  .content header {
+    background: #8b4513;
+  }
+  
+  
+  .content header {
+    color: #ffdead;
+  }
+  
+    
+    .content header a {
+      color: #f4a460;
+    }
+    .content header .external .dot {
+      background: #f4a460;
+    }
     
 
   
+  .current a {
+    color: #d2691e;
+  }
 
+  .content a {
+    color: #d2691e;
+  }
+  
+
+  
+  .content code,
+  .content pre {
+    color: #;
+  }
   
 
   /*
@@ -772,11 +820,34 @@
     Date: Mar 12, 2016, 12:09 AM
   */
   
-
+  .content hr::before,
+  .footnotes::before {
+    background: #8b4513;
+    box-shadow: 24px 0 0 0 #8b4513, -24px 0 0 0 #8b4513;
+  }
   
 
   
+  .note,
+  .store,
+  .download {
+    border-left-color: #d2691e;
+  }
+  
 
+  
+  .external .dot {
+    background: #d2691e;
+  }
+  
+
+  
+  :target [rev=footnote],
+  :target [rel=footnote],
+  :target .reversefootnote,
+  :target .footnote {
+    color: #;
+  }
   
 
 .tag-cloud {

@@ -8,6 +8,7 @@
 #+DESCRIPTION: 
 #+TAGS: apple, iOS 9.0.2, icloud, SemiRestore, Cydia, openssh, clutch, jailbreak, 
 #+CATEGORIES: mobile
+#+EXTRA-YAML-HEADERS: theme: \nplugin: \nscheme-text: "#8b4513"\nscheme-link: "#d2691e"\nscheme-hover: "#"\nscheme-code: "#"\nscheme-bg: "#ffeebd"\nscheme-hero-text: "#ffdead"\nscheme-hero-link: "#f4a460"\nscheme-hero-bg: "#8b4513"\nscheme-bg-light: true\n
 
 * 无法激活状态的前情
 一直越狱使用iOS9.0.2的手机，上周摔了屏幕，想到天才吧花点贵钱换个原装屏。天才吧的政策是手机必须非越狱状态才提供维修服务，不得已只好搜索一下越狱擦除工具。开始的时候使用Cydia eraser（原Cydia Impactor），提供无ota无法使用；继尔使用SemiRestore，成功擦除。
