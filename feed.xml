@@ -137,7 +137,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>首页</title>
   <subtitle>y.g.i</subtitle>
-  <updated>2018-06-29T16:32:31+08:00</updated>
+  <updated>2018-07-04T15:49:49+08:00</updated>
   <id>http://0.0.0.0:4321/</id>
   <generator uri="https://sparanoid.com/lab/amsf/" version="1.1.10">Almace Scaffolding</generator>
 
@@ -150,6 +150,109 @@
     <email>yefeiyu@gmail.com</email>
   </author>
 
+  
+    
+      
+
+      
+
+      <entry>
+        <title>anki deck production</title>
+        <id>http://0.0.0.0:4321/soft/2018/07/04/anki-deck-production.html</id>
+        <link rel="alternate" type="text/html" href="http://0.0.0.0:4321/soft/2018/07/04/anki-deck-production.html" />
+        <published>2018-07-04T00:00:00+08:00</published>
+
+        
+          <updated>2018-07-04T00:00:00+08:00</updated>
+        
+
+        <author>
+          <name>yefeiyu</name>
+          <uri>http://yefeiyu.github.io</uri>
+          <email>yefeiyu@gmail.com</email>
+        </author>
+
+        <content type="html" xml:base="http://0.0.0.0:4321/">
+          
+            &lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-1&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;1&lt;/span&gt; Download *.mkv film or U.S.drama&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-2&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-2&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;2&lt;/span&gt; MKVExtractGUI2&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-2&quot;&gt;
+&lt;p&gt;
+a. Download mkvtoolnix-20-0-0-64-bit, the latest version is 23rd, what we need is 20th here.&lt;br /&gt;
+Installed&lt;br /&gt;
+b. Download MKVExtractGUI2, the latest version is 2.4.0.0, what we need is 1.6.4.1 here.&lt;br /&gt;
+put MKVExtractGUI2 into mkvtoolnix's installation folder.&lt;br /&gt;
+c. Use MKVExtractGUI2 to seperate *.mkv into video, music, and subtitle files.&lt;br /&gt;
+d. Use mkvtoolnix to combine video and music files into a new *.mkv file.&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-3&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-3&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;3&lt;/span&gt; Use SrtEdit to convert subtitle file and adjust the timeline.&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-4&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-4&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;4&lt;/span&gt; aboboo&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-4&quot;&gt;
+&lt;p&gt;
+a. Add *mkv file, load subtitles, remove short sentence. Save original and translated subtitles in *srt UTF-8 format seperately.&lt;br /&gt;
+b. (You can also make aboboo mobile courseware.&lt;sup&gt;&lt;a id=&quot;fnr.1&quot; name=&quot;fnr.1&quot; class=&quot;footref&quot; href=&quot;#fn.1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;)&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-5&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-5&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;5&lt;/span&gt; subs2srs&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-5&quot;&gt;
+&lt;p&gt;
+a. Subs1, Original subtitle; Subs2, translated; Check the Normalize Audio box; modify Generalte Audio Clips into 320, modify Generate Snapshots and Video Clips into best quality; modify Bitrates into 3200 and 320 kb/s; Name of deck as XX.S01, and E01 is defined by First Episode. Now you can preview it.&lt;br /&gt;
+b. The generated files is in the Output folder. The *.mp3.&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-6&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-6&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;6&lt;/span&gt; anki&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-6&quot;&gt;
+&lt;p&gt;
+a. First, you need modify the **.S01.tsv‘s contents,remove the first &lt;code&gt;Tab&lt;/code&gt; symbol for each line.&lt;br /&gt;
+b. Open anki, &lt;code&gt;Import File&lt;/code&gt;&lt;br /&gt;
+c. Type is subs2srs, Deck is U.S.drama::[Yours deck's name]::espode number, and &lt;code&gt;Import&lt;/code&gt; it.&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-7&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-7&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;7&lt;/span&gt; ASChange&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-7&quot;&gt;
+&lt;p&gt;
+a. add all mp3 files, select all, hit &lt;code&gt;Convert&lt;/code&gt;&lt;br /&gt;
+b. &lt;code&gt;Format&lt;/code&gt; tag, Max. Quality; &lt;code&gt;Extras&lt;/code&gt; tag, Don't check &lt;code&gt;Normalize volume&lt;/code&gt; box, if you had adjusted th volume by check the &lt;code&gt;Normalize Audio&lt;/code&gt; option in &lt;code&gt;subs2srs&lt;/code&gt;.&lt;br /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;footnotes&quot;&gt;
+&lt;h2 class=&quot;footnotes&quot;&gt;Footnotes: &lt;/h2&gt;
+&lt;div id=&quot;text-footnotes&quot;&gt;
+
+&lt;div class=&quot;footdef&quot;&gt;&lt;sup&gt;&lt;a id=&quot;fn.1&quot; name=&quot;fn.1&quot; class=&quot;footnum&quot; href=&quot;#fnr.1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;p class=&quot;footpara&quot;&gt;
+I'll write a other tutorial.&lt;br /&gt;
+&lt;/p&gt;&lt;/div&gt;
+
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+          
+          
+        
+      
+        </content>
+
+        
+          <summary>1 Download *.mkv film or U.S.drama&amp;lt;/div</summary>
+        
+      </entry>
+    
   
     
       
@@ -5011,7 +5114,7 @@ $ gem sources -l
 &lt;/p&gt;
 &lt;pre class=&quot;example&quot;&gt;
 &amp;lt;a href=&quot;&quot; title=&quot;查看所有标签&quot;&amp;gt;&amp;lt;i class=&quot;icon-fixed-width icon-tags&quot;&amp;gt;&amp;lt;/i&amp;gt; 标签云&amp;lt;/a&amp;gt;
-&amp;lt;span title=&quot;标签总数&quot;&amp;gt;183&amp;lt;/span&amp;gt;
+&amp;lt;span title=&quot;标签总数&quot;&amp;gt;191&amp;lt;/span&amp;gt;
 &amp;lt;div id=&quot;tag-cloud&quot;&amp;gt;
 {\% assign first = site.tags.first \%}
 {\% assign max = first[1].size \%}
