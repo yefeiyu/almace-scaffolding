@@ -4,7 +4,7 @@ I modified the background color from *#263238* to *#061218*.
 The origin yellow color is *#fff590d*, which was modified to *#ffff33*. 
 Therefore, the difference between it and white is more significant.
 
-The _EIN_ background color from _#1e2930_ to _0e1920_.
+The _EIN_ background color from _#1e2930_ to _#0e1920_.
 
 All of this is only an adjustment in depth and light, and overall does not affect the beauty of the original theme.
 
