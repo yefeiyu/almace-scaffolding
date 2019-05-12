@@ -1,0 +1,47 @@
+** EXPLAINED by Forker Yefeiyu
+I modified the background color from *#263238* to *#061218*.
+
+The origin yellow color is *#fff590d*, which was modified to *#ffff33*. 
+Therefore, the difference between it and white is more significant.
+
+The _EIN_ background color from _#1e2930_ to _0e1920_.
+
+All of this is only an adjustment in depth and light, and overall does not affect the beauty of the original theme.
+
+* Material Theme for Emacs
+[[https://github.com/cpaulik/emacs-material-theme/blob/master/LICENSE.txt][file:https://img.shields.io/badge/license-MIT-green.svg]]
+[[http://melpa.org/#/material-theme][file:http://melpa.org/packages/material-theme-badge.svg]]
+[[http://stable.melpa.org/#/material-theme][file:http://stable.melpa.org/packages/material-theme-badge.svg]]
+
+Emacs Theme based on the colors proposed by the [[http://www.google.com/design/spec/style/color.html#color-color-palette][Google Material Design]].
+
+** Light and Dark Theme 
+There are two variants of the theme:
+
+- material ::
+  To use it put the following in your init.el 
+  #+begin_src emacs-lisp
+  (load-theme 'material t)
+  #+end_src
+
+- material-light ::
+  To use it put the following in your init.el 
+  #+begin_src emacs-lisp
+  (load-theme 'material-light t)
+  #+end_src
+
+
+
+* Screenshots
+
+** Overview
+[[./material-theme.png]]
+
+** Org mode
+[[./org-mode-demo.png]]
+
+** Rainbow Delimiters
+[[./rainbow-delimiters.png]]
+
+** Ace-window
+[[./ace-window.png]]
